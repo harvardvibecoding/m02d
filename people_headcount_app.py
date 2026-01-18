@@ -3,7 +3,7 @@ import pandas as pd
 import altair as alt
 from pathlib import Path
 
-CSV_PATH = Path("/Users/sharzhou/m2-project/data_room/people/employee_roster.csv")
+CSV_PATH = Path(__file__).parent / "data_room/people/employee_roster.csv"
 
 st.set_page_config(page_title="People Headcount Scenarios", layout="wide")
 
