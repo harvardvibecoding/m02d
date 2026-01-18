@@ -1,0 +1,44 @@
+# Patent Application #6: Enterprise LLM Security & Compliance Framework
+
+**Example AI, Inc.**
+**Confidential - M&A Due Diligence**
+
+---
+
+## Application Information
+
+| Field | Details |
+|-------|---------|
+| **Application Number** | US 17/XXX,XXX |
+| **Filing Date** | August 20, 2024 |
+| **Inventors** | Christopher Lee, Thomas Wright, Daniel Kim |
+| **Assignee** | Example AI, Inc. |
+| **Status** | Pending (Under Examination) |
+
+---
+
+## Abstract
+
+A security framework for enterprise LLM deployments that provides data loss prevention (DLP), prompt injection detection, output filtering, and comprehensive audit logging. The system enables organizations to deploy LLM applications while maintaining regulatory compliance.
+
+---
+
+## Key Claims
+
+1. Real-time prompt injection detection using classifier ensemble
+
+2. Sensitive data masking/redaction in LLM inputs and outputs
+
+3. Immutable audit trail with cryptographic verification
+
+---
+
+## Technology Domain
+
+Security & Compliance
+
+---
+
+*Document prepared for M&A due diligence purposes*
+*Application numbers redacted for confidentiality*
+*Data as of September 30, 2026*

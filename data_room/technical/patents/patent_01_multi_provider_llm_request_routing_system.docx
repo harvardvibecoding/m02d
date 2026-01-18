@@ -1,0 +1,51 @@
+# Patent #1: Multi-Provider LLM Request Routing System
+
+**Example AI, Inc.**
+**Confidential - M&A Due Diligence**
+
+---
+
+## Patent Information
+
+| Field | Details |
+|-------|---------|
+| **Patent Number** | US 11,XXX,XXX |
+| **Filing Date** | March 15, 2023 |
+| **Grant Date** | September 8, 2025 |
+| **Inventors** | Daniel Kim, Brian Lee, Marcus Johnson |
+| **Assignee** | Example AI, Inc. |
+| **Status** | Granted |
+
+---
+
+## Abstract
+
+A system and method for intelligently routing Large Language Model (LLM) requests across multiple providers based on real-time provider availability, capability matching, cost optimization, and quality-of-service requirements. The system maintains a dynamic registry of provider capabilities and implements automatic failover with sub-100ms switchover times.
+
+---
+
+## Key Claims
+
+1. A method for routing LLM requests comprising analyzing request characteristics, querying a capability registry, and selecting an optimal provider based on multi-factor scoring
+
+2. A failover mechanism that maintains request context during provider switching
+
+3. A request transformation layer that normalizes API differences across providers
+
+---
+
+## Commercial Importance
+
+Core to the multi-provider gateway product; primary competitive differentiator
+
+---
+
+## Technology Domain
+
+LLM Gateway & Routing
+
+---
+
+*Document prepared for M&A due diligence purposes*
+*Patent numbers redacted for confidentiality*
+*Data as of September 30, 2026*

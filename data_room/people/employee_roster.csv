@@ -1,0 +1,186 @@
+employee_id,name,role,level,department,location,start_date,comp_usd,equity_pct,reports_to
+E001,Sarah Li,CEO & Co-Founder,C-Level,Executive,Santa Clara,2022-01-15,280000,19.0,Board
+E002,Daniel Kim,CTO & Co-Founder,C-Level,Engineering,Boston,2022-01-15,250000,17.0,Board
+E003,Michael Torres,VP Engineering,VP,Engineering,Santa Clara,2022-03-01,240000,1.2,E002
+E004,Jennifer Walsh,VP Sales,VP,Sales,Boston,2023-06-15,220000,0.8,E001
+E005,Priya Sharma,VP Product,VP,Product,Santa Clara,2023-04-01,225000,0.9,E001
+E006,David Liu,CFO,C-Level,Finance,Santa Clara,2024-05-20,235000,0.6,E001
+E007,Rachel Goldman,VP Marketing,VP,Marketing,Boston,2024-07-10,210000,0.5,E001
+
+E101,James Park,Engineering Manager - ML Platform,Manager,Engineering,Santa Clara,2022-02-01,195000,0.4,E003
+E102,Lisa Anderson,Engineering Manager - Infrastructure,Manager,Engineering,Boston,2022-06-15,190000,0.35,E003
+E103,Kevin Zhang,Engineering Manager - Product,Manager,Engineering,Santa Clara,2023-01-10,185000,0.3,E003
+E104,Amanda Foster,Engineering Manager - Data,Manager,Engineering,Boston,2023-09-01,180000,0.28,E003
+E105,Robert Martinez,Engineering Manager - Platform,Manager,Engineering,Santa Clara,2024-02-15,185000,0.25,E003
+E106,Emily Chen,Engineering Manager - AI Research,Manager,Engineering,Boston,2024-06-01,190000,0.22,E003
+E107,Thomas Wright,Engineering Manager - Security,Manager,Engineering,Santa Clara,2024-08-15,182000,0.2,E003
+E108,Sophia Patel,Engineering Manager - DevOps,Manager,Engineering,Boston,2025-01-20,180000,0.18,E003
+
+E201,Brian Lee,Staff ML Engineer,Staff,Engineering,Santa Clara,2022-02-15,185000,0.35,E101
+E202,Marcus Johnson,Staff Engineer - Distributed Systems,Staff,Engineering,Boston,2022-07-01,180000,0.32,E102
+E203,Nina Rodriguez,Staff Engineer - AI/ML,Staff,Engineering,Santa Clara,2023-02-10,175000,0.28,E101
+E204,Alex Kim,Staff Engineer - Backend,Staff,Engineering,Boston,2023-05-15,172000,0.26,E103
+E205,Olivia Chang,Staff Data Scientist,Staff,Engineering,Santa Clara,2023-11-01,170000,0.24,E104
+E206,Jordan Williams,Staff Engineer - Infrastructure,Staff,Engineering,Boston,2024-03-10,175000,0.22,E102
+E207,Maya Singh,Staff Engineer - ML Ops,Staff,Engineering,Santa Clara,2024-07-01,178000,0.2,E101
+E208,Christopher Lee,Staff Security Engineer,Staff,Engineering,Boston,2024-09-15,180000,0.18,E107
+E209,Isabella Torres,Staff Engineer - Performance,Staff,Engineering,Santa Clara,2025-02-01,182000,0.16,E105
+E210,Ethan Brown,Staff Data Engineer,Staff,Engineering,Boston,2025-04-15,175000,0.15,E104
+
+E301,Amy Zhao,Senior ML Engineer,Senior,Engineering,Santa Clara,2022-04-01,165000,0.22,E101
+E302,Daniel Nguyen,Senior Backend Engineer,Senior,Engineering,Boston,2022-05-15,160000,0.2,E103
+E303,Sarah Kim,Senior Frontend Engineer,Senior,Engineering,Santa Clara,2022-08-01,158000,0.19,E103
+E304,Ryan Martinez,Senior ML Engineer,Senior,Engineering,Boston,2022-09-10,162000,0.18,E101
+E305,Jessica Chen,Senior Data Scientist,Senior,Engineering,Santa Clara,2022-11-01,160000,0.17,E104
+E306,Andrew Park,Senior DevOps Engineer,Senior,Engineering,Boston,2023-01-15,158000,0.16,E108
+E307,Lauren Wu,Senior ML Engineer,Senior,Engineering,Santa Clara,2023-03-20,165000,0.16,E101
+E308,Nathan Foster,Senior Platform Engineer,Senior,Engineering,Boston,2023-05-01,160000,0.15,E105
+E309,Michelle Rodriguez,Senior Backend Engineer,Senior,Engineering,Santa Clara,2023-07-10,162000,0.15,E103
+E310,Brandon Lee,Senior ML Engineer,Senior,Engineering,Boston,2023-08-15,164000,0.14,E101
+E311,Stephanie Liu,Senior Data Engineer,Senior,Engineering,Santa Clara,2023-10-01,160000,0.14,E104
+E312,Tyler Johnson,Senior Security Engineer,Senior,Engineering,Boston,2023-12-01,165000,0.13,E107
+E313,Ashley Zhang,Senior ML Researcher,Senior,Engineering,Santa Clara,2024-01-15,168000,0.13,E106
+E314,Jacob Martinez,Senior Infrastructure Engineer,Senior,Engineering,Boston,2024-02-20,160000,0.12,E102
+E315,Megan Chen,Senior Full Stack Engineer,Senior,Engineering,Santa Clara,2024-04-01,158000,0.12,E103
+E316,Dylan Park,Senior ML Engineer,Senior,Engineering,Boston,2024-05-10,165000,0.12,E101
+E317,Hannah Kim,Senior Data Scientist,Senior,Engineering,Santa Clara,2024-06-15,162000,0.11,E104
+E318,Connor Williams,Senior Platform Engineer,Senior,Engineering,Boston,2024-07-20,160000,0.11,E105
+E319,Samantha Patel,Senior Backend Engineer,Senior,Engineering,Santa Clara,2024-08-01,161000,0.11,E103
+E320,Justin Lee,Senior ML Engineer,Senior,Engineering,Boston,2024-09-10,164000,0.1,E101
+E321,Rachel Torres,Senior DevOps Engineer,Senior,Engineering,Santa Clara,2024-10-15,159000,0.1,E108
+E322,Zachary Brown,Senior Data Engineer,Senior,Engineering,Boston,2024-11-01,160000,0.1,E104
+E323,Victoria Zhang,Senior ML Researcher,Senior,Engineering,Santa Clara,2025-01-05,167000,0.09,E106
+E324,Mason Johnson,Senior Infrastructure Engineer,Senior,Engineering,Boston,2025-02-10,160000,0.09,E102
+E325,Abigail Chen,Senior Full Stack Engineer,Senior,Engineering,Santa Clara,2025-03-15,158000,0.09,E103
+
+E401,Emma Wilson,ML Engineer,Mid,Engineering,Santa Clara,2022-10-01,145000,0.12,E101
+E402,Lucas Anderson,Backend Engineer,Mid,Engineering,Boston,2022-11-15,140000,0.11,E103
+E403,Sophia Martinez,Frontend Engineer,Mid,Engineering,Santa Clara,2023-02-01,138000,0.11,E103
+E404,Jack Thompson,ML Engineer,Mid,Engineering,Boston,2023-04-10,142000,0.1,E101
+E405,Ava Rodriguez,Data Scientist,Mid,Engineering,Santa Clara,2023-06-15,140000,0.1,E104
+E406,Noah Kim,Platform Engineer,Mid,Engineering,Boston,2023-08-01,138000,0.09,E105
+E407,Isabella Garcia,ML Engineer,Mid,Engineering,Santa Clara,2023-09-15,143000,0.09,E101
+E408,Liam Chen,Backend Engineer,Mid,Engineering,Boston,2023-11-01,140000,0.09,E103
+E409,Mia Park,Data Engineer,Mid,Engineering,Santa Clara,2024-01-10,140000,0.08,E104
+E410,William Lee,DevOps Engineer,Mid,Engineering,Boston,2024-02-15,138000,0.08,E108
+E411,Charlotte Zhang,ML Engineer,Mid,Engineering,Santa Clara,2024-03-20,144000,0.08,E101
+E412,James Johnson,Infrastructure Engineer,Mid,Engineering,Boston,2024-04-25,138000,0.08,E102
+E413,Amelia Torres,Full Stack Engineer,Mid,Engineering,Santa Clara,2024-05-15,136000,0.08,E103
+E414,Benjamin Martinez,ML Engineer,Mid,Engineering,Boston,2024-06-20,143000,0.07,E101
+E415,Harper Chen,Data Scientist,Mid,Engineering,Santa Clara,2024-07-10,141000,0.07,E104
+E416,Elijah Kim,Backend Engineer,Mid,Engineering,Boston,2024-08-15,139000,0.07,E103
+E417,Evelyn Park,ML Researcher,Mid,Engineering,Santa Clara,2024-09-05,145000,0.07,E106
+E418,Alexander Liu,Platform Engineer,Mid,Engineering,Boston,2024-10-10,138000,0.07,E105
+E419,Aria Rodriguez,Frontend Engineer,Mid,Engineering,Santa Clara,2024-11-15,137000,0.06,E103
+E420,Henry Zhang,ML Engineer,Mid,Engineering,Boston,2024-12-01,142000,0.06,E101
+E421,Luna Garcia,Data Engineer,Mid,Engineering,Santa Clara,2025-01-15,140000,0.06,E104
+E422,Sebastian Johnson,DevOps Engineer,Mid,Engineering,Boston,2025-02-20,138000,0.06,E108
+E423,Scarlett Chen,ML Engineer,Mid,Engineering,Santa Clara,2025-03-10,144000,0.06,E101
+E424,Owen Martinez,Backend Engineer,Mid,Engineering,Boston,2025-04-15,140000,0.06,E103
+E425,Chloe Kim,Data Scientist,Mid,Engineering,Santa Clara,2025-05-20,141000,0.05,E104
+E426,Gabriel Park,Infrastructure Engineer,Mid,Engineering,Boston,2025-06-10,138000,0.05,E102
+E427,Layla Torres,Full Stack Engineer,Mid,Engineering,Santa Clara,2025-07-15,137000,0.05,E103
+E428,Carter Lee,ML Engineer,Mid,Engineering,Boston,2025-08-01,143000,0.05,E101
+E429,Zoey Zhang,Platform Engineer,Mid,Engineering,Santa Clara,2025-09-10,139000,0.05,E105
+E430,Wyatt Chen,Backend Engineer,Mid,Engineering,Boston,2025-10-15,140000,0.05,E103
+
+E501,Grace Liu,Junior ML Engineer,Junior,Engineering,Santa Clara,2024-06-01,125000,0.05,E101
+E502,Leo Anderson,Junior Backend Engineer,Junior,Engineering,Boston,2024-07-15,120000,0.05,E103
+E503,Nora Martinez,Junior Data Scientist,Junior,Engineering,Santa Clara,2024-08-10,122000,0.05,E104
+E504,Julian Kim,Junior Frontend Engineer,Junior,Engineering,Boston,2024-09-01,118000,0.04,E103
+E505,Violet Park,Junior ML Engineer,Junior,Engineering,Santa Clara,2024-10-05,124000,0.04,E101
+E506,Mateo Garcia,Junior DevOps Engineer,Junior,Engineering,Boston,2024-11-10,119000,0.04,E108
+E507,Penelope Chen,Junior Platform Engineer,Junior,Engineering,Santa Clara,2024-12-15,120000,0.04,E105
+E508,Jaxon Torres,Junior Backend Engineer,Junior,Engineering,Boston,2025-01-20,120000,0.04,E103
+E509,Stella Rodriguez,Junior Data Engineer,Junior,Engineering,Santa Clara,2025-02-15,121000,0.04,E104
+E510,Maverick Lee,Junior ML Engineer,Junior,Engineering,Boston,2025-03-25,124000,0.04,E101
+E511,Aurora Zhang,Junior Full Stack Engineer,Junior,Engineering,Santa Clara,2025-04-20,118000,0.04,E103
+E512,Grayson Johnson,Junior Infrastructure Engineer,Junior,Engineering,Boston,2025-05-15,119000,0.03,E102
+E513,Hazel Kim,Junior ML Researcher,Junior,Engineering,Santa Clara,2025-06-20,126000,0.03,E106
+E514,Lincoln Martinez,Junior Backend Engineer,Junior,Engineering,Boston,2025-07-10,120000,0.03,E103
+E515,Nova Chen,Junior Data Scientist,Junior,Engineering,Santa Clara,2025-08-15,122000,0.03,E104
+E516,Hudson Park,Junior Platform Engineer,Junior,Engineering,Boston,2025-09-20,120000,0.03,E105
+E517,Ivy Torres,Junior ML Engineer,Junior,Engineering,Santa Clara,2025-11-10,125000,0.03,E101
+E518,Easton Liu,Junior Backend Engineer,Junior,Engineering,Boston,2025-12-15,121000,0.03,E103
+E519,Willow Zhang,Junior DevOps Engineer,Junior,Engineering,Santa Clara,2026-01-20,119000,0.03,E108
+E520,Theo Garcia,Junior Data Engineer,Junior,Engineering,Boston,2025-12-10,121000,0.03,E104
+
+E601,Alice Johnson,Director of Product Management,Director,Product,Boston,2023-05-01,190000,0.5,E005
+E602,Robert Kim,Senior Product Manager,Senior,Product,Santa Clara,2023-07-15,165000,0.18,E601
+E603,Maria Santos,Senior Product Manager,Senior,Product,Boston,2023-10-01,162000,0.17,E601
+E604,Steven Chen,Product Manager,Mid,Product,Santa Clara,2024-01-15,145000,0.12,E601
+E605,Diana Park,Product Manager,Mid,Product,Boston,2024-04-01,143000,0.11,E601
+E606,Carlos Martinez,Product Manager,Mid,Product,Santa Clara,2024-07-10,144000,0.1,E601
+E607,Jennifer Lee,Senior Product Manager,Senior,Product,Boston,2024-10-15,164000,0.15,E601
+E608,Anthony Zhang,Product Manager,Mid,Product,Santa Clara,2025-02-01,145000,0.09,E601
+E609,Nicole Rodriguez,Product Manager,Mid,Product,Boston,2025-05-15,143000,0.08,E601
+E610,Kevin Torres,Associate Product Manager,Junior,Product,Santa Clara,2025-08-01,128000,0.05,E601
+E611,Melissa Garcia,Associate Product Manager,Junior,Product,Boston,2025-12-20,127000,0.04,E601
+
+E701,Carla Gomez,Sales Director - Enterprise,Director,Sales,Boston,2023-07-01,175000,0.45,E004
+E702,Richard Thompson,Sales Director - Mid-Market,Director,Sales,Santa Clara,2024-01-10,170000,0.35,E004
+E703,Patricia Davis,Senior Account Executive,Senior,Sales,Boston,2023-09-15,155000,0.22,E701
+E704,Michael Brown,Senior Account Executive,Senior,Sales,Santa Clara,2023-11-01,153000,0.2,E702
+E705,Sandra Wilson,Senior Account Executive,Senior,Sales,Boston,2024-03-15,154000,0.18,E701
+E706,Thomas Anderson,Senior Account Executive,Senior,Sales,Santa Clara,2024-05-20,152000,0.17,E702
+E707,Barbara Martinez,Account Executive,Mid,Sales,Boston,2024-07-01,138000,0.12,E701
+E708,Christopher Lee,Account Executive,Mid,Sales,Santa Clara,2024-08-15,136000,0.11,E702
+E709,Nancy Rodriguez,Account Executive,Mid,Sales,Boston,2024-10-01,137000,0.1,E701
+E710,Paul Kim,Account Executive,Mid,Sales,Santa Clara,2024-11-15,135000,0.1,E702
+E711,Karen Chen,Senior Account Executive,Senior,Sales,Boston,2025-01-20,155000,0.16,E701
+E712,Mark Zhang,Account Executive,Mid,Sales,Santa Clara,2025-03-10,137000,0.09,E702
+E713,Lisa Park,Account Executive,Mid,Sales,Boston,2025-05-01,136000,0.08,E701
+E714,George Torres,Account Executive,Mid,Sales,Santa Clara,2025-07-15,135000,0.08,E702
+E715,Helen Garcia,Sales Development Rep,Junior,Sales,Boston,2025-09-01,115000,0.04,E701
+E716,Kenneth Johnson,Sales Development Rep,Junior,Sales,Santa Clara,2025-10-15,114000,0.04,E702
+E717,Ruth Martinez,Account Executive,Mid,Sales,Boston,2025-11-10,137000,0.07,E701
+E718,Edward Liu,Sales Development Rep,Junior,Sales,Santa Clara,2026-01-01,115000,0.03,E702
+E719,Betty Chen,Sales Development Rep,Junior,Sales,Boston,2025-11-15,114000,0.03,E701
+E720,Donald Kim,Account Executive,Mid,Sales,Santa Clara,2025-12-01,136000,0.07,E702
+
+E801,Margaret Foster,Director of Marketing,Director,Marketing,Boston,2024-08-01,165000,0.3,E007
+E802,Jason Lee,Senior Marketing Manager,Senior,Marketing,Santa Clara,2024-10-15,145000,0.15,E801
+E803,Sharon Rodriguez,Content Marketing Manager,Mid,Marketing,Boston,2025-01-10,128000,0.08,E801
+E804,Matthew Park,Growth Marketing Manager,Mid,Marketing,Santa Clara,2025-04-01,130000,0.08,E801
+E805,Michelle Zhang,Product Marketing Manager,Mid,Marketing,Boston,2025-07-15,132000,0.07,E801
+E806,Daniel Garcia,Marketing Analyst,Junior,Marketing,Santa Clara,2026-01-01,108000,0.03,E801
+
+E901,Laura Chen,Controller,Director,Finance,Santa Clara,2024-06-15,155000,0.25,E006
+E902,Gregory Martinez,FP&A Manager,Manager,Finance,Boston,2024-09-01,140000,0.15,E901
+E903,Angela Kim,Senior Financial Analyst,Senior,Finance,Santa Clara,2025-01-15,125000,0.08,E902
+E904,Scott Park,Senior Accountant,Senior,Finance,Boston,2025-04-01,118000,0.06,E901
+E905,Christine Torres,Financial Analyst,Mid,Finance,Santa Clara,2025-08-15,112000,0.05,E902
+E906,Eric Zhang,Accountant,Mid,Finance,Boston,2025-12-20,105000,0.04,E901
+E907,Rebecca Liu,Junior Financial Analyst,Junior,Finance,Santa Clara,2025-11-01,98000,0.03,E902
+
+E1001,Victoria Martinez,Head of People Ops,Director,Operations,Boston,2023-08-15,150000,0.28,E001
+E1002,Jonathan Kim,IT Manager,Manager,Operations,Santa Clara,2024-02-01,135000,0.12,E1001
+E1003,Deborah Chen,Senior Recruiter,Senior,Operations,Boston,2024-05-15,122000,0.08,E1001
+E1004,Frank Park,Senior IT Support,Senior,Operations,Santa Clara,2024-08-20,115000,0.07,E1002
+E1005,Teresa Rodriguez,Recruiter,Mid,Operations,Boston,2025-02-10,108000,0.05,E1001
+E1006,Gerald Zhang,IT Support Specialist,Mid,Operations,Santa Clara,2025-06-15,102000,0.04,E1002
+E1007,Pamela Lee,People Ops Coordinator,Junior,Operations,Boston,2025-11-01,95000,0.03,E1001
+E1008,Douglas Garcia,Executive Assistant to CEO,Mid,Operations,Santa Clara,2024-03-10,105000,0.05,E001
+E1009,Julie Torres,Office Manager,Mid,Operations,Boston,2024-06-01,98000,0.04,E1001
+E1010,Ralph Johnson,Facilities Coordinator,Junior,Operations,Santa Clara,2025-09-15,88000,0.03,E1009
+
+Summary Statistics:
+Total Employees,166
+Santa Clara (HQ),86
+Boston,80
+C-Level / VP,7
+Directors,8
+Managers,8
+Staff,10
+Senior,47
+Mid,81
+Junior,39
+Engineering,130
+Product,11
+Sales,20
+Marketing,6
+Finance,7
+Operations,10
+Executive,7
+Average Tenure (months),18.2
+Median Comp,140000

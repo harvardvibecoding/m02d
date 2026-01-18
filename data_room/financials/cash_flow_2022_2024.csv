@@ -1,0 +1,278 @@
+period,category,amount,notes
+2022-01,inflow,45000,Early customer revenue
+2022-01,outflow,-180000,Payroll (15 employees)
+2022-01,outflow,-25000,Office rent and utilities
+2022-01,outflow,-35000,Cloud infrastructure (AWS/GCP)
+2022-02,inflow,52000,Customer revenue
+2022-02,outflow,-185000,Payroll
+2022-02,outflow,-25000,Office rent and utilities
+2022-02,outflow,-38000,Cloud infrastructure
+2022-03,inflow,48000,Customer revenue
+2022-03,outflow,-190000,Payroll
+2022-03,outflow,-25000,Office rent and utilities
+2022-03,outflow,-40000,Cloud infrastructure
+2022-04,inflow,61000,Customer revenue
+2022-04,outflow,-195000,Payroll
+2022-04,outflow,-25000,Office rent and utilities
+2022-04,outflow,-42000,Cloud infrastructure
+2022-05,inflow,58000,Customer revenue
+2022-05,outflow,-200000,Payroll
+2022-05,outflow,-25000,Office rent and utilities
+2022-05,outflow,-45000,Cloud infrastructure
+2022-06,inflow,550000,Pre-Seed funding round
+2022-06,inflow,67000,Customer revenue
+2022-06,outflow,-205000,Payroll
+2022-06,outflow,-25000,Office rent and utilities
+2022-06,outflow,-48000,Cloud infrastructure
+2022-07,inflow,73000,Customer revenue
+2022-07,outflow,-220000,Payroll (20 employees)
+2022-07,outflow,-30000,Office rent and utilities
+2022-07,outflow,-52000,Cloud infrastructure
+2022-08,inflow,81000,Customer revenue
+2022-08,outflow,-225000,Payroll
+2022-08,outflow,-30000,Office rent and utilities
+2022-08,outflow,-55000,Cloud infrastructure
+2022-09,inflow,89000,Customer revenue
+2022-09,outflow,-230000,Payroll
+2022-09,outflow,-30000,Office rent and utilities
+2022-09,outflow,-58000,Cloud infrastructure
+2022-10,inflow,94000,Customer revenue
+2022-10,outflow,-235000,Payroll
+2022-10,outflow,-30000,Office rent and utilities
+2022-10,outflow,-61000,Cloud infrastructure
+2022-11,inflow,102000,Customer revenue
+2022-11,outflow,-240000,Payroll
+2022-11,outflow,-30000,Office rent and utilities
+2022-11,outflow,-64000,Cloud infrastructure
+2022-12,inflow,118000,Customer revenue
+2022-12,outflow,-245000,Payroll
+2022-12,outflow,-30000,Office rent and utilities
+2022-12,outflow,-68000,Cloud infrastructure
+2022-12,outflow,-50000,Year-end bonuses and taxes
+2023-01,inflow,126000,Customer revenue
+2023-01,outflow,-265000,Payroll (25 employees)
+2023-01,outflow,-35000,Office rent and utilities
+2023-01,outflow,-72000,Cloud infrastructure
+2023-02,inflow,138000,Customer revenue
+2023-02,outflow,-270000,Payroll
+2023-02,outflow,-35000,Office rent and utilities
+2023-02,outflow,-75000,Cloud infrastructure
+2023-03,inflow,4000000,Seed funding round
+2023-03,inflow,152000,Customer revenue
+2023-03,outflow,-275000,Payroll
+2023-03,outflow,-35000,Office rent and utilities
+2023-03,outflow,-45000,GPU lease payment (Lease #1 starts)
+2023-03,outflow,-75000,Cloud infrastructure
+2023-03,outflow,-8000,LLM APIs and developer tools
+2023-04,inflow,167000,Customer revenue
+2023-04,outflow,-310000,Payroll (35 employees)
+2023-04,outflow,-40000,Office rent and utilities
+2023-04,outflow,-45000,GPU lease payment
+2023-04,outflow,-40000,Cloud infrastructure
+2023-04,outflow,-10000,LLM APIs and developer tools
+2023-05,inflow,183000,Customer revenue
+2023-05,outflow,-320000,Payroll
+2023-05,outflow,-40000,Office rent and utilities
+2023-05,outflow,-45000,GPU lease payment
+2023-05,outflow,-43000,Cloud infrastructure
+2023-05,outflow,-12000,LLM APIs and developer tools
+2023-06,inflow,201000,Customer revenue
+2023-06,outflow,-330000,Payroll
+2023-06,outflow,-40000,Office rent and utilities
+2023-06,outflow,-45000,GPU lease payment
+2023-06,outflow,-47000,Cloud infrastructure
+2023-06,outflow,-15000,LLM APIs and developer tools
+2023-07,inflow,224000,Customer revenue
+2023-07,outflow,-340000,Payroll
+2023-07,outflow,-40000,Office rent and utilities
+2023-07,outflow,-45000,GPU lease payment
+2023-07,outflow,-51000,Cloud infrastructure
+2023-07,outflow,-17000,LLM APIs and developer tools
+2023-08,inflow,247000,Customer revenue
+2023-08,outflow,-350000,Payroll
+2023-08,outflow,-40000,Office rent and utilities
+2023-08,outflow,-45000,GPU lease payment
+2023-08,outflow,-55000,Cloud infrastructure
+2023-08,outflow,-19000,LLM APIs and developer tools
+2023-09,inflow,271000,Customer revenue
+2023-09,outflow,-360000,Payroll
+2023-09,outflow,-40000,Office rent and utilities
+2023-09,outflow,-45000,GPU lease payment
+2023-09,outflow,-60000,Cloud infrastructure
+2023-09,outflow,-22000,LLM APIs and developer tools
+2023-10,inflow,298000,Customer revenue
+2023-10,outflow,-370000,Payroll (40 employees)
+2023-10,outflow,-42000,Office rent and utilities
+2023-10,outflow,-73000,GPU lease payments (Leases #1 + #2)
+2023-10,outflow,-37000,Cloud infrastructure
+2023-10,outflow,-24000,LLM APIs and developer tools
+2023-11,inflow,327000,Customer revenue
+2023-11,outflow,-380000,Payroll
+2023-11,outflow,-42000,Office rent and utilities
+2023-11,outflow,-73000,GPU lease payments
+2023-11,outflow,-42000,Cloud infrastructure
+2023-11,outflow,-26000,LLM APIs and developer tools
+2023-12,inflow,358000,Customer revenue
+2023-12,inflow,250000,Strategic customer annual prepay
+2023-12,outflow,-390000,Payroll
+2023-12,outflow,-42000,Office rent and utilities
+2023-12,outflow,-73000,GPU lease payments
+2023-12,outflow,-47000,Cloud infrastructure
+2023-12,outflow,-28000,LLM APIs and developer tools
+2023-12,outflow,-85000,Year-end bonuses and taxes
+2024-01,inflow,392000,Customer revenue
+2024-01,outflow,-430000,Payroll (50 employees)
+2024-01,outflow,-48000,Office rent and utilities
+2024-01,outflow,-73000,GPU lease payments
+2024-01,outflow,-55000,Cloud infrastructure
+2024-01,outflow,-32000,LLM APIs and developer tools
+2024-02,inflow,431000,Customer revenue
+2024-02,outflow,-440000,Payroll
+2024-02,outflow,-48000,Office rent and utilities
+2024-02,outflow,-73000,GPU lease payments
+2024-02,outflow,-59000,Cloud infrastructure
+2024-02,outflow,-35000,LLM APIs and developer tools
+2024-03,inflow,474000,Customer revenue
+2024-03,outflow,-450000,Payroll
+2024-03,outflow,-48000,Office rent and utilities
+2024-03,outflow,-73000,GPU lease payments
+2024-03,outflow,-65000,Cloud infrastructure
+2024-03,outflow,-42000,LLM APIs and developer tools
+2024-04,inflow,521000,Customer revenue
+2024-04,outflow,-460000,Payroll
+2024-04,outflow,-48000,Office rent and utilities
+2024-04,outflow,-73000,GPU lease payments
+2024-04,outflow,-72000,Cloud infrastructure
+2024-04,outflow,-48000,LLM APIs and developer tools
+2024-05,inflow,38000000,Series A funding round
+2024-05,inflow,573000,Customer revenue
+2024-05,outflow,-470000,Payroll
+2024-05,outflow,-48000,Office rent and utilities
+2024-05,outflow,-73000,GPU lease payments
+2024-05,outflow,-79000,Cloud infrastructure
+2024-05,outflow,-55000,LLM APIs and developer tools
+2024-06,inflow,630000,Customer revenue
+2024-06,outflow,-620000,Payroll (75 employees)
+2024-06,outflow,-65000,Office expansion
+2024-06,outflow,-145000,GPU lease payments (Leases #1 + #2 + #3 starts)
+2024-06,outflow,-20000,Cloud infrastructure
+2024-06,outflow,-68000,LLM APIs and developer tools
+2024-06,outflow,-90000,Additional lease and operational costs
+2024-07,inflow,693000,Customer revenue
+2024-07,outflow,-640000,Payroll
+2024-07,outflow,-65000,Office rent and utilities
+2024-07,outflow,-145000,GPU lease payments
+2024-07,outflow,-30000,Cloud infrastructure
+2024-07,outflow,-75000,LLM APIs and developer tools
+2024-08,inflow,762000,Customer revenue
+2024-08,outflow,-660000,Payroll
+2024-08,outflow,-65000,Office rent and utilities
+2024-08,outflow,-145000,GPU lease payments
+2024-08,outflow,-40000,Cloud infrastructure
+2024-08,outflow,-82000,LLM APIs and developer tools
+2024-09,inflow,838000,Customer revenue
+2024-09,outflow,-680000,Payroll (85 employees)
+2024-09,outflow,-65000,Office rent and utilities
+2024-09,outflow,-145000,GPU lease payments
+2024-09,outflow,-50000,Cloud infrastructure
+2024-09,outflow,-95000,LLM APIs and developer tools
+2024-10,inflow,922000,Customer revenue
+2024-10,outflow,-700000,Payroll
+2024-10,outflow,-65000,Office rent and utilities
+2024-10,outflow,-145000,GPU lease payments
+2024-10,outflow,-60000,Cloud infrastructure
+2024-10,outflow,-102000,LLM APIs and developer tools
+2024-11,inflow,1014000,Customer revenue
+2024-11,outflow,-720000,Payroll
+2024-11,outflow,-65000,Office rent and utilities
+2024-11,outflow,-145000,GPU lease payments
+2024-11,outflow,-70000,Cloud infrastructure
+2024-11,outflow,-108000,LLM APIs and developer tools
+2024-12,inflow,1115000,Customer revenue
+2024-12,inflow,150000,Customer renewals
+2024-12,outflow,-740000,Payroll
+2024-12,outflow,-65000,Office rent and utilities
+2024-12,outflow,-145000,GPU lease payments
+2024-12,outflow,-80000,Cloud infrastructure
+2024-12,outflow,-118000,LLM APIs and developer tools
+2024-12,outflow,-125000,Year-end bonuses and taxes
+2025-01,inflow,1227000,Customer revenue
+2025-01,outflow,-850000,Payroll (100 employees)
+2025-01,outflow,-75000,Office rent and utilities
+2025-01,outflow,-145000,GPU lease payments
+2025-01,outflow,-95000,Cloud infrastructure
+2025-01,outflow,-125000,LLM APIs and developer tools
+2025-02,inflow,1349000,Customer revenue
+2025-02,outflow,-870000,Payroll
+2025-02,outflow,-75000,Office rent and utilities
+2025-02,outflow,-264000,GPU lease payments (Lease #4 starts)
+2025-02,outflow,-20000,Cloud infrastructure
+2025-02,outflow,-128000,LLM APIs and developer tools
+2025-03,inflow,1484000,Customer revenue
+2025-03,outflow,-890000,Payroll
+2025-03,outflow,-75000,Office rent and utilities
+2025-03,outflow,-264000,GPU lease payments
+2025-03,outflow,-30000,Cloud infrastructure
+2025-03,outflow,-132000,LLM APIs and developer tools
+2025-04,inflow,1632000,Customer revenue
+2025-04,outflow,-910000,Payroll (110 employees)
+2025-04,outflow,-75000,Office rent and utilities
+2025-04,outflow,-264000,GPU lease payments
+2025-04,outflow,-40000,Cloud infrastructure
+2025-04,outflow,-138000,LLM APIs and developer tools
+2025-05,inflow,1795000,Customer revenue
+2025-05,outflow,-930000,Payroll
+2025-05,outflow,-75000,Office rent and utilities
+2025-05,outflow,-264000,GPU lease payments
+2025-05,outflow,-50000,Cloud infrastructure
+2025-05,outflow,-142000,LLM APIs and developer tools
+2025-06,inflow,1975000,Customer revenue
+2025-06,outflow,-950000,Payroll
+2025-06,outflow,-75000,Office rent and utilities
+2025-06,outflow,-264000,GPU lease payments
+2025-06,outflow,-60000,Cloud infrastructure
+2025-06,outflow,-148000,LLM APIs and developer tools
+2025-07,inflow,2172000,Customer revenue
+2025-07,outflow,-1050000,Payroll (125 employees)
+2025-07,outflow,-85000,Office rent and utilities
+2025-07,outflow,-264000,GPU lease payments
+2025-07,outflow,-75000,Cloud infrastructure
+2025-07,outflow,-152000,LLM APIs and developer tools
+2025-08,inflow,2389000,Customer revenue
+2025-08,outflow,-1080000,Payroll
+2025-08,outflow,-85000,Office rent and utilities
+2025-08,outflow,-264000,GPU lease payments
+2025-08,outflow,-90000,Cloud infrastructure
+2025-08,outflow,-158000,LLM APIs and developer tools
+2025-09,inflow,2628000,Customer revenue
+2025-09,outflow,-1110000,Payroll
+2025-09,outflow,-85000,Office rent and utilities
+2025-09,outflow,-264000,GPU lease payments
+2025-09,outflow,-105000,Cloud infrastructure
+2025-09,outflow,-165000,LLM APIs and developer tools
+2025-10,inflow,2891000,Customer revenue
+2025-10,outflow,-1140000,Payroll (135 employees)
+2025-10,outflow,-85000,Office rent and utilities
+2025-10,outflow,-264000,GPU lease payments
+2025-10,outflow,-120000,Cloud infrastructure
+2025-10,outflow,-168000,LLM APIs and developer tools
+2025-11,inflow,79000000,Series B funding round
+2025-11,inflow,3180000,Customer revenue
+2025-11,outflow,-1170000,Payroll
+2025-11,outflow,-85000,Office rent and utilities
+2025-11,outflow,-264000,GPU lease payments
+2025-11,outflow,-135000,Cloud infrastructure
+2025-11,outflow,-172000,LLM APIs and developer tools
+2025-12,inflow,3498000,Customer revenue
+2025-12,outflow,-1200000,Payroll
+2025-12,outflow,-85000,Office rent and utilities
+2025-12,outflow,-264000,GPU lease payments
+2025-12,outflow,-150000,Cloud infrastructure
+2025-12,outflow,-175000,LLM APIs and developer tools
+2025-12,outflow,-185000,Year-end bonuses and taxes
+2026-01,inflow,3848000,Customer revenue
+2026-01,outflow,-1450000,Payroll (165 employees)
+2026-01,outflow,-95000,Office rent and utilities
+2026-01,outflow,-264000,GPU lease payments
+2026-01,outflow,-190000,Cloud infrastructure
+2026-01,outflow,-178000,LLM APIs and developer tools

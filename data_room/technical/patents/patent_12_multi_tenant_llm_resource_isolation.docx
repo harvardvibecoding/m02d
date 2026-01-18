@@ -1,0 +1,34 @@
+# Patent Application #12: Multi-Tenant LLM Resource Isolation
+
+**Example AI, Inc.**
+**Confidential - M&A Due Diligence**
+
+---
+
+## Application Information
+
+| Field | Details |
+|-------|---------|
+| **Application Number** | US 17/XXX,XXX |
+| **Filing Date** | September 20, 2025 |
+| **Inventors** | Lisa Anderson, Robert Martinez, Kevin Zhang |
+| **Assignee** | Example AI, Inc. |
+| **Status** | Pending (Filed) |
+
+---
+
+## Abstract
+
+A multi-tenant architecture for LLM infrastructure that provides strict resource isolation, fair scheduling, and quality-of-service guarantees across enterprise customers sharing underlying infrastructure.
+
+---
+
+## Technology Domain
+
+LLM Gateway & Routing
+
+---
+
+*Document prepared for M&A due diligence purposes*
+*Application numbers redacted for confidentiality*
+*Data as of September 30, 2026*

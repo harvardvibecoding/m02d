@@ -1,0 +1,27 @@
+period,headcount_start,hires,voluntary_departures,involuntary_departures,headcount_end,attrition_rate_pct,notes
+2022-Q1,15,3,1,0,17,6.7,Early stage team building
+2022-Q2,17,5,1,1,20,10.0,Pre-Seed funding (June) - first sales hires
+2022-Q3,20,7,2,0,25,10.0,Scaling engineering post-funding
+2022-Q4,25,3,1,0,27,4.0,Year-end retention strong
+2023-Q1,27,12,3,1,35,14.8,Seed funding (March) - rapid expansion
+2023-Q2,35,7,1,1,40,5.7,Product-market fit acceleration
+2023-Q3,40,2,1,1,40,5.0,Restructure ML team; 1 PIP termination
+2023-Q4,40,3,2,0,41,5.0,Stable growth phase
+2024-Q1,41,12,2,1,50,7.3,Pre-Series A hiring ramp
+2024-Q2,50,28,2,1,75,6.0,Series A (May) - aggressive expansion
+2024-Q3,75,13,2,1,85,4.0,Office expansion; Austin opened then closed
+2024-Q4,85,18,2,1,100,3.5,Product scaling; consolidating to SC/Boston
+2025-Q1,100,15,3,2,110,5.0,International customer expansion
+2025-Q2,110,20,2,3,125,4.5,GPU infrastructure buildout
+2025-Q3,125,13,1,2,135,2.4,Strong retention during growth
+2025-Q4,135,32,1,1,165,1.5,Series B (Nov) - enterprise sales team 2x
+2026-Q1,165,3,1,1,166,1.8,Hit 166 employees (January); lowest attrition rate to date
+
+Summary Statistics (2022-2026 Q1):
+Total hires,192
+Total voluntary departures,26
+Total involuntary departures,16
+Net headcount growth,151
+Overall attrition rate (annualized),4.8%
+2024-2026 Q1 attrition rate (annualized),2.9%,Strong retention post-Series A
+Key insight,,"Attrition trending down as company matures; competitive comp packages + mission retention"

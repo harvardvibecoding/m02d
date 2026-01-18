@@ -1,0 +1,303 @@
+{
+  "company": "Example AI, Inc.",
+  "as_of_date": "2025-12-31",
+  "total_shares_outstanding": 50000000,
+  "fully_diluted_shares": 55000000,
+  "last_round": "Series B",
+  "post_money_valuation": 350000000,
+
+  "holders": [
+    {
+      "category": "Founders",
+      "name": "Founders (combined)",
+      "shares": 20000000,
+      "pct": 36.36,
+      "fully_diluted_pct": 36.36,
+      "liquidation_preference": 0,
+      "share_class": "Common"
+    },
+
+    {
+      "category": "Super Angels",
+      "name": "Michael Anderson",
+      "shares": 250000,
+      "pct": 0.50,
+      "fully_diluted_pct": 0.45,
+      "round": "Pre-Seed",
+      "investment_amount": 100000,
+      "share_class": "Preferred - Pre-Seed"
+    },
+    {
+      "category": "Super Angels",
+      "name": "Nathan Reynolds",
+      "shares": 200000,
+      "pct": 0.40,
+      "fully_diluted_pct": 0.36,
+      "round": "Pre-Seed",
+      "investment_amount": 100000,
+      "share_class": "Preferred - Pre-Seed"
+    },
+    {
+      "category": "Super Angels",
+      "name": "Eric Gardner",
+      "shares": 250000,
+      "pct": 0.50,
+      "fully_diluted_pct": 0.45,
+      "round": "Pre-Seed",
+      "investment_amount": 150000,
+      "share_class": "Preferred - Pre-Seed"
+    },
+    {
+      "category": "Super Angels",
+      "name": "Lucas Graham",
+      "shares": 150000,
+      "pct": 0.30,
+      "fully_diluted_pct": 0.27,
+      "round": "Pre-Seed",
+      "investment_amount": 100000,
+      "share_class": "Preferred - Pre-Seed"
+    },
+    {
+      "category": "Super Angels",
+      "name": "David Greene",
+      "shares": 200000,
+      "pct": 0.40,
+      "fully_diluted_pct": 0.36,
+      "round": "Seed",
+      "investment_amount": 150000,
+      "share_class": "Preferred - Seed"
+    },
+    {
+      "category": "Super Angels",
+      "name": "James Abbott",
+      "shares": 150000,
+      "pct": 0.30,
+      "fully_diluted_pct": 0.27,
+      "round": "Seed",
+      "investment_amount": 100000,
+      "share_class": "Preferred - Seed"
+    },
+    {
+      "category": "Super Angels",
+      "name": "Samuel Lewis",
+      "shares": 125000,
+      "pct": 0.25,
+      "fully_diluted_pct": 0.23,
+      "round": "Seed",
+      "investment_amount": 75000,
+      "share_class": "Preferred - Seed"
+    },
+    {
+      "category": "Super Angels",
+      "name": "Brian Singh",
+      "shares": 175000,
+      "pct": 0.35,
+      "fully_diluted_pct": 0.32,
+      "round": "Seed",
+      "investment_amount": 125000,
+      "share_class": "Preferred - Seed"
+    },
+
+    {
+      "category": "Seed VCs",
+      "name": "Zenith Ventures",
+      "shares": 1000000,
+      "pct": 2.00,
+      "fully_diluted_pct": 1.82,
+      "round": "Seed",
+      "investment_amount": 500000,
+      "share_class": "Preferred - Seed",
+      "board_seat": false
+    },
+    {
+      "category": "Seed VCs",
+      "name": "Foundation Rise Capital (Lead)",
+      "shares": 2500000,
+      "pct": 5.00,
+      "fully_diluted_pct": 4.55,
+      "round": "Seed",
+      "investment_amount": 2000000,
+      "share_class": "Preferred - Seed",
+      "board_seat": false
+    },
+    {
+      "category": "Seed VCs",
+      "name": "Summit Ventures",
+      "shares": 750000,
+      "pct": 1.50,
+      "fully_diluted_pct": 1.36,
+      "round": "Seed",
+      "investment_amount": 500000,
+      "share_class": "Preferred - Seed",
+      "board_seat": false
+    },
+    {
+      "category": "Seed VCs",
+      "name": "Lighthouse Ventures",
+      "shares": 500000,
+      "pct": 1.00,
+      "fully_diluted_pct": 0.91,
+      "round": "Seed",
+      "investment_amount": 300000,
+      "share_class": "Preferred - Seed",
+      "board_seat": false
+    },
+
+    {
+      "category": "Series A VCs",
+      "name": "Stellar Capital (Lead)",
+      "shares": 7500000,
+      "pct": 15.00,
+      "fully_diluted_pct": 13.64,
+      "round": "Series A",
+      "investment_amount": 20000000,
+      "share_class": "Preferred - Series A",
+      "board_seat": true,
+      "board_member": "Robert Barnes"
+    },
+    {
+      "category": "Series A VCs",
+      "name": "Aurora Holdings",
+      "shares": 5000000,
+      "pct": 10.00,
+      "fully_diluted_pct": 9.09,
+      "round": "Series A",
+      "investment_amount": 12000000,
+      "share_class": "Preferred - Series A",
+      "board_seat": false
+    },
+    {
+      "category": "Series A VCs",
+      "name": "Ascent Partners",
+      "shares": 2000000,
+      "pct": 4.00,
+      "fully_diluted_pct": 3.64,
+      "round": "Series A",
+      "investment_amount": 5000000,
+      "share_class": "Preferred - Series A",
+      "board_seat": false
+    },
+
+    {
+      "category": "Series B VCs",
+      "name": "Basecamp Ventures (Lead)",
+      "shares": 4500000,
+      "pct": 9.00,
+      "fully_diluted_pct": 8.18,
+      "round": "Series B",
+      "investment_amount": 35000000,
+      "share_class": "Preferred - Series B",
+      "board_seat": true,
+      "board_member": "Sandra Torres"
+    },
+    {
+      "category": "Series B VCs",
+      "name": "Granite Partners",
+      "shares": 2500000,
+      "pct": 5.00,
+      "fully_diluted_pct": 4.55,
+      "round": "Series B",
+      "investment_amount": 20000000,
+      "share_class": "Preferred - Series B",
+      "board_seat": false
+    },
+    {
+      "category": "Series B VCs",
+      "name": "Ironclad Ventures",
+      "shares": 2000000,
+      "pct": 4.00,
+      "fully_diluted_pct": 3.64,
+      "round": "Series B",
+      "investment_amount": 15000000,
+      "share_class": "Preferred - Series B",
+      "board_seat": false
+    },
+
+    {
+      "category": "Strategic Investors",
+      "name": "Stratosphere Ventures",
+      "shares": 750000,
+      "pct": 1.50,
+      "fully_diluted_pct": 1.36,
+      "round": "Series B",
+      "investment_amount": 5000000,
+      "share_class": "Preferred - Series B",
+      "board_seat": false,
+      "strategic_value": "Enterprise distribution and integration"
+    },
+    {
+      "category": "Strategic Investors",
+      "name": "AMD",
+      "shares": 500000,
+      "pct": 1.00,
+      "fully_diluted_pct": 0.91,
+      "round": "Series B",
+      "investment_amount": 4000000,
+      "share_class": "Preferred - Series B",
+      "board_seat": false,
+      "strategic_value": "GPU compute credits and AI infrastructure"
+    },
+    {
+      "category": "Strategic Investors",
+      "name": "Streamline Commerce",
+      "shares": 375000,
+      "pct": 0.75,
+      "fully_diluted_pct": 0.68,
+      "round": "Series A",
+      "investment_amount": 1000000,
+      "share_class": "Preferred - Series A",
+      "board_seat": false,
+      "strategic_value": "E-commerce platform integration"
+    },
+
+    {
+      "category": "Employee Stock Options",
+      "name": "Option Pool (Unallocated)",
+      "shares": 5000000,
+      "pct": 10.00,
+      "fully_diluted_pct": 9.09,
+      "share_class": "Options",
+      "notes": "Reserved for employee equity compensation"
+    }
+  ],
+
+  "funding_rounds": [
+    {
+      "round": "Pre-Seed",
+      "date": "2022-06-15",
+      "amount_raised": 550000,
+      "post_money_valuation": 5000000,
+      "lead_investors": ["Super Angels"]
+    },
+    {
+      "round": "Seed",
+      "date": "2023-03-20",
+      "amount_raised": 4000000,
+      "post_money_valuation": 25000000,
+      "lead_investors": ["Foundation Rise Capital"]
+    },
+    {
+      "round": "Series A",
+      "date": "2024-05-10",
+      "amount_raised": 38000000,
+      "post_money_valuation": 150000000,
+      "lead_investors": ["Stellar Capital", "Aurora Holdings"]
+    },
+    {
+      "round": "Series B",
+      "date": "2025-11-01",
+      "amount_raised": 79000000,
+      "post_money_valuation": 350000000,
+      "lead_investors": ["Basecamp Ventures"]
+    }
+  ],
+
+  "total_capital_raised": 121550000,
+
+  "board_of_directors": [
+    {"name": "CEO (Founder)", "representing": "Management"},
+    {"name": "CTO (Founder)", "representing": "Management"},
+    {"name": "Robert Barnes", "representing": "Stellar Capital"},
+    {"name": "Sandra Torres", "representing": "Basecamp Ventures"}
+  ]
+}

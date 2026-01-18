@@ -1,0 +1,19 @@
+Name,Title,Location,Tenure Start,Base Compensation,Equity %,Reports To,Education Highest,Prior Company 1,Prior Company 2,Prior Company 3,Key Metric 1,Key Metric 2,Key Metric 3
+Sarah Li,CEO & Co-Founder,Santa Clara CA,January 2022,$280000,19.0%,Board of Directors,Ph.D. Computer Science Stanford,Google Brain,OpenAI,MIT,Led company to $99M ARR,Raised $121.5M across 4 rounds,Built org from 2 to 166 employees
+Daniel Kim,CTO & Co-Founder,Boston MA,January 2022,$250000,17.0%,Board of Directors,Ph.D. EECS MIT,Meta AI Research (FAIR),Anthropic,Carnegie Mellon,Designed multi-provider LLM gateway,Led team growth to 130 engineers,4 patents granted 9 pending
+David Liu,Chief Financial Officer,Santa Clara CA,May 2024,$235000,0.6%,CEO,MBA Wharton,Datadog,Twilio,Goldman Sachs,Led Series B $79M raise,Drove company to cash flow positive,Built finance team 1 to 7 members
+Michael Torres,VP Engineering,Santa Clara CA,March 2022,$240000,1.2%,CTO,M.S. Computer Science Stanford,Stripe,Google,University of Illinois,Scaled eng org 5 to 130 engineers,Achieved 99.95% platform uptime,500M+ requests/month architecture
+Jennifer Walsh,VP Sales,Boston MA,June 2023,"$220000 + commission",0.8%,CEO,MBA Harvard,Segment,Mixpanel,Salesforce,Built sales org 4 to 20 members,Grew enterprise ARR $2M to $67M,115% average quota attainment
+Priya Sharma,VP Product,Santa Clara CA,April 2023,$225000,0.9%,CEO,M.S. HCI Carnegie Mellon,Notion,Slack,LinkedIn,Launched 15+ major product features,Built product team 2 to 11 members,Achieved 72 NPS score
+Rachel Goldman,VP Marketing,Boston MA,July 2024,$210000,0.5%,CEO,MBA Kellogg,Vercel,HashiCorp,AWS,Grew Discord community 8K to 28.5K,Increased inbound leads 3x,Launched dev conference 500+ attendees
+Alice Johnson,Director of Product Management,Boston MA,May 2023,$190000,0.5%,VP Product,M.S. Engineering Management Duke,Databricks,Palantir,,,,
+Carla Gomez,Sales Director Enterprise,Boston MA,July 2023,"$175000 + commission",0.45%,VP Sales,B.S. Business Boston College,Snowflake,MongoDB,,118% FY26 attainment,Closed 3 $1M+ deals,
+Richard Thompson,Sales Director Mid-Market,Santa Clara CA,January 2024,"$170000 + commission",0.35%,VP Sales,MBA Santa Clara University,Amplitude,Intercom,,,,
+Laura Chen,Controller,Santa Clara CA,June 2024,$155000,0.25%,CFO,B.S. Accounting USC,Deloitte,,,CPA California,,
+Victoria Martinez,Head of People Operations,Boston MA,August 2023,$150000,0.28%,CEO,M.A. Organizational Psychology Columbia,Figma,Dropbox,,Built HR function,Achieved 96.9% retention rate,
+Margaret Foster,Director of Marketing,Boston MA,August 2024,$165000,0.3%,VP Marketing,B.A. Journalism Syracuse,Netlify,DigitalOcean,,,,
+James Park,Engineering Manager ML Platform,Santa Clara CA,February 2022,$195000,0.4%,VP Engineering,Ph.D. Machine Learning UC Berkeley,Scale AI,Uber ATG,,Manages 18 engineers,3 patents as inventor,
+Lisa Anderson,Engineering Manager Infrastructure,Boston MA,June 2022,$190000,0.35%,VP Engineering,M.S. Computer Science Georgia Tech,Netflix,Amazon AWS,,Manages 15 engineers,Responsible for 99.95% uptime,
+Brian Lee,Staff ML Engineer,Santa Clara CA,February 2022,$185000,0.35%,VP Engineering,Ph.D. Computer Vision MIT,DeepMind,NVIDIA,,4 patents as inventor,12 peer-reviewed papers,
+Marcus Johnson,Staff Engineer Distributed Systems,Boston MA,July 2022,$180000,0.32%,VP Engineering,M.S. Computer Science UW,Cockroach Labs,Confluent (Apache Kafka),,2 patents as inventor,Architect of event streaming infrastructure,
+Christopher Lee,Staff Security Engineer,Boston MA,September 2024,$180000,0.18%,VP Engineering,B.S. Cybersecurity Purdue,Okta,Square,,CISSP OSCP certified,Led SOC 2 Type II certification,

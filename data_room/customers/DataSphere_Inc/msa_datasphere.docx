@@ -1,0 +1,206 @@
+# Master Services Agreement
+
+**Agreement No:** MSA-2025-0156
+**Effective Date:** November 1, 2025
+**Confidential**
+
+---
+
+## PARTIES
+
+**Provider:**
+Example AI, Inc.
+548 Market St, Suite 95000
+San Francisco, CA 94104
+
+**Customer:**
+DataSphere, Inc.
+8500 Analytics Way
+Boston, MA 02110
+
+---
+
+## AGREEMENT SUMMARY
+
+| Term | Value |
+|------|-------|
+| Agreement Type | Master Services Agreement (MSA) |
+| Industry | Data Analytics |
+| Initial Term | 2 Years |
+| Effective Date | November 1, 2025 |
+| Expiration Date | October 31, 2027 |
+| Annual Contract Value | $1,500,000 |
+| Total Contract Value | $3,000,000 |
+| Payment Terms | Net 30 |
+| Auto-Renewal | 1-year periods with 60-day notice |
+
+---
+
+## 1. SERVICES
+
+### 1.1 Platform Services
+Provider grants Customer access to the Example AI Platform for:
+
+- AI/ML inference API access (Enterprise tier)
+- Model fine-tuning capabilities (up to 20 custom models)
+- Batch processing capabilities
+- Enterprise administration console
+- Premium support services
+
+### 1.2 Hybrid Deployment
+- **Cloud Component:** Primary inference and API access
+- **On-Premise Component:** Edge inference nodes for sensitive data
+- **Hybrid Sync:** Real-time model synchronization
+
+### 1.3 On-Premise Specifications
+- 2x Edge inference appliances included
+- Air-gapped deployment support
+- Local model caching
+- Offline inference capability
+
+### 1.4 Permitted Use Cases
+- Data analysis and insights generation
+- Report automation
+- Natural language querying
+- Predictive analytics
+- Customer analytics platforms
+
+---
+
+## 2. FEES AND PAYMENT
+
+### 2.1 Fee Schedule
+
+| Year | Annual Fee | Components |
+|------|------------|------------|
+| Year 1 | $1,500,000 | Cloud: $1,100,000 / On-Prem: $400,000 |
+| Year 2 | $1,500,000 | Cloud: $1,100,000 / On-Prem: $400,000 |
+
+### 2.2 On-Premise Licensing
+- Perpetual license for edge appliance software
+- Annual maintenance: Included in Year 1-2, 20% of license thereafter
+
+### 2.3 Payment Terms
+- Quarterly payments ($375,000/quarter)
+- Net 30 from invoice date
+
+---
+
+## 3. SERVICE LEVEL AGREEMENT
+
+### 3.1 Cloud Services
+
+| Metric | Target |
+|--------|--------|
+| API Availability | 99.9% |
+| P95 Latency | <500ms |
+
+### 3.2 On-Premise Support
+
+| Service | Commitment |
+|---------|------------|
+| Software Updates | Monthly |
+| Security Patches | Within 72 hours of critical CVE |
+| Hardware Replacement | Next business day |
+
+### 3.3 Support Response
+
+| Severity | Response Time |
+|----------|---------------|
+| Critical (P1) | 1 hour |
+| High (P2) | 4 hours |
+| Medium (P3) | 8 hours |
+
+---
+
+## 4. DATA AND SECURITY
+
+### 4.1 Data Handling
+- Cloud data: US region only
+- On-premise data: Never leaves Customer environment
+- No data mixing between cloud and on-prem components
+
+### 4.2 Security
+- **Cloud:** SOC 2 Type II, encryption at rest/transit
+- **On-Prem:** Customer-managed security, Provider secure boot
+
+### 4.3 Compliance
+- Data Processing Agreement (DPA) - Exhibit A
+- On-Premise Security Addendum - Exhibit B
+
+---
+
+## 5. INTELLECTUAL PROPERTY
+
+### 5.1 Ownership
+
+| Asset | Owner |
+|-------|-------|
+| Platform Technology | Provider |
+| On-Prem Appliance Software | Provider (licensed to Customer) |
+| Customer Data | Customer |
+| Custom Models | Customer |
+| On-Prem Generated Insights | Customer |
+
+### 5.2 Source Code Escrow
+- Source code held in escrow with Iron Mountain
+- Release conditions: Provider bankruptcy, material breach, discontinuation
+
+---
+
+## 6. LIMITATION OF LIABILITY
+
+### 6.1 Liability Caps
+
+| Liability Type | Cap |
+|----------------|-----|
+| Direct Damages | 12 months fees paid |
+| Data Breach (Cloud) | 24 months fees paid |
+| Indemnification (IP) | Unlimited |
+
+---
+
+## 7. TERM AND TERMINATION
+
+### 7.1 Term
+- Initial Term: 2 years from Effective Date
+- Renewal: Automatic 1-year renewals unless 60-day written notice
+
+### 7.2 Termination
+- Material breach with 30-day cure period
+- On-premise perpetual license survives termination (maintenance optional)
+
+### 7.3 Change of Control
+Customer may terminate within 180 days of Provider Change of Control with 90 days written notice.
+
+---
+
+## EXHIBITS
+
+- **Exhibit A:** Data Processing Agreement (DPA)
+- **Exhibit B:** On-Premise Security Addendum
+- **Exhibit C:** Hardware Specifications
+- **Exhibit D:** Source Code Escrow Agreement
+
+---
+
+## SIGNATURES
+
+**Example AI, Inc.**
+
+Signature: _________________________
+Name: James Morrison
+Title: Chief Financial Officer
+Date: November 1, 2025
+
+**DataSphere, Inc.**
+
+Signature: _________________________
+Name: Robert Chen
+Title: Chief Technology Officer
+Date: November 1, 2025
+
+---
+
+*Document ID: MSA-2025-0156-DATASPHERE*
+*Classification: Confidential - M&A Due Diligence*

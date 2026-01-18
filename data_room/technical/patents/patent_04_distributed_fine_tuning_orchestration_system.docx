@@ -1,0 +1,50 @@
+# Patent Application #4: Distributed Fine-Tuning Orchestration System
+
+**Example AI, Inc.**
+**Confidential - M&A Due Diligence**
+
+---
+
+## Application Information
+
+| Field | Details |
+|-------|---------|
+| **Application Number** | US 17/XXX,XXX |
+| **Filing Date** | February 8, 2024 |
+| **Inventors** | Brian Lee, Maya Singh, James Park |
+| **Assignee** | Example AI, Inc. |
+| **Status** | Pending (Non-Final Office Action received) |
+
+---
+
+## Abstract
+
+A distributed system for orchestrating LLM fine-tuning jobs across heterogeneous GPU clusters with automatic checkpointing, resource optimization, and training progress monitoring. The system enables enterprise customers to fine-tune models using their proprietary data without requiring deep ML expertise.
+
+---
+
+## Key Claims
+
+1. Automatic GPU cluster selection based on model size and training requirements
+
+2. Checkpoint-based recovery and training resumption across cluster failures
+
+3. Hyperparameter optimization using Bayesian methods with early stopping
+
+---
+
+## Prosecution Status
+
+Non-Final Office Action received August 2025; response filed October 2025
+
+---
+
+## Technology Domain
+
+Fine-Tuning & Model Management
+
+---
+
+*Document prepared for M&A due diligence purposes*
+*Application numbers redacted for confidentiality*
+*Data as of September 30, 2026*

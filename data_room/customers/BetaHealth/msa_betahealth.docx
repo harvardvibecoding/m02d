@@ -1,0 +1,241 @@
+# Master Services Agreement
+
+**Agreement No:** MSA-2025-0134
+**Effective Date:** August 1, 2025
+**Confidential**
+
+---
+
+## PARTIES
+
+**Provider:**
+Example AI, Inc.
+548 Market St, Suite 95000
+San Francisco, CA 94104
+
+**Customer:**
+BetaHealth Systems, Inc.
+500 Healthcare Innovation Center
+Nashville, TN 37203
+
+---
+
+## AGREEMENT SUMMARY
+
+| Term | Value |
+|------|-------|
+| Agreement Type | Master Services Agreement (MSA) + BAA |
+| Industry | Healthcare |
+| Initial Term | 2 Years |
+| Effective Date | August 1, 2025 |
+| Expiration Date | July 31, 2027 |
+| Annual Contract Value | $720,000 |
+| Total Contract Value | $1,440,000 |
+| Payment Terms | Net 30 |
+| Auto-Renewal | 1-year periods with 60-day notice |
+| HIPAA Compliance | Yes - BAA Executed |
+
+---
+
+## 1. SERVICES
+
+### 1.1 Platform Services
+Provider grants Customer access to the Example AI Platform for:
+
+- AI/ML inference API access (Enterprise tier)
+- HIPAA-compliant processing environment
+- Model fine-tuning capabilities (up to 15 custom models)
+- Healthcare-specific model library access
+- Enterprise administration console
+- Premium support services
+
+### 1.2 Healthcare Compliance Features
+- HIPAA-compliant infrastructure
+- PHI handling procedures
+- Audit logging (minimum 6 years retention)
+- Access controls and authentication
+- Business Associate Agreement (BAA)
+
+### 1.3 Permitted Use Cases
+- Clinical documentation assistance
+- Medical coding suggestions
+- Patient communication drafting
+- Administrative workflow automation
+- Clinical decision support (non-diagnostic)
+
+### 1.4 Prohibited Uses
+- Primary diagnostic decisions
+- Treatment recommendations without physician review
+- Direct patient-facing medical advice
+- Prescription or medication decisions
+
+---
+
+## 2. FEES AND PAYMENT
+
+### 2.1 Fee Schedule
+
+| Year | Annual Fee | Payment Schedule |
+|------|------------|------------------|
+| Year 1 | $720,000 | Quarterly ($180,000) |
+| Year 2 | $720,000 | Quarterly ($180,000) |
+
+### 2.2 Healthcare Compliance Premium
+- 15% premium for HIPAA-compliant infrastructure (included in fee)
+
+### 2.3 Payment Terms
+- Net 30 from invoice date
+- Quarterly invoicing in advance
+
+---
+
+## 3. SERVICE LEVEL AGREEMENT
+
+### 3.1 Uptime Commitment
+- **Guaranteed Uptime:** 99.9%
+- **Measurement Period:** Monthly
+
+### 3.2 Performance
+
+| Metric | Target |
+|--------|--------|
+| P95 Latency | <500ms |
+| P99 Latency | <800ms |
+
+### 3.3 Support
+
+| Severity | Response Time |
+|----------|---------------|
+| Critical (P1) | 1 hour |
+| High (P2) | 4 hours |
+| Medium (P3) | 8 hours |
+
+### 3.4 Service Credits
+- 15% monthly fee credit per 0.1% below SLA
+
+---
+
+## 4. HIPAA COMPLIANCE
+
+### 4.1 Business Associate Agreement
+- BAA executed as Exhibit B
+- Provider designated as Business Associate
+- PHI handling per BAA terms
+
+### 4.2 Security Safeguards
+- Administrative safeguards per HIPAA Security Rule
+- Physical safeguards for data centers
+- Technical safeguards including encryption
+
+### 4.3 PHI Handling
+
+| Requirement | Implementation |
+|-------------|----------------|
+| Encryption at Rest | AES-256 |
+| Encryption in Transit | TLS 1.3 |
+| Access Logging | All PHI access logged |
+| Minimum Necessary | Role-based access controls |
+| Breach Notification | Within 24 hours |
+
+### 4.4 Audit Rights
+Customer and HHS may audit Provider's HIPAA compliance upon reasonable notice.
+
+---
+
+## 5. DATA AND SECURITY
+
+### 5.1 Data Processing
+- US-only data processing and storage
+- Dedicated HIPAA-compliant tenant
+- No data used for model training
+
+### 5.2 Data Retention
+- PHI retained only as necessary for service delivery
+- Audit logs: Minimum 6 years
+- Data deletion within 30 days of termination
+
+### 5.3 Certifications
+- SOC 2 Type II
+- HITRUST CSF (in progress)
+
+---
+
+## 6. INTELLECTUAL PROPERTY
+
+### 6.1 Ownership
+
+| Asset | Owner |
+|-------|-------|
+| Platform Technology | Provider |
+| Customer Data (including PHI) | Customer |
+| Custom Models | Customer |
+| Generated Content | Customer |
+
+### 6.2 De-identification
+Provider may not de-identify or use PHI for any purpose other than service delivery without Customer consent.
+
+---
+
+## 7. LIMITATION OF LIABILITY
+
+### 7.1 Liability Caps
+
+| Liability Type | Cap |
+|----------------|-----|
+| Direct Damages | 12 months fees paid |
+| HIPAA Breach | 24 months fees paid |
+| Indemnification (IP) | Unlimited |
+
+### 7.2 Healthcare Disclaimer
+Platform outputs are assistive only. Provider makes no representations regarding medical accuracy. Customer responsible for clinical review of all outputs.
+
+---
+
+## 8. TERM AND TERMINATION
+
+### 8.1 Term
+- Initial Term: 2 years from Effective Date
+- Renewal: Automatic 1-year renewals unless 60-day written notice
+
+### 8.2 Termination for HIPAA Breach
+Either party may terminate immediately upon material HIPAA violation by the other party.
+
+### 8.3 Change of Control
+Customer may terminate within 180 days of Provider Change of Control with 90 days written notice.
+
+### 8.4 Post-Termination PHI
+- PHI returned or destroyed within 30 days
+- Certification of destruction provided
+- Audit logs retained per legal requirements
+
+---
+
+## EXHIBITS
+
+- **Exhibit A:** Data Processing Agreement (DPA)
+- **Exhibit B:** Business Associate Agreement (BAA)
+- **Exhibit C:** HIPAA Security Controls
+- **Exhibit D:** Permitted Use Cases Detail
+
+---
+
+## SIGNATURES
+
+**Example AI, Inc.**
+
+Signature: _________________________
+Name: James Morrison
+Title: Chief Financial Officer
+Date: August 1, 2025
+
+**BetaHealth Systems, Inc.**
+
+Signature: _________________________
+Name: Dr. Amanda Collins
+Title: Chief Medical Information Officer
+Date: August 1, 2025
+
+---
+
+*Document ID: MSA-2025-0134-BETAHEALTH*
+*Classification: Confidential - M&A Due Diligence*

@@ -1,0 +1,7 @@
+Board Update Q2:
+
+Key points:
+- ARR: $1.8M (recognition vs cash differs due to prepay contracts)
+- Burn: 6 month runway by conservative forecast
+- Risks: top-customer concentration; hardware lease commitments
+- Ask: Approval to extend hiring freeze and renegotiate GPU leases

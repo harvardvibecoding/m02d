@@ -1,0 +1,309 @@
+EXAMPLE AI, INC. - LLM API & DEVELOPER TOOLS SPEND BREAKDOWN
+================================================================================
+
+As of: January 31, 2026
+All amounts in USD
+
+
+LLM API USAGE - MONTHLY SPEND: $185,000
+================================================================================
+
+PRODUCT & PRODUCTION USAGE: $142,000/month (77%)
+--------------------------------------------------------------------------------
+
+OpenAI API (GPT-4 & GPT-4 Turbo)
+- Monthly spend: $68,000
+- Primary use: Customer-facing chat features, content generation
+- Volume: ~45M tokens/month (input + output combined)
+- Average cost: $1.51 per 1K tokens (mixed input/output)
+- Users: All product features
+- Notes: Production workloads with 99.9% uptime SLA
+
+Anthropic API (Claude 3.5 Sonnet, Claude 3 Opus)
+- Monthly spend: $52,000
+- Primary use: Long-context analysis, document processing, code generation
+- Volume: ~52M tokens/month
+- Average cost: $1.00 per 1K tokens (mixed input/output)
+- Users: Premium tier customers, enterprise features
+- Notes: Higher context windows for specialized use cases
+
+OpenAI API (GPT-3.5 Turbo)
+- Monthly spend: $12,000
+- Primary use: High-volume, lower-complexity requests
+- Volume: ~24M tokens/month
+- Average cost: $0.50 per 1K tokens
+- Users: Free tier customers, chatbot fallbacks
+- Notes: Cost optimization for scale
+
+Cohere API
+- Monthly spend: $8,000
+- Primary use: Embeddings, semantic search
+- Volume: 160M tokens/month (embeddings only)
+- Average cost: $0.05 per 1K tokens
+- Users: Search infrastructure, recommendation engine
+- Notes: Specialized for retrieval tasks
+
+Together AI (Open source models)
+- Monthly spend: $2,000
+- Primary use: Experimentation with Llama, Mixtral
+- Volume: Variable
+- Users: R&D team
+- Notes: Testing open-source alternatives
+
+
+RESEARCH & DEVELOPMENT USAGE: $43,000/month (23%)
+--------------------------------------------------------------------------------
+
+OpenAI API (R&D experimentation)
+- Monthly spend: $18,000
+- Primary use: Model evaluation, prompt engineering, A/B testing
+- Teams: ML Research (15 engineers), Product R&D (25 engineers)
+- Notes: Pre-production testing and validation
+
+Anthropic API (R&D experimentation)
+- Monthly spend: $14,000
+- Primary use: Advanced reasoning tasks, safety research
+- Teams: ML Research, Safety & Alignment teams
+- Notes: Exploring frontier model capabilities
+
+Google Vertex AI (PaLM 2, Gemini)
+- Monthly spend: $7,000
+- Primary use: Competitive benchmarking, multimodal experiments
+- Teams: ML Research
+- Notes: Evaluating Google's model offerings
+
+Hugging Face Inference API
+- Monthly spend: $3,000
+- Primary use: Fine-tuned model hosting, custom deployments
+- Teams: ML Engineering
+- Notes: Hosting proprietary fine-tunes
+
+Replicate API
+- Monthly spend: $1,000
+- Primary use: Image generation (Stable Diffusion), video models
+- Teams: Product R&D
+- Notes: Exploring multimodal features
+
+
+HISTORICAL LLM API SPEND TRENDS
+================================================================================
+
+2023-03: $8,000   (Early product development, GPT-3.5 only)
+2023-06: $15,000  (First production features launched)
+2023-09: $22,000  (Growing user base)
+2023-12: $28,000  (Claude integration added)
+2024-03: $42,000  (GPT-4 Turbo adoption)
+2024-06: $68,000  (Series A growth, premium tier launch)
+2024-09: $95,000  (Enterprise customers onboarded)
+2024-12: $118,000 (Scaling production workloads)
+2025-03: $132,000 (New product features)
+2025-06: $148,000 (Continued growth)
+2025-09: $165,000 (GPT-4o and Claude 3.5 Sonnet)
+2025-12: $172,000
+2026-03: $178,000
+2026-06: $182,000
+2026-09: $185,000 (Current)
+
+
+COST OPTIMIZATION INITIATIVES
+================================================================================
+
+Planned for Q2 2026:
+- Prompt caching (Anthropic): Saving ~$8,000/month
+- Smart routing (cheaper models for simple queries): ~$12,000/month savings
+- Response streaming with early termination: ~$3,000/month savings
+- Batch API usage for non-time-sensitive requests: ~$5,000/month savings
+
+In Progress:
+- Fine-tuning GPT-3.5 for specific product workflows (est. $15k/month savings)
+- Evaluating self-hosted models on direct GPU infrastructure (est. $40k/month savings)
+- Implementing semantic cache layer (est. $10k/month savings)
+
+Total monthly savings from optimizations: ~$28,000
+Gross LLM API spend without optimizations would be: ~$213,000/month
+
+
+DEVELOPER TOOLS - MONTHLY SPEND: $38,000
+================================================================================
+
+AI CODING ASSISTANTS: $32,000/month
+--------------------------------------------------------------------------------
+
+Cursor Pro
+- Monthly spend: $16,000
+- Licenses: 120 seats @ $133/month per seat
+- Users: All engineers (frontend, backend, ML, infrastructure)
+- Primary use: Code generation, refactoring, debugging
+- Adoption rate: 98% (163 of 166 employees)
+- Notes: Most popular tool, highest productivity impact
+
+GitHub Copilot Business
+- Monthly spend: $8,000
+- Licenses: 200 seats @ $40/month per seat
+- Users: All technical staff
+- Primary use: Code completion, boilerplate generation
+- Adoption rate: 85%
+- Notes: Standard baseline tool for all developers
+
+Claude Code (Anthropic)
+- Monthly spend: $6,000
+- Licenses: 60 seats @ $100/month per seat
+- Users: Senior engineers, architects, ML researchers
+- Primary use: Complex refactoring, system design, debugging
+- Adoption rate: 95% among licensed users
+- Notes: Used for more complex tasks requiring deeper reasoning
+
+Tabnine Enterprise
+- Monthly spend: $2,000
+- Licenses: 50 seats @ $40/month per seat
+- Users: Security-sensitive teams, infrastructure engineers
+- Primary use: Code completion with on-prem deployment
+- Adoption rate: 70%
+- Notes: Used where data cannot leave internal network
+
+
+OTHER DEVELOPER PRODUCTIVITY TOOLS: $6,000/month
+--------------------------------------------------------------------------------
+
+Linear (Project management)
+- Monthly spend: $2,400
+- Licenses: 200 seats @ $12/month per seat
+- Notes: Engineering task tracking and sprint management
+
+Notion Enterprise
+- Monthly spend: $1,600
+- Licenses: 200 seats @ $8/month per seat
+- Notes: Documentation, knowledge base, team wiki
+
+Figma Professional
+- Monthly spend: $1,200
+- Licenses: 25 seats @ $48/month per seat (design team)
+- Notes: Product design and prototyping
+
+Datadog APM
+- Monthly spend: $800
+- Usage-based billing
+- Notes: Already counted in monitoring budget, cross-reference only
+
+
+PRODUCTIVITY IMPACT ANALYSIS
+================================================================================
+
+Internal Survey Results (Q4 2025):
+- Engineers report 28% time savings from AI coding assistants
+- Average lines of code written per engineer increased 42%
+- Code review cycle time reduced by 18%
+- Bug density decreased by 12% (AI tools catch edge cases)
+- Onboarding time for new engineers reduced from 6 weeks to 4 weeks
+
+ROI Calculation:
+- Total developer tools spend: $38,000/month
+- Average engineering fully-loaded cost: $190,000/year or $15,833/month
+- 200 engineers × $15,833 × 28% time savings = $887,048/month in productivity value
+- ROI: 23.3x return on investment
+
+Engineering Leadership Perspective:
+"AI coding assistants are now critical infrastructure. The productivity gains
+are so significant that we consider them non-negotiable, similar to how we
+view IDEs or version control. The $38k/month investment pays for itself many
+times over in velocity and code quality."
+- VP Engineering, July 2026
+
+
+USAGE PATTERNS BY ROLE
+================================================================================
+
+Software Engineers (120 seats):
+- Cursor Pro: 100% adoption
+- GitHub Copilot: 92% adoption
+- Average usage: 6-8 hours/day across both tools
+
+ML Engineers (40 seats):
+- Claude Code: 95% adoption (38 of 40)
+- Cursor Pro: 100% adoption
+- GitHub Copilot: 88% adoption
+- Notes: Heavy users of Claude Code for experiment tracking and analysis
+
+Data Engineers (15 seats):
+- Cursor Pro: 93% adoption
+- GitHub Copilot: 100% adoption
+- Tabnine: 60% adoption (data security requirements)
+
+Infrastructure/DevOps (10 seats):
+- Tabnine Enterprise: 100% adoption (security policy)
+- GitHub Copilot: 90% adoption
+- Cursor Pro: 70% adoption
+
+Product Managers (10 seats):
+- No coding assistant licenses
+- Linear and Notion only
+
+Designers (5 seats):
+- Figma Professional: 100%
+- No coding assistants
+
+
+VENDOR RELATIONSHIPS & CONTRACTS
+================================================================================
+
+Cursor Pro
+- Contract: Annual prepay with monthly seat adjustments
+- Committed term: 12 months (renews October 2026)
+- Discount: 15% for >100 seats
+- Support tier: Business
+- Notes: Considering Enterprise tier for SSO and advanced analytics
+
+GitHub Copilot Business
+- Contract: Microsoft Enterprise Agreement
+- Committed term: Rolling monthly
+- Discount: 10% (bundled with GitHub Enterprise)
+- Support tier: Standard
+- Notes: Bundled pricing, minimal negotiation leverage
+
+Claude Code
+- Contract: Direct with Anthropic
+- Committed term: 6 months (renews November 2026)
+- Discount: 20% (strategic partnership discussions)
+- Support tier: Priority
+- Notes: Anthropic interested in case study, may expand partnership
+
+Tabnine Enterprise
+- Contract: Annual license with on-prem deployment
+- Committed term: 12 months (renews March 2027)
+- Discount: Enterprise pricing
+- Support tier: Premium
+- Notes: Required for compliance with certain customer contracts
+
+
+STRATEGIC CONSIDERATIONS FOR M&A
+================================================================================
+
+Cost Structure:
+- Total AI/ML spend: $223,000/month (LLM APIs + Developer Tools)
+- Represents 8.3% of total monthly burn
+- 11.7% of infrastructure budget
+- Critical dependency on external AI providers
+
+Potential Acquirer Value:
+1. Strong AI-native culture and tooling sophistication
+2. Demonstrated ability to leverage latest AI capabilities
+3. Productivity metrics significantly above industry average
+4. Engineering team accustomed to cutting-edge tools
+
+Potential Risks:
+1. High dependency on external LLM providers (vendor lock-in concern)
+2. Cost structure sensitive to token pricing changes
+3. ~$2.7M annual spend on external AI services
+
+Mitigation Strategies:
+1. Evaluating self-hosted models on direct GPU infrastructure
+2. Multi-provider strategy already in place (OpenAI, Anthropic, Cohere, Google)
+3. Cost optimization reducing dependency by ~$28k/month
+4. Building internal fine-tuning capabilities
+
+M&A Due Diligence Notes:
+- All LLM API contracts are month-to-month or <12 month commitments
+- No long-term vendor lock-in
+- Developer tools contracts include enterprise transfer clauses
+- Easy to consolidate with acquirer's existing tool stack if needed
+- Team productivity gains should persist with alternative tools

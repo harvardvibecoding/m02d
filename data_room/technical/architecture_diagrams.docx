@@ -1,0 +1,606 @@
+# Example AI, Inc. - Product Architecture
+
+**Confidential - M&A Due Diligence**
+**As of: September 30, 2026**
+
+---
+
+## Executive Summary
+
+Example AI's platform is a cloud-native, multi-tenant LLM infrastructure platform built for enterprise-grade reliability, security, and scale. The architecture supports 12+ LLM providers, processes 500M+ API requests monthly, and delivers 99.95% uptime with sub-500ms P95 latency.
+
+---
+
+## High-Level System Architecture
+
+```
+                                    EXAMPLE AI PLATFORM ARCHITECTURE
+                                    ================================
+
+    ┌─────────────────────────────────────────────────────────────────────────────────┐
+    │                              CUSTOMER APPLICATIONS                               │
+    │  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────────┐ │
+    │  │  Web Apps   │  │ Mobile Apps │  │   Agents    │  │  Enterprise Systems     │ │
+    │  └──────┬──────┘  └──────┬──────┘  └──────┬──────┘  └───────────┬─────────────┘ │
+    └─────────┼────────────────┼────────────────┼─────────────────────┼───────────────┘
+              │                │                │                     │
+              └────────────────┴────────────────┴─────────────────────┘
+                                        │
+                               HTTPS/WSS (TLS 1.3)
+                                        │
+    ┌───────────────────────────────────┼───────────────────────────────────────────┐
+    │                         ┌─────────▼─────────┐                                 │
+    │                         │   CLOUDFLARE CDN  │                                 │
+    │                         │   WAF / DDoS      │                                 │
+    │                         └─────────┬─────────┘                                 │
+    │                                   │                                           │
+    │  ┌────────────────────────────────┼────────────────────────────────────────┐  │
+    │  │                    LOAD BALANCER LAYER                                  │  │
+    │  │  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐ │  │
+    │  │  │   AWS ALB   │  │   AWS ALB   │  │  GCP GLB    │  │    GCP GLB      │ │  │
+    │  │  │  (US-East)  │  │  (US-West)  │  │  (EU-West)  │  │    (APAC)       │ │  │
+    │  │  └──────┬──────┘  └──────┬──────┘  └──────┬──────┘  └────────┬────────┘ │  │
+    │  └─────────┼────────────────┼────────────────┼──────────────────┼──────────┘  │
+    │            └────────────────┴────────────────┴──────────────────┘             │
+    │                                     │                                         │
+    │  ┌──────────────────────────────────┼────────────────────────────────────┐    │
+    │  │                        API GATEWAY LAYER                              │    │
+    │  │  ┌────────────────────────────────────────────────────────────────┐   │    │
+    │  │  │                    Kong API Gateway                            │   │    │
+    │  │  │  • Rate Limiting  • Auth/OAuth2  • Request Routing            │   │    │
+    │  │  │  • API Versioning • Request/Response Transform                │   │    │
+    │  │  └────────────────────────────────────────────────────────────────┘   │    │
+    │  └──────────────────────────────────┬────────────────────────────────────┘    │
+    │                                     │                                         │
+    │  ┌──────────────────────────────────┼────────────────────────────────────┐    │
+    │  │                     APPLICATION LAYER (K8s)                           │    │
+    │  │                                                                       │    │
+    │  │  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────────┐   │    │
+    │  │  │  Request Router │  │ Prompt Manager  │  │  Response Handler   │   │    │
+    │  │  │    Service      │  │    Service      │  │      Service        │   │    │
+    │  │  │   (Go/Rust)     │  │    (Python)     │  │      (Go)           │   │    │
+    │  │  └────────┬────────┘  └────────┬────────┘  └──────────┬──────────┘   │    │
+    │  │           │                    │                      │              │    │
+    │  │  ┌────────▼────────┐  ┌────────▼────────┐  ┌─────────▼──────────┐   │    │
+    │  │  │  LLM Gateway    │  │  Fine-Tuning    │  │   RAG Pipeline     │   │    │
+    │  │  │    Service      │  │    Service      │  │     Service        │   │    │
+    │  │  │   (Python)      │  │   (Python)      │  │    (Python)        │   │    │
+    │  │  └────────┬────────┘  └────────┬────────┘  └─────────┬──────────┘   │    │
+    │  │           │                    │                      │              │    │
+    │  │  ┌────────▼────────┐  ┌────────▼────────┐  ┌─────────▼──────────┐   │    │
+    │  │  │  Cost Optimizer │  │  Model Registry │  │  Vector Search     │   │    │
+    │  │  │    Service      │  │    Service      │  │     Service        │   │    │
+    │  │  │   (Python)      │  │   (Python)      │  │   (Rust/Python)    │   │    │
+    │  │  └─────────────────┘  └─────────────────┘  └────────────────────┘   │    │
+    │  └───────────────────────────────────────────────────────────────────────┘    │
+    │                                     │                                         │
+    │  ┌──────────────────────────────────┼────────────────────────────────────┐    │
+    │  │                      DATA LAYER                                       │    │
+    │  │                                                                       │    │
+    │  │  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  │    │
+    │  │  │ PostgreSQL  │  │   Redis     │  │  Pinecone   │  │    S3       │  │    │
+    │  │  │ (Aurora)    │  │  Cluster    │  │  (Vectors)  │  │  (Blobs)    │  │    │
+    │  │  │             │  │             │  │             │  │             │  │    │
+    │  │  │ • Metadata  │  │ • Cache     │  │ • Embeddings│  │ • Models    │  │    │
+    │  │  │ • Config    │  │ • Sessions  │  │ • RAG Index │  │ • Artifacts │  │    │
+    │  │  │ • Audit Log │  │ • Rate Limit│  │             │  │ • Logs      │  │    │
+    │  │  └─────────────┘  └─────────────┘  └─────────────┘  └─────────────┘  │    │
+    │  │                                                                       │    │
+    │  │  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐                   │    │
+    │  │  │ TimescaleDB │  │   Kafka     │  │ClickHouse  │                   │    │
+    │  │  │             │  │             │  │             │                   │    │
+    │  │  │ • Metrics   │  │ • Events    │  │ • Analytics │                   │    │
+    │  │  │ • Time-series│  │ • Streaming │  │ • Reporting │                   │    │
+    │  │  └─────────────┘  └─────────────┘  └─────────────┘                   │    │
+    │  └───────────────────────────────────────────────────────────────────────┘    │
+    │                                                                               │
+    │                              EXAMPLE AI CLOUD                                 │
+    └───────────────────────────────────────────────────────────────────────────────┘
+                                        │
+              ┌─────────────────────────┼─────────────────────────┐
+              │                         │                         │
+    ┌─────────▼─────────┐   ┌──────────▼──────────┐   ┌─────────▼─────────┐
+    │   LLM PROVIDERS   │   │   LLM PROVIDERS     │   │   LLM PROVIDERS   │
+    │                   │   │                     │   │                   │
+    │  ┌─────────────┐  │   │  ┌───────────────┐  │   │  ┌─────────────┐  │
+    │  │   OpenAI    │  │   │  │   Anthropic   │  │   │  │   Google    │  │
+    │  │  GPT-4/3.5  │  │   │  │    Claude     │  │   │  │   Gemini    │  │
+    │  └─────────────┘  │   │  └───────────────┘  │   │  └─────────────┘  │
+    │  ┌─────────────┐  │   │  ┌───────────────┐  │   │  ┌─────────────┐  │
+    │  │   Cohere    │  │   │  │  Together AI  │  │   │  │  Replicate  │  │
+    │  └─────────────┘  │   │  └───────────────┘  │   │  └─────────────┘  │
+    │  ┌─────────────┐  │   │  ┌───────────────┐  │   │  ┌─────────────┐  │
+    │  │  Hugging    │  │   │  │    AWS        │  │   │  │   Azure     │  │
+    │  │   Face      │  │   │  │   Bedrock     │  │   │  │   OpenAI    │  │
+    │  └─────────────┘  │   │  └───────────────┘  │   │  └─────────────┘  │
+    └───────────────────┘   └─────────────────────┘   └───────────────────┘
+```
+
+---
+
+## Core Platform Components
+
+### 1. LLM Gateway Service
+
+**Purpose:** Unified interface to 12+ LLM providers with intelligent routing
+
+```
+                    LLM GATEWAY SERVICE ARCHITECTURE
+                    ================================
+
+    Incoming Request
+          │
+          ▼
+    ┌─────────────────┐
+    │  Request Parser │ ── Validate, normalize, extract routing hints
+    └────────┬────────┘
+             │
+             ▼
+    ┌─────────────────┐     ┌─────────────────┐
+    │  Router Engine  │────▶│  Model Registry │
+    │                 │     │                 │
+    │  • Cost-based   │     │  • Capabilities │
+    │  • Latency-based│     │  • Pricing      │
+    │  • Capability   │     │  • Availability │
+    └────────┬────────┘     └─────────────────┘
+             │
+             ▼
+    ┌─────────────────┐
+    │ Provider Adapter│ ── OpenAI, Anthropic, Google, etc.
+    │      Pool       │
+    └────────┬────────┘
+             │
+             ├──────────────┬──────────────┐
+             ▼              ▼              ▼
+    ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
+    │   OpenAI    │ │  Anthropic  │ │   Fallback  │
+    │   Adapter   │ │   Adapter   │ │   Handler   │
+    └─────────────┘ └─────────────┘ └─────────────┘
+             │              │              │
+             └──────────────┴──────────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │Response Handler │
+                  │ • Streaming     │
+                  │ • Token counting│
+                  │ • Cost tracking │
+                  └─────────────────┘
+```
+
+**Key Features:**
+- Automatic failover (< 100ms switchover)
+- Cost-optimized routing (30-40% cost savings)
+- Response caching (semantic deduplication)
+- Rate limit management across providers
+
+### 2. Fine-Tuning Pipeline
+
+**Purpose:** Enterprise model customization with managed infrastructure
+
+```
+                    FINE-TUNING PIPELINE
+                    ====================
+
+    ┌─────────────────────────────────────────────────────────────────┐
+    │                     TRAINING ORCHESTRATOR                       │
+    │                                                                 │
+    │  ┌─────────────┐    ┌─────────────┐    ┌─────────────────────┐ │
+    │  │   Dataset   │───▶│  Training   │───▶│   Model Artifact    │ │
+    │  │   Ingestion │    │    Jobs     │    │      Storage        │ │
+    │  │             │    │             │    │                     │ │
+    │  │ • S3 Upload │    │ • Kubernetes│    │ • S3 / HuggingFace  │ │
+    │  │ • Validation│    │ • GPU Nodes │    │ • Version Control   │ │
+    │  │ • Splitting │    │ • Checkpts  │    │ • Access Control    │ │
+    │  └─────────────┘    └─────────────┘    └─────────────────────┘ │
+    │                                                                 │
+    │  ┌─────────────────────────────────────────────────────────┐   │
+    │  │                    GPU CLUSTER                          │   │
+    │  │                                                         │   │
+    │  │   Santa Clara DC          │        Austin DC            │   │
+    │  │   ┌───────────────────┐   │   ┌───────────────────┐    │   │
+    │  │   │ 28 Racks          │   │   │ 14 Racks          │    │   │
+    │  │   │ 168 AMD MI355X    │   │   │ 112 AMD MI355X    │    │   │
+    │  │   │ ~500 TFLOPS FP32  │   │   │ ~350 TFLOPS FP32  │    │   │
+    │  │   │ 21TB HBM3         │   │   │ 14TB HBM3         │    │   │
+    │  │   └───────────────────┘   │   └───────────────────┘    │   │
+    │  └─────────────────────────────────────────────────────────┘   │
+    │                                                                 │
+    │  ┌─────────────┐    ┌─────────────┐    ┌─────────────────────┐ │
+    │  │ Evaluation  │───▶│   Model     │───▶│     Deployment      │ │
+    │  │   Suite     │    │   Testing   │    │      Pipeline       │ │
+    │  │             │    │             │    │                     │ │
+    │  │ • Accuracy  │    │ • A/B Tests │    │ • Blue/Green        │ │
+    │  │ • Latency   │    │ • Canary    │    │ • Auto-scaling      │ │
+    │  │ • Safety    │    │ • Rollback  │    │ • Multi-region      │ │
+    │  └─────────────┘    └─────────────┘    └─────────────────────┘ │
+    └─────────────────────────────────────────────────────────────────┘
+```
+
+### 3. RAG (Retrieval-Augmented Generation) Pipeline
+
+**Purpose:** Enterprise knowledge integration for grounded LLM responses
+
+```
+                    RAG PIPELINE ARCHITECTURE
+                    =========================
+
+    ┌─────────────────────────────────────────────────────────────────┐
+    │                    DOCUMENT INGESTION                           │
+    │                                                                 │
+    │  ┌─────────────┐    ┌─────────────┐    ┌─────────────────────┐ │
+    │  │   Sources   │───▶│   Parser    │───▶│     Chunking        │ │
+    │  │             │    │             │    │                     │ │
+    │  │ • S3/GCS    │    │ • PDF       │    │ • Semantic          │ │
+    │  │ • Confluence│    │ • Word      │    │ • Sliding Window    │ │
+    │  │ • Notion    │    │ • HTML      │    │ • Hierarchical      │ │
+    │  │ • Slack     │    │ • Code      │    │                     │ │
+    │  └─────────────┘    └─────────────┘    └─────────────────────┘ │
+    └────────────────────────────┬────────────────────────────────────┘
+                                 │
+                                 ▼
+    ┌─────────────────────────────────────────────────────────────────┐
+    │                    EMBEDDING & INDEXING                         │
+    │                                                                 │
+    │  ┌─────────────┐    ┌─────────────┐    ┌─────────────────────┐ │
+    │  │  Embedding  │───▶│   Vector    │───▶│    Metadata         │ │
+    │  │   Models    │    │    Store    │    │     Index           │ │
+    │  │             │    │             │    │                     │ │
+    │  │ • OpenAI    │    │ • Pinecone  │    │ • PostgreSQL        │ │
+    │  │ • Cohere    │    │ • Weaviate  │    │ • Elasticsearch     │ │
+    │  │ • Custom    │    │ • pgvector  │    │                     │ │
+    │  └─────────────┘    └─────────────┘    └─────────────────────┘ │
+    └────────────────────────────┬────────────────────────────────────┘
+                                 │
+                                 ▼
+    ┌─────────────────────────────────────────────────────────────────┐
+    │                    RETRIEVAL & GENERATION                       │
+    │                                                                 │
+    │       Query                                                     │
+    │         │                                                       │
+    │         ▼                                                       │
+    │  ┌─────────────┐    ┌─────────────┐    ┌─────────────────────┐ │
+    │  │   Query     │───▶│  Retriever  │───▶│    Context          │ │
+    │  │  Embedding  │    │             │    │    Assembler        │ │
+    │  │             │    │ • Hybrid    │    │                     │ │
+    │  │ • Expansion │    │ • Reranking │    │ • Deduplication     │ │
+    │  │ • HyDE      │    │ • Filtering │    │ • Relevance Filter  │ │
+    │  └─────────────┘    └─────────────┘    └─────────────────────┘ │
+    │                                                │                │
+    │                                                ▼                │
+    │                                    ┌─────────────────────┐     │
+    │                                    │   LLM Generation    │     │
+    │                                    │                     │     │
+    │                                    │ • Context Injection │     │
+    │                                    │ • Citation Tracking │     │
+    │                                    │ • Hallucination Det │     │
+    │                                    └─────────────────────┘     │
+    └─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Infrastructure Architecture
+
+### Multi-Region Deployment
+
+```
+                    GLOBAL INFRASTRUCTURE
+                    =====================
+
+         US-EAST-1 (Primary)              US-WEST-2 (Secondary)
+    ┌─────────────────────────┐      ┌─────────────────────────┐
+    │                         │      │                         │
+    │  ┌─────────────────┐    │      │    ┌─────────────────┐  │
+    │  │   EKS Cluster   │    │      │    │   EKS Cluster   │  │
+    │  │   (100+ pods)   │    │◀────▶│    │   (80+ pods)    │  │
+    │  └─────────────────┘    │      │    └─────────────────┘  │
+    │                         │      │                         │
+    │  ┌─────────────────┐    │      │    ┌─────────────────┐  │
+    │  │  Aurora PG      │    │      │    │  Aurora Replica │  │
+    │  │  (Primary)      │────│─────▶│    │  (Read Replica) │  │
+    │  └─────────────────┘    │      │    └─────────────────┘  │
+    │                         │      │                         │
+    │  ┌─────────────────┐    │      │    ┌─────────────────┐  │
+    │  │ Redis Cluster   │◀───│─────▶│    │ Redis Cluster   │  │
+    │  └─────────────────┘    │      │    └─────────────────┘  │
+    │                         │      │                         │
+    └─────────────────────────┘      └─────────────────────────┘
+              │                                   │
+              └───────────────┬───────────────────┘
+                              │
+         EU-WEST-1                            AP-NORTHEAST-1
+    ┌─────────────────────────┐      ┌─────────────────────────┐
+    │                         │      │                         │
+    │  ┌─────────────────┐    │      │    ┌─────────────────┐  │
+    │  │   GKE Cluster   │    │      │    │   GKE Cluster   │  │
+    │  │   (GDPR)        │    │      │    │   (Data Res.)   │  │
+    │  └─────────────────┘    │      │    └─────────────────┘  │
+    │                         │      │                         │
+    │  ┌─────────────────┐    │      │    ┌─────────────────┐  │
+    │  │  CloudSQL PG    │    │      │    │  CloudSQL PG    │  │
+    │  │  (EU Data Res.) │    │      │    │  (JP Data Res.) │  │
+    │  └─────────────────┘    │      │    └─────────────────┘  │
+    │                         │      │                         │
+    └─────────────────────────┘      └─────────────────────────┘
+
+    Traffic Distribution:
+    • US-EAST-1:  45%  (Americas)
+    • US-WEST-2:  15%  (Americas failover)
+    • EU-WEST-1:  28%  (EMEA)
+    • AP-NE-1:    12%  (APAC)
+```
+
+### Kubernetes Architecture
+
+```
+                    KUBERNETES CLUSTER LAYOUT
+                    =========================
+
+    ┌─────────────────────────────────────────────────────────────────┐
+    │                         EKS CLUSTER                             │
+    │                                                                 │
+    │  ┌─────────────────────────────────────────────────────────┐   │
+    │  │                   SYSTEM NAMESPACE                       │   │
+    │  │  ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────────┐│   │
+    │  │  │ Ingress  │ │  Cert    │ │ External │ │ Cluster      ││   │
+    │  │  │ Nginx    │ │  Manager │ │   DNS    │ │ Autoscaler   ││   │
+    │  │  └──────────┘ └──────────┘ └──────────┘ └──────────────┘│   │
+    │  └─────────────────────────────────────────────────────────┘   │
+    │                                                                 │
+    │  ┌─────────────────────────────────────────────────────────┐   │
+    │  │                   PRODUCTION NAMESPACE                   │   │
+    │  │                                                          │   │
+    │  │  API Gateway Pods (12 replicas)                          │   │
+    │  │  ┌────┐ ┌────┐ ┌────┐ ┌────┐ ┌────┐ ┌────┐              │   │
+    │  │  │ GW │ │ GW │ │ GW │ │ GW │ │ GW │ │... │              │   │
+    │  │  └────┘ └────┘ └────┘ └────┘ └────┘ └────┘              │   │
+    │  │                                                          │   │
+    │  │  LLM Gateway Pods (24 replicas)                          │   │
+    │  │  ┌────┐ ┌────┐ ┌────┐ ┌────┐ ┌────┐ ┌────┐ ┌────┐       │   │
+    │  │  │ LLM│ │ LLM│ │ LLM│ │ LLM│ │ LLM│ │ LLM│ │... │       │   │
+    │  │  └────┘ └────┘ └────┘ └────┘ └────┘ └────┘ └────┘       │   │
+    │  │                                                          │   │
+    │  │  Worker Pods (16 replicas)                               │   │
+    │  │  ┌────┐ ┌────┐ ┌────┐ ┌────┐ ┌────┐ ┌────┐              │   │
+    │  │  │ WRK│ │ WRK│ │ WRK│ │ WRK│ │ WRK│ │... │              │   │
+    │  │  └────┘ └────┘ └────┘ └────┘ └────┘ └────┘              │   │
+    │  └─────────────────────────────────────────────────────────┘   │
+    │                                                                 │
+    │  ┌─────────────────────────────────────────────────────────┐   │
+    │  │                   GPU NAMESPACE                          │   │
+    │  │  ┌────────────────────────────────────────────────────┐ │   │
+    │  │  │         Fine-Tuning Job Pods (on-demand)           │ │   │
+    │  │  │   ┌─────────┐  ┌─────────┐  ┌─────────┐            │ │   │
+    │  │  │   │ FT-Job  │  │ FT-Job  │  │ FT-Job  │            │ │   │
+    │  │  │   │(8xGPU)  │  │(8xGPU)  │  │(4xGPU)  │            │ │   │
+    │  │  │   └─────────┘  └─────────┘  └─────────┘            │ │   │
+    │  │  └────────────────────────────────────────────────────┘ │   │
+    │  └─────────────────────────────────────────────────────────┘   │
+    │                                                                 │
+    │  ┌─────────────────────────────────────────────────────────┐   │
+    │  │                   OBSERVABILITY NAMESPACE                │   │
+    │  │  ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────────┐│   │
+    │  │  │Prometheus│ │ Grafana  │ │  Jaeger  │ │ Fluent Bit   ││   │
+    │  │  └──────────┘ └──────────┘ └──────────┘ └──────────────┘│   │
+    │  └─────────────────────────────────────────────────────────┘   │
+    └─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Security Architecture
+
+```
+                    SECURITY ARCHITECTURE
+                    =====================
+
+    ┌─────────────────────────────────────────────────────────────────┐
+    │                      PERIMETER SECURITY                         │
+    │                                                                 │
+    │  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────────┐ │
+    │  │ Cloudflare  │  │    AWS      │  │      Identity &         │ │
+    │  │    WAF      │  │   Shield    │  │   Access Management     │ │
+    │  │             │  │             │  │                         │ │
+    │  │ • DDoS      │  │ • L3/L4     │  │ • Okta SSO (SAML 2.0)   │ │
+    │  │ • Bot Mgmt  │  │ • DDoS      │  │ • OAuth 2.0 / OIDC      │ │
+    │  │ • Rate Limit│  │ • Protection│  │ • MFA Enforcement       │ │
+    │  └─────────────┘  └─────────────┘  └─────────────────────────┘ │
+    └─────────────────────────────────────────────────────────────────┘
+                                 │
+                                 ▼
+    ┌─────────────────────────────────────────────────────────────────┐
+    │                     APPLICATION SECURITY                        │
+    │                                                                 │
+    │  ┌─────────────────────────────────────────────────────────┐   │
+    │  │                   API Security                          │   │
+    │  │  • API Key Management (rotatable, scoped)               │   │
+    │  │  • JWT Token Validation                                 │   │
+    │  │  • Request Signing (HMAC-SHA256)                        │   │
+    │  │  • Rate Limiting (per-key, per-org)                     │   │
+    │  └─────────────────────────────────────────────────────────┘   │
+    │                                                                 │
+    │  ┌─────────────────────────────────────────────────────────┐   │
+    │  │                  RBAC & Authorization                    │   │
+    │  │                                                          │   │
+    │  │   Organization                                           │   │
+    │  │       │                                                  │   │
+    │  │       ├── Admin (full access)                            │   │
+    │  │       ├── Developer (read/write API, prompts)            │   │
+    │  │       ├── Analyst (read-only, billing)                   │   │
+    │  │       └── Viewer (dashboard only)                        │   │
+    │  │                                                          │   │
+    │  │   Resource-Level Permissions:                            │   │
+    │  │   • Projects → API Keys → Models → Prompts               │   │
+    │  └─────────────────────────────────────────────────────────┘   │
+    └─────────────────────────────────────────────────────────────────┘
+                                 │
+                                 ▼
+    ┌─────────────────────────────────────────────────────────────────┐
+    │                       DATA SECURITY                             │
+    │                                                                 │
+    │  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────────┐ │
+    │  │ Encryption  │  │    Data     │  │       Compliance        │ │
+    │  │             │  │  Isolation  │  │                         │ │
+    │  │ • At Rest:  │  │             │  │ • SOC 2 Type II         │ │
+    │  │   AES-256   │  │ • Tenant    │  │ • GDPR DPA              │ │
+    │  │             │  │   Isolation │  │ • HIPAA BAA             │ │
+    │  │ • In Transit│  │ • Network   │  │ • CCPA                  │ │
+    │  │   TLS 1.3   │  │   Segmentn  │  │ • ISO 27001 (roadmap)   │ │
+    │  │             │  │ • Data Res. │  │                         │ │
+    │  │ • Key Mgmt: │  │   Controls  │  │ Audit Logging:          │ │
+    │  │   AWS KMS   │  │             │  │ • All API calls logged  │ │
+    │  │   + BYOK    │  │             │  │ • 90-day retention      │ │
+    │  └─────────────┘  └─────────────┘  └─────────────────────────┘ │
+    └─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Data Flow Diagram
+
+```
+                    END-TO-END REQUEST FLOW
+                    =======================
+
+    Client App
+        │
+        │ (1) HTTPS POST /v1/chat/completions
+        │     Headers: Authorization: Bearer sk-xxx
+        │     Body: { model: "gpt-4", messages: [...] }
+        │
+        ▼
+    ┌─────────────────┐
+    │   Cloudflare    │ (2) WAF rules, DDoS protection
+    │      CDN        │     Geographic routing
+    └────────┬────────┘
+             │
+             ▼
+    ┌─────────────────┐
+    │   AWS ALB       │ (3) SSL termination, health checks
+    │                 │     Target group routing
+    └────────┬────────┘
+             │
+             ▼
+    ┌─────────────────┐
+    │  Kong Gateway   │ (4) API key validation
+    │                 │     Rate limiting check
+    │                 │     Request transformation
+    └────────┬────────┘
+             │
+             ▼
+    ┌─────────────────┐
+    │ Request Router  │ (5) Parse request
+    │    Service      │     Extract routing hints
+    │                 │     Check cache (Redis)
+    └────────┬────────┘
+             │
+        ┌────┴────┐
+        │         │
+        ▼         ▼
+    [Cache Hit] [Cache Miss]
+        │         │
+        │         ▼
+        │   ┌─────────────────┐
+        │   │  Cost Optimizer │ (6) Select optimal provider
+        │   │     Service     │     Consider: cost, latency,
+        │   │                 │     capability, quota
+        │   └────────┬────────┘
+        │            │
+        │            ▼
+        │   ┌─────────────────┐
+        │   │  LLM Gateway    │ (7) Format for provider
+        │   │     Service     │     Add retry logic
+        │   │                 │     Handle streaming
+        │   └────────┬────────┘
+        │            │
+        │            ▼
+        │   ┌─────────────────┐
+        │   │  LLM Provider   │ (8) External API call
+        │   │  (e.g., OpenAI) │     (OpenAI, Anthropic, etc.)
+        │   └────────┬────────┘
+        │            │
+        │            ▼
+        │   ┌─────────────────┐
+        │   │ Response Handler│ (9) Parse response
+        │   │                 │     Count tokens
+        │   │                 │     Update cache
+        │   └────────┬────────┘
+        │            │
+        └────────────┤
+                     │
+                     ▼
+    ┌─────────────────────────────────────────────────────────────────┐
+    │                    OBSERVABILITY PIPELINE                       │
+    │                                                                 │
+    │  (10) Async logging & metrics                                   │
+    │  ┌──────────┐    ┌──────────┐    ┌──────────┐                  │
+    │  │  Kafka   │───▶│ClickHouse│───▶│ Grafana  │                  │
+    │  │ (events) │    │(analytics)│   │(dashbrd) │                  │
+    │  └──────────┘    └──────────┘    └──────────┘                  │
+    └─────────────────────────────────────────────────────────────────┘
+                     │
+                     ▼
+              Client Response
+              (11) { choices: [...], usage: {...} }
+```
+
+---
+
+## Technology Stack Summary
+
+### Languages & Frameworks
+
+| Component | Language | Framework | Rationale |
+|-----------|----------|-----------|-----------|
+| API Gateway | Go | Kong + Custom | Performance, ecosystem |
+| LLM Gateway | Python | FastAPI | ML ecosystem, async |
+| Fine-Tuning | Python | PyTorch, HF | Industry standard |
+| RAG Pipeline | Python | LangChain + Custom | Flexibility |
+| High-perf Services | Rust | Tokio, Axum | Latency-critical |
+| Frontend | TypeScript | Next.js, React | Developer productivity |
+| SDKs | Python, JS, Go | Native | Customer adoption |
+
+### Infrastructure & DevOps
+
+| Category | Technology | Purpose |
+|----------|------------|---------|
+| Container Orchestration | Kubernetes (EKS/GKE) | Workload management |
+| Service Mesh | Istio | Traffic management |
+| CI/CD | GitHub Actions + ArgoCD | Deployment automation |
+| IaC | Terraform | Infrastructure as code |
+| Secrets | HashiCorp Vault | Secrets management |
+| Monitoring | Prometheus + Grafana | Metrics & dashboards |
+| Logging | Fluent Bit + Loki | Log aggregation |
+| Tracing | Jaeger + OpenTelemetry | Distributed tracing |
+
+### Data Stores
+
+| Store | Technology | Use Case |
+|-------|------------|----------|
+| Primary DB | PostgreSQL (Aurora) | Metadata, config |
+| Cache | Redis Cluster | Sessions, rate limits |
+| Vector DB | Pinecone | RAG embeddings |
+| Time-Series | TimescaleDB | Metrics, analytics |
+| Analytics | ClickHouse | Usage analytics |
+| Object Storage | S3/GCS | Models, artifacts |
+| Message Queue | Apache Kafka | Event streaming |
+
+---
+
+## Performance & Scale Metrics
+
+| Metric | Current | Target (EOY 2027) |
+|--------|---------|-------------------|
+| API Requests/Month | 500M | 2B |
+| Tokens/Month | 50B | 200B |
+| P50 Latency | 280ms | <200ms |
+| P95 Latency | 480ms | <400ms |
+| P99 Latency | 850ms | <700ms |
+| Uptime | 99.95% | 99.99% |
+| Concurrent Connections | 50K | 200K |
+
+---
+
+*Document prepared for M&A due diligence purposes*
+*Architecture as of September 30, 2026*

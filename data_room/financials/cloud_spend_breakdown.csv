@@ -1,0 +1,10 @@
+service,monthly_usd,notes
+compute,90000,Autoscaling CPU/GPU instances for burst capacity (AWS/GCP mix)
+storage,50000,Object storage + backups + databases
+data_pipeline,50000,ETL pipelines and data processing
+llm_apis,178000,OpenAI/Anthropic API usage - product features + R&D
+developer_tools,38000,Cursor/Claude Code/Copilot licenses (166 seats)
+third_party_apis,22000,Non-LLM third-party integrations
+networking,18000,CDN + data transfer + load balancing
+monitoring,5000,Observability and logging infrastructure
+direct_gpu_leases,264000,See gpu_leases.txt - AMD MI355X clusters (Santa Clara + Austin)

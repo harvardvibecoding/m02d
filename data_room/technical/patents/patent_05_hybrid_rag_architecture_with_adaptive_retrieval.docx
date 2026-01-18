@@ -1,0 +1,44 @@
+# Patent Application #5: Hybrid RAG Architecture with Adaptive Retrieval
+
+**Example AI, Inc.**
+**Confidential - M&A Due Diligence**
+
+---
+
+## Application Information
+
+| Field | Details |
+|-------|---------|
+| **Application Number** | US 17/XXX,XXX |
+| **Filing Date** | May 15, 2024 |
+| **Inventors** | Nina Rodriguez, Olivia Chang, Ashley Zhang |
+| **Assignee** | Example AI, Inc. |
+| **Status** | Pending (Under Examination) |
+
+---
+
+## Abstract
+
+A hybrid retrieval-augmented generation system that combines dense vector retrieval with sparse keyword matching and applies adaptive retrieval depth based on query complexity. The system automatically adjusts the number of retrieved context chunks based on query type and domain.
+
+---
+
+## Key Claims
+
+1. Adaptive retrieval depth selection based on query complexity scoring
+
+2. Hybrid ranking algorithm combining vector similarity and BM25 scores
+
+3. Context compression to maximize relevant information within token limits
+
+---
+
+## Technology Domain
+
+RAG & Retrieval Systems
+
+---
+
+*Document prepared for M&A due diligence purposes*
+*Application numbers redacted for confidentiality*
+*Data as of September 30, 2026*

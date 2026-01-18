@@ -1,0 +1,215 @@
+# Master Services Agreement
+
+**Agreement No:** MSA-2025-0118
+**Effective Date:** September 15, 2025
+**Confidential**
+
+---
+
+## PARTIES
+
+**Provider:**
+Example AI, Inc.
+548 Market St, Suite 95000
+San Francisco, CA 94104
+
+**Customer:**
+TechFlow Enterprise Solutions, Inc.
+1200 Innovation Drive
+Austin, TX 78701
+
+---
+
+## AGREEMENT SUMMARY
+
+| Term | Value |
+|------|-------|
+| Agreement Type | Master Services Agreement (MSA) |
+| Industry | Technology / SaaS |
+| Initial Term | 2 Years |
+| Effective Date | September 15, 2025 |
+| Expiration Date | September 14, 2027 |
+| Annual Contract Value | $1,800,000 |
+| Total Contract Value | $3,600,000 |
+| Payment Terms | Net 30 |
+| Auto-Renewal | 1-year periods with 60-day notice |
+
+---
+
+## 1. SERVICES
+
+### 1.1 Platform Services
+Provider grants Customer access to the Example AI Platform for:
+
+- AI/ML inference API access (Enterprise tier)
+- Model fine-tuning capabilities (up to 25 custom models)
+- Real-time streaming inference
+- Enterprise administration console
+- Premium support services
+- Dedicated customer success manager
+
+### 1.2 Technical Specifications
+- **API Rate Limits:** 10,000 requests/minute
+- **Model Hosting:** Up to 25 fine-tuned models
+- **Concurrent Connections:** Unlimited
+- **Data Storage:** 5TB included
+
+### 1.3 Permitted Use Cases
+- AI-powered developer tools
+- Code analysis and generation
+- Documentation automation
+- Customer-facing AI features
+- Internal productivity tools
+
+---
+
+## 2. FEES AND PAYMENT
+
+### 2.1 Fee Schedule
+
+| Year | Annual Fee | Payment Schedule |
+|------|------------|------------------|
+| Year 1 | $1,800,000 | Annual Prepay |
+| Year 2 | $1,800,000 | Annual Prepay |
+
+### 2.2 Prepay Discount
+- 15% annual prepay discount applied
+
+### 2.3 Expansion Pricing
+- Additional API capacity: $0.002/1K tokens
+- Additional model slots: $25,000/model/year
+- Additional storage: $500/TB/month
+
+### 2.4 Payment Terms
+- Annual prepay due within 30 days of invoice
+- Expansion usage invoiced monthly in arrears
+
+---
+
+## 3. SERVICE LEVEL AGREEMENT
+
+### 3.1 Uptime Commitment
+- **Guaranteed Uptime:** 99.9%
+- **Measurement Period:** Monthly
+
+### 3.2 Performance SLAs
+
+| Metric | Target |
+|--------|--------|
+| API Availability | 99.9% |
+| P95 Latency | <500ms |
+| P99 Latency | <800ms |
+
+### 3.3 Support
+
+| Severity | Response Time |
+|----------|---------------|
+| Critical (P1) | 1 hour |
+| High (P2) | 4 hours |
+| Medium (P3) | 8 hours |
+| Low (P4) | 1 business day |
+
+### 3.4 Service Credits
+- 15% monthly fee credit per 0.1% below SLA
+
+---
+
+## 4. DATA AND SECURITY
+
+### 4.1 Data Processing
+- Data Processing Agreement (DPA) - Exhibit A
+- GDPR and CCPA compliant
+
+### 4.2 Security
+- **Encryption at Rest:** AES-256
+- **Encryption in Transit:** TLS 1.3
+- **SOC 2 Type II:** Certified
+
+### 4.3 Data Handling
+- Customer data deleted within 30 days of termination
+- No data used for model training without consent
+
+---
+
+## 5. INTELLECTUAL PROPERTY
+
+### 5.1 Ownership
+
+| Asset | Owner |
+|-------|-------|
+| Platform Technology | Provider |
+| Customer Data | Customer |
+| Custom Models | Customer |
+| Output/Generated Content | Customer |
+
+### 5.2 Resale Rights
+Customer may incorporate Platform capabilities into Customer's products for end-user consumption, subject to Acceptable Use Policy.
+
+---
+
+## 6. LIMITATION OF LIABILITY
+
+### 6.1 Liability Caps
+
+| Liability Type | Cap |
+|----------------|-----|
+| Direct Damages | 12 months fees paid |
+| Data Breach | 24 months fees paid |
+| Indemnification (IP) | Unlimited |
+
+---
+
+## 7. TERM AND TERMINATION
+
+### 7.1 Term
+- Initial Term: 2 years from Effective Date
+- Renewal: Automatic 1-year renewals unless 60-day written notice
+
+### 7.2 Termination for Cause
+- Material breach with 30-day cure period
+
+### 7.3 Change of Control
+Customer may terminate within 180 days of Provider Change of Control with 90 days written notice.
+
+---
+
+## 8. EXPANSION OPPORTUNITY
+
+### 8.1 Current Discussions
+Customer has indicated interest in expanding to 3-year Enterprise License Agreement with:
+- Increased API capacity
+- Additional regions (EU, APAC)
+- Embedded/white-label capabilities
+
+*Status: Expansion proposal under review - Q4 2026*
+
+---
+
+## EXHIBITS
+
+- **Exhibit A:** Data Processing Agreement (DPA)
+- **Exhibit B:** Acceptable Use Policy
+- **Exhibit C:** Technical Specifications
+
+---
+
+## SIGNATURES
+
+**Example AI, Inc.**
+
+Signature: _________________________
+Name: David Park
+Title: VP of Sales
+Date: September 15, 2025
+
+**TechFlow Enterprise Solutions, Inc.**
+
+Signature: _________________________
+Name: Jennifer Liu
+Title: VP of Engineering
+Date: September 15, 2025
+
+---
+
+*Document ID: MSA-2025-0118-TECHFLOW*
+*Classification: Confidential - M&A Due Diligence*

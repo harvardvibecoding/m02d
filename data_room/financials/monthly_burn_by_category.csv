@@ -1,0 +1,6 @@
+category,avg_monthly_burn_usd,percent_of_total,notes
+payroll,1450000,65.0,166 employees as of January 2026
+infrastructure,632000,28.3,"Cloud $190k + GPU leases $264k + LLM APIs $178k"
+developer_tools,38000,1.7,Cursor/Claude Code/Copilot (166 licenses)
+rent_office,95000,4.3,Office expansion completed mid-2024
+other,5000,0.2,Miscellaneous operational expenses

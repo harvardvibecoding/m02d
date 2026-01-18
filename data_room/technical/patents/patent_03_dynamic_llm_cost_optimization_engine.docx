@@ -1,0 +1,51 @@
+# Patent #3: Dynamic LLM Cost Optimization Engine
+
+**Example AI, Inc.**
+**Confidential - M&A Due Diligence**
+
+---
+
+## Patent Information
+
+| Field | Details |
+|-------|---------|
+| **Patent Number** | US 11,XXX,XXX |
+| **Filing Date** | September 10, 2023 |
+| **Grant Date** | March 22, 2026 |
+| **Inventors** | Daniel Kim, Sarah Li, Alex Kim |
+| **Assignee** | Example AI, Inc. |
+| **Status** | Granted |
+
+---
+
+## Abstract
+
+A real-time cost optimization engine for LLM workloads that analyzes request complexity, provider pricing tiers, and quality requirements to automatically route requests to the most cost-effective provider while maintaining specified quality constraints.
+
+---
+
+## Key Claims
+
+1. A method for predicting LLM response quality across providers using historical performance data
+
+2. Dynamic price-performance optimization based on configurable quality thresholds
+
+3. Budget enforcement and alerting mechanism with automatic tier downgrades
+
+---
+
+## Commercial Importance
+
+Enterprise cost control feature; frequently cited in sales wins
+
+---
+
+## Technology Domain
+
+Cost Optimization
+
+---
+
+*Document prepared for M&A due diligence purposes*
+*Patent numbers redacted for confidentiality*
+*Data as of September 30, 2026*

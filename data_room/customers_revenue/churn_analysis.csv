@@ -1,0 +1,67 @@
+metric,period,value,notes
+# Churn Analysis - Example AI Inc.
+# Data through January 2026
+# Confidential - M&A Due Diligence
+
+# Quarterly Churn Metrics
+gross_churn_rate,2025-Q1,0.8%,1 SMB customer churned
+gross_churn_rate,2025-Q2,0.5%,Minor churn in self-serve segment
+gross_churn_rate,2025-Q3,0.6%,
+gross_churn_rate,2025-Q4,0.4%,Below target
+gross_churn_rate,2026-Q1,0.7%,
+
+net_revenue_retention,2025-Q1,118%,Strong expansion
+net_revenue_retention,2025-Q2,121%,TechFlow expansion
+net_revenue_retention,2025-Q3,115%,
+net_revenue_retention,2025-Q4,119%,
+net_revenue_retention,2026-Q1,122%,Quantum Dynamics multi-site rollout
+
+logo_retention,2025-Q1,98.5%,
+logo_retention,2025-Q2,99.0%,
+logo_retention,2025-Q3,98.8%,
+logo_retention,2025-Q4,99.2%,
+logo_retention,2026-Q1,98.7%,
+
+# Segment Analysis (Q1 2026)
+enterprise_churn_rate,trailing_12m,0.2%,1 enterprise customer churned (non-top 10)
+mid_market_churn_rate,trailing_12m,3.5%,
+self_serve_churn_rate,trailing_12m,8.2%,Expected for self-serve segment
+
+# Top 10 Customer Retention
+top_10_logo_retention,trailing_12m,100%,No top 10 customers churned
+top_10_nrr,trailing_12m,125%,Strong expansion in enterprise accounts
+
+# Churn Reasons (Trailing 12 Months)
+churn_reason_budget,count,12,Budget cuts / downsizing
+churn_reason_competitor,count,5,Switched to competitor
+churn_reason_no_use,count,8,Low usage / poor adoption
+churn_reason_acquired,count,3,Customer acquired / merged
+churn_reason_other,count,4,
+
+# At-Risk Accounts (Q1 2026)
+at_risk_accounts,count,3,Identified through health scoring
+at_risk_arr,amount,185000,Combined ARR of at-risk accounts
+at_risk_segment,detail,Mid-Market,All at-risk are mid-market
+
+# Cohort Analysis - Annual Retention by Sign-up Year
+cohort_2023_retention,year_1,94%,
+cohort_2023_retention,year_2,91%,
+cohort_2024_retention,year_1,96%,Improved onboarding
+cohort_2025_retention,year_1,97%,Enterprise focus paying off
+
+# Renewal Forecast (Next 12 Months)
+renewals_q4_2026,arr_up_for_renewal,8200000,
+renewals_q4_2026,expected_retention,95%,
+renewals_q1_2027,arr_up_for_renewal,9800000,Includes Vantage AI Labs (reviewing 3yr)
+renewals_q1_2027,expected_retention,94%,
+renewals_q2_2027,arr_up_for_renewal,7500000,Includes Meridian Analytics
+renewals_q2_2027,expected_retention,95%,
+renewals_q3_2027,arr_up_for_renewal,11200000,
+renewals_q3_2027,expected_retention,93%,
+
+# Key Metrics Summary (As of Q1 2026)
+summary_gross_arr_churn,trailing_12m,2.1%,
+summary_net_revenue_retention,trailing_12m,119%,
+summary_logo_retention,trailing_12m,98.9%,
+summary_enterprise_nrr,trailing_12m,128%,
+summary_expansion_revenue,trailing_12m,4200000,From existing customers

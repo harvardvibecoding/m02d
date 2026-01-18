@@ -1,0 +1,173 @@
+# Example AI, Inc. - Patent Portfolio Summary
+
+**Confidential - M&A Due Diligence**
+**As of: September 30, 2026**
+
+---
+
+## Executive Summary
+
+Example AI maintains a strategic intellectual property portfolio focused on core innovations in LLM orchestration, cost optimization, and enterprise AI infrastructure. The company has filed 12 patent applications, with 3 patents granted and 9 pending. The IP strategy prioritizes defensive protection of key competitive advantages while avoiding entanglement with existing AI/ML patent thickets.
+
+---
+
+## Patent Portfolio Summary
+
+| Status | Count | Technology Area |
+|--------|-------|-----------------|
+| Granted | 3 | LLM Routing, Cost Optimization, Caching |
+| Pending | 9 | Fine-tuning, RAG, Security, Analytics |
+| **Total** | **12** | - |
+
+### Portfolio by Technology Domain
+
+| Domain | Filed | Granted | Pending |
+|--------|-------|---------|---------|
+| LLM Gateway & Routing | 4 | 2 | 2 |
+| Cost Optimization | 2 | 1 | 1 |
+| Fine-Tuning & Model Management | 2 | 0 | 2 |
+| RAG & Retrieval Systems | 2 | 0 | 2 |
+| Security & Compliance | 1 | 0 | 1 |
+| Analytics & Observability | 1 | 0 | 1 |
+
+---
+
+## Individual Patent Files
+
+The following individual patent documents are available in this folder:
+
+### Granted Patents
+1. patent_01_multi_provider_llm_request_routing_system.docx
+2. patent_02_semantic_caching_system_for_llm_responses.docx
+3. patent_03_dynamic_llm_cost_optimization_engine.docx
+
+### Pending Applications
+4. patent_04_distributed_fine_tuning_orchestration_system.docx
+5. patent_05_hybrid_rag_architecture_with_adaptive_retrieval.docx
+6. patent_06_enterprise_llm_security_compliance_framework.docx
+7. patent_07_intelligent_model_routing_with_quality_prediction.docx
+8. patent_08_token_efficient_context_management_for_rag.docx
+9. patent_09_real_time_llm_performance_analytics.docx
+10. patent_10_federated_fine_tuning_for_privacy_preserving_ml.docx
+11. patent_11_streaming_response_optimization.docx
+12. patent_12_multi_tenant_llm_resource_isolation.docx
+
+---
+
+## International Filings
+
+### PCT Applications
+
+| Application | Status | National Phase Entries |
+|-------------|--------|----------------------|
+| PCT/US2024/XXXXX (Routing) | National phase | EP, CN, JP, KR |
+| PCT/US2024/XXXXX (Caching) | National phase | EP, CN, JP |
+| PCT/US2025/XXXXX (Cost Opt) | Filed | TBD |
+
+### Foreign Grants/Pending
+
+| Jurisdiction | Granted | Pending |
+|--------------|---------|---------|
+| European Patent Office (EP) | 1 | 2 |
+| China (CNIPA) | 0 | 2 |
+| Japan (JPO) | 1 | 1 |
+| South Korea (KIPO) | 0 | 2 |
+
+---
+
+## IP Strategy & Competitive Analysis
+
+### Freedom to Operate (FTO) Assessment
+
+Example AI has conducted FTO analyses for its core product areas:
+
+| Product Area | FTO Status | Notes |
+|--------------|------------|-------|
+| LLM Gateway | Clear | No blocking patents identified |
+| Fine-Tuning | Clear | Standard ML techniques; no novel claims |
+| RAG Pipeline | Clear | Builds on prior art (HuggingFace, etc.) |
+| Cost Optimization | Clear | Novel approach, proprietary implementation |
+
+### Competitive Patent Landscape
+
+| Competitor | Est. Patents | Overlap Risk |
+|------------|--------------|--------------|
+| LangChain | <5 | Low (OSS focus) |
+| Humanloop | <10 | Low |
+| OpenAI | 50+ | Medium (broad claims) |
+| Google | 200+ | Low (different focus) |
+| Microsoft | 150+ | Low (different focus) |
+
+**Assessment:** No identified patent infringement risks. OpenAI has broad patents but primarily focused on model architecture, not orchestration/infrastructure.
+
+---
+
+## IP Assignment & Chain of Title
+
+### Employee IP Assignments
+
+All Example AI employees have signed:
+1. **Proprietary Information and Inventions Assignment Agreement (PIIA)** - At hire
+2. **Patent Assignment** - For each invention disclosure
+
+| Category | Coverage |
+|----------|----------|
+| Current employees | 100% |
+| Former employees (inventors) | 100% |
+| Contractors | N/A (no inventor contributions) |
+
+### Inventor Confirmations
+
+All named inventors have signed confirmatory assignments for their respective patents/applications.
+
+---
+
+## Patent Maintenance & Costs
+
+### Annual Patent Costs
+
+| Category | Annual Cost |
+|----------|-------------|
+| USPTO Maintenance Fees | $12,000 |
+| Foreign Maintenance | $45,000 |
+| Prosecution Costs | $85,000 |
+| FTO/Clearance | $25,000 |
+| **Total** | **$167,000** |
+
+### Upcoming Maintenance Actions
+
+| Patent/Application | Action | Due Date | Cost |
+|--------------------|--------|----------|------|
+| US 11,XXX,XXX | 3.5-year maintenance | Q2 2029 | $2,000 |
+| EP 4,XXX,XXX | Annuity Year 3 | Q1 2027 | $1,500 |
+| US 17/XXX,XXX | Issue fee | TBD | $1,200 |
+
+---
+
+## Trade Secrets
+
+In addition to patents, Example AI maintains trade secrets for:
+
+| Trade Secret | Protection Measures |
+|--------------|---------------------|
+| Provider performance benchmarks | Access controls, NDA |
+| Routing algorithm parameters | Code obfuscation, limited access |
+| Customer usage patterns | Anonymization, encryption |
+| Cost optimization models | Proprietary, not disclosed |
+
+---
+
+## IP Counsel
+
+| Role | Firm/Name | Contact |
+|------|-----------|---------|
+| Patent Prosecution | Fish & Richardson | patent-team@example-ai.com |
+| IP Litigation (if needed) | Quinn Emanuel | - |
+| FTO/Clearance | Cooley LLP | - |
+| International | Bird & Bird | - |
+
+---
+
+*Document prepared for M&A due diligence purposes*
+*Patent numbers redacted for confidentiality*
+*Data as of September 30, 2026*

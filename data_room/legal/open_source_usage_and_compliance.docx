@@ -1,0 +1,294 @@
+# Example AI, Inc. - Open Source Usage and Compliance
+
+**Confidential - M&A Due Diligence**
+**As of: September 30, 2026**
+
+---
+
+## Executive Summary
+
+Example AI maintains a rigorous open source compliance program to manage licensing risks and ensure proper attribution. The platform primarily uses permissively licensed components (MIT, Apache 2.0, BSD) with no copyleft (GPL) dependencies in the core commercial product. The company also contributes to and maintains several open source projects to build developer community and ecosystem adoption.
+
+---
+
+## Open Source Policy Overview
+
+### Governance Framework
+
+**Open Source Review Board (OSRB):**
+- Chair: CTO (Daniel Kim)
+- Members: VP Engineering, Staff Security Engineer, Legal Counsel
+- Meeting Cadence: Monthly + ad-hoc for new dependencies
+
+**Policy Principles:**
+1. Prefer permissive licenses (MIT, Apache 2.0, BSD) for all dependencies
+2. Copyleft licenses (GPL, LGPL, AGPL) require OSRB approval
+3. All dependencies must be scanned before inclusion
+4. Proper attribution maintained in NOTICES file
+5. No proprietary code contributed to open source without approval
+
+### License Classification
+
+| Category | Allowed | Approval Required | Prohibited |
+|----------|---------|-------------------|------------|
+| MIT | Yes | No | - |
+| Apache 2.0 | Yes | No | - |
+| BSD (2/3 clause) | Yes | No | - |
+| ISC | Yes | No | - |
+| MPL 2.0 | Case-by-case | OSRB | - |
+| LGPL | Case-by-case | OSRB + Legal | - |
+| GPL v2/v3 | - | - | Yes |
+| AGPL | - | - | Yes |
+| SSPL | - | - | Yes |
+| Proprietary | - | - | Yes |
+
+---
+
+## Open Source Bill of Materials (SBOM)
+
+### Summary Statistics
+
+| Metric | Count |
+|--------|-------|
+| Total Direct Dependencies | 342 |
+| Total Transitive Dependencies | 1,847 |
+| Languages | Python, TypeScript, Go, Rust |
+| Permissive Licensed | 98.2% |
+| Weak Copyleft (LGPL/MPL) | 1.8% |
+| Strong Copyleft (GPL/AGPL) | 0% |
+
+### Dependency Breakdown by Language
+
+#### Python Dependencies (Core Platform)
+
+| Package | Version | License | Purpose |
+|---------|---------|---------|---------|
+| FastAPI | 0.104.x | MIT | API framework |
+| Pydantic | 2.5.x | MIT | Data validation |
+| SQLAlchemy | 2.0.x | MIT | Database ORM |
+| Redis | 5.0.x | MIT | Caching |
+| Celery | 5.3.x | BSD-3 | Task queue |
+| httpx | 0.25.x | BSD-3 | HTTP client |
+| NumPy | 1.26.x | BSD-3 | Numerical computing |
+| PyTorch | 2.1.x | BSD-3 | ML framework |
+| Transformers | 4.36.x | Apache 2.0 | LLM utilities |
+| LangChain | 0.1.x | MIT | LLM orchestration |
+| tiktoken | 0.5.x | MIT | Token counting |
+| openai | 1.6.x | MIT | OpenAI SDK |
+| anthropic | 0.8.x | MIT | Anthropic SDK |
+| boto3 | 1.34.x | Apache 2.0 | AWS SDK |
+| google-cloud-* | various | Apache 2.0 | GCP SDK |
+| prometheus-client | 0.19.x | Apache 2.0 | Metrics |
+| structlog | 23.2.x | Apache 2.0 | Logging |
+| cryptography | 41.x | Apache 2.0 | Encryption |
+
+#### TypeScript/JavaScript Dependencies (Frontend/SDK)
+
+| Package | Version | License | Purpose |
+|---------|---------|---------|---------|
+| React | 18.2.x | MIT | UI framework |
+| Next.js | 14.x | MIT | Web framework |
+| TypeScript | 5.3.x | Apache 2.0 | Type system |
+| TailwindCSS | 3.4.x | MIT | Styling |
+| Recharts | 2.10.x | MIT | Charts |
+| Zustand | 4.4.x | MIT | State management |
+| React Query | 5.x | MIT | Data fetching |
+| Zod | 3.22.x | MIT | Validation |
+| Axios | 1.6.x | MIT | HTTP client |
+
+#### Go Dependencies (Infrastructure Services)
+
+| Package | Version | License | Purpose |
+|---------|---------|---------|---------|
+| gin | 1.9.x | MIT | HTTP framework |
+| gorm | 1.25.x | MIT | ORM |
+| zap | 1.26.x | MIT | Logging |
+| viper | 1.18.x | MIT | Configuration |
+| grpc-go | 1.60.x | Apache 2.0 | RPC framework |
+| prometheus/client | 1.17.x | Apache 2.0 | Metrics |
+
+#### Rust Dependencies (Performance-Critical)
+
+| Package | Version | License | Purpose |
+|---------|---------|---------|---------|
+| tokio | 1.35.x | MIT | Async runtime |
+| axum | 0.7.x | MIT | Web framework |
+| serde | 1.0.x | MIT/Apache 2.0 | Serialization |
+| tracing | 0.1.x | MIT | Observability |
+
+### Weak Copyleft Dependencies (Approved Exceptions)
+
+| Package | License | Justification | Isolation Method |
+|---------|---------|---------------|------------------|
+| GNU readline | LGPL | CLI tooling only | Dynamic linking |
+| LGPL fonts | LGPL | UI display | Standard font usage |
+| chardet | LGPL | Encoding detection | Process isolation |
+
+**Note:** All LGPL dependencies are dynamically linked or process-isolated, maintaining compliance with LGPL requirements and avoiding copyleft propagation to our proprietary code.
+
+---
+
+## Open Source Scanning & Compliance Tools
+
+### Toolchain
+
+| Tool | Purpose | Integration |
+|------|---------|-------------|
+| Snyk | Vulnerability scanning | CI/CD pipeline |
+| FOSSA | License compliance | Pre-merge check |
+| Dependabot | Dependency updates | GitHub automation |
+| Trivy | Container scanning | Docker build |
+| OSS Review Toolkit | SBOM generation | Release process |
+
+### Compliance Workflow
+
+```
+1. Developer adds dependency
+    ↓
+2. Pre-commit hook checks license
+    ↓
+3. CI/CD runs FOSSA scan
+    ↓
+4. Blocked if prohibited license detected
+    ↓
+5. OSRB review if weak copyleft
+    ↓
+6. Approved dependencies added to allowlist
+    ↓
+7. SBOM updated at release
+```
+
+### Vulnerability Management
+
+| Severity | SLA | Current Open |
+|----------|-----|--------------|
+| Critical | 24 hours | 0 |
+| High | 7 days | 2 |
+| Medium | 30 days | 8 |
+| Low | 90 days | 15 |
+
+**Current Status:** No critical or high-severity vulnerabilities in production dependencies.
+
+---
+
+## Example AI Open Source Contributions
+
+### Projects Maintained by Example AI
+
+| Project | License | Stars | Description |
+|---------|---------|-------|-------------|
+| example-ai-sdk | MIT | 4,200 | Official Python SDK |
+| example-ai-js | MIT | 2,800 | Official JavaScript SDK |
+| llm-benchmark-suite | Apache 2.0 | 1,500 | LLM evaluation framework |
+| prompt-templates | MIT | 980 | Community prompt library |
+
+### External Project Contributions
+
+| Project | Contribution Type | Status |
+|---------|-------------------|--------|
+| LangChain | Code contributions | Active contributor |
+| Hugging Face Transformers | Bug fixes, docs | Periodic |
+| FastAPI | Documentation | Periodic |
+| OpenTelemetry | Instrumentation plugins | Active |
+
+### Contributor License Agreements (CLAs)
+
+All Example AI employees contributing to external projects have signed appropriate CLAs. Internal CLA bot ensures compliance before merging external contributions.
+
+---
+
+## Compliance Certifications & Audits
+
+### Third-Party Audits
+
+| Audit | Date | Result | Next Review |
+|-------|------|--------|-------------|
+| FOSSA License Audit | Q2 2026 | Pass | Q2 2027 |
+| Black Duck Scan | Q3 2026 | Pass | Q3 2027 |
+| SOC 2 (incl. OSS review) | Q1 2026 | Pass | Q1 2027 |
+
+### License Compliance Attestation
+
+> "Example AI, Inc. attests that its commercial products do not contain any GPL, AGPL, SSPL, or other strong copyleft licensed code. All open source dependencies are properly licensed under permissive terms (MIT, Apache 2.0, BSD) or approved weak copyleft licenses used in compliance with their respective terms."
+>
+> — CTO, Example AI, Inc.
+
+---
+
+## Risk Assessment
+
+### License Risk Summary
+
+| Risk Category | Status | Mitigation |
+|---------------|--------|------------|
+| Copyleft contamination | Low | No GPL/AGPL in codebase |
+| Attribution compliance | Low | Automated NOTICES generation |
+| Vulnerability exposure | Low | Continuous scanning |
+| Supply chain risk | Medium | SBOM tracking, pinned versions |
+| Dependency abandonment | Medium | Fork capability, alternatives identified |
+
+### Known Issues & Remediation
+
+| Issue | Status | Remediation Plan |
+|-------|--------|------------------|
+| None | N/A | N/A |
+
+---
+
+## M&A Considerations
+
+### IP Clean Room Analysis
+
+1. **No copyleft code in commercial product:** Verified via FOSSA scan
+2. **All contributions from employees:** CLA signed, IP assigned to company
+3. **No third-party code without license:** All code scanned and attributed
+4. **Export control compliance:** No restricted cryptography implementations
+
+### Due Diligence Deliverables Available
+
+- [ ] Complete SBOM (CycloneDX format)
+- [ ] FOSSA license compliance report
+- [ ] Snyk vulnerability report
+- [ ] NOTICES file with all attributions
+- [ ] Open source policy documentation
+- [ ] CLA records for all contributors
+- [ ] Third-party audit reports
+
+---
+
+## Appendix: NOTICES File (Excerpt)
+
+```
+EXAMPLE AI, INC. - OPEN SOURCE NOTICES
+
+This product includes software developed by third parties under the following licenses:
+
+================================================================================
+FastAPI
+Copyright (c) 2018-present Sebastian Ramirez
+Licensed under MIT License
+https://github.com/tiangolo/fastapi
+================================================================================
+
+================================================================================
+PyTorch
+Copyright (c) Facebook, Inc. and its affiliates
+Licensed under BSD-3-Clause License
+https://github.com/pytorch/pytorch
+================================================================================
+
+================================================================================
+Transformers
+Copyright (c) 2018-present Hugging Face
+Licensed under Apache License 2.0
+https://github.com/huggingface/transformers
+================================================================================
+
+[... continued for all 342 direct dependencies ...]
+```
+
+---
+
+*Document prepared for M&A due diligence purposes*
+*Full SBOM and audit reports available upon request*
+*Data as of September 30, 2026*

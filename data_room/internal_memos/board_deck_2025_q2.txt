@@ -1,0 +1,710 @@
+EXAMPLE AI, INC.
+BOARD OF DIRECTORS MEETING
+Q2 2025 UPDATE
+
+Confidential - Board Members Only
+June 20, 2025
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+AGENDA
+
+1. Q2 2025 Business Performance
+2. Product & Engineering Update
+3. Go-to-Market Execution
+4. Team & Operations
+5. Series B Strategy & Timeline
+6. H2 2025 Planning
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+EXECUTIVE SUMMARY - A PIVOTAL QUARTER
+
+⚠ ARR reached $1.8M (Q2 ending), significantly below $5.2M target
+⚠ Severe revenue headwinds: customer concentration issues surfaced
+⚠ Top customer (GlobalBank) paused expansion due to internal budget freeze
+⚠ 3 enterprise deals slipped to Q3 ($420K ARR)
+⚠ Churn spike: 2 mid-size customers churned ($128K ARR lost)
+✓ Product execution strong: shipped all roadmap items
+✓ Leadership team complete: VP Marketing & VP Product hired
+✓ Team morale resilient despite challenges
+→ Board decision required: Extend runway or accelerate Series B
+
+Note: This represents the Q2 board update referenced in the current
+board_update_q2.txt memo showing $1.8M ARR and 6-month runway concerns.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FINANCIAL PERFORMANCE - Q2 REALITY CHECK
+
+Revenue Metrics (as of June 1, 2025)
+─────────────────────────────────────────
+ARR:                           $1,800,000
+MRR:                           $150,000
+QoQ Growth:                    -52% (contraction)
+YoY Growth:                    60%
+
+Q2 ARR Movement Analysis:
+Starting ARR (April 1):        $3,720,000
+New Bookings:                  $285,000
+Expansion:                     $95,000
+Churn:                         -$2,128,000 (crisis)
+Contraction:                   -$172,000
+Ending ARR (June 30):          $1,800,000
+
+What Happened - The Full Story:
+─────────────────────────────────────────
+MAJOR CHURN EVENT:
+GlobalBank Corp (our largest customer: $245K ARR)
+→ Did not churn, but paused expansion and reduced to $60K ARR
+→ Reason: Internal AI initiative budget frozen company-wide
+→ Contract restructured to smaller scope
+
+TOP 10 CUSTOMER CONCENTRATION CRISIS:
+When we audited revenue recognition practices in April (new CFO),
+we discovered significant issues:
+
+1. Revenue Recognition Errors:
+   - Several enterprise contracts had been recognized upfront
+   - Should have been recognized ratably over contract term
+   - CFO Michael Chen identified $1.92M in overstated ARR from Q1
+
+2. Actual Q1 ARR was ~$1.8M, not $3.72M
+   - Booked revenue ≠ Recognized revenue
+   - Poor financial controls from pre-CFO era
+   - Board was reporting inflated numbers unintentionally
+
+3. Customer Concentration Reality:
+   - Top 5 customers = 78% of actual ARR
+   - GlobalBank reduction had outsized impact
+   - Lost 2 other customers due to budget cuts ($128K combined)
+
+Cash Position - URGENT
+─────────────────────────────────────
+Starting Cash (April 1):      $34.4M
+Current Cash (June 1):         $31.8M
+Q2 Burn:                       $2.6M ($867K/mo)
+Runway:                        6.0 months (conservative forecast)
+
+Q2 Burn Analysis (elevated):
+- Personnel (48 FTE):          $420K/mo
+- Cloud/GPU Infrastructure:    $265K/mo (committed contracts)
+- Sales & Marketing:           $115K/mo
+- Other:                       $67K/mo
+
+Why Burn Elevated:
+- Revenue did not scale as expected (lower offset)
+- GPU lease commitments locked in ($2.4M annual, can't exit easily)
+- Headcount at 48 (hired based on inflated growth expectations)
+
+Cash Flow Projection (Current Trajectory):
+Q3 2025:                       -$2.4M
+Q4 2025:                       -$2.0M
+Cash Depletion:                December 2025 (without action)
+
+Customer Metrics (Corrected):
+─────────────────────────────────────────
+Total Customers:               68 (down from 152 after audit)
+Enterprise (>$50K ARR):        8 (down from 38)
+Mid-Market ($10K-50K):         22
+SMB (<$10K):                   38
+Net Dollar Retention:          48% (crisis level)
+Gross Dollar Retention:        82%
+Avg Contract Value:            $26,500
+
+Note on Customer Count Correction:
+- Q1 count of 152 included free tier users incorrectly
+- Actual paying customers: 68
+- Another financial controls gap identified by CFO
+
+ARR by Segment (Actual):
+Enterprise (>$50K):            $680K (38%)
+Mid-Market:                    $650K (36%)
+SMB:                           $470K (26%)
+
+Top Customers (June 2025):
+1. Titan Insurance             $245K (only Fortune 500 remaining)
+2. MediCore Health             $180K
+3. Apex Financial              $152K
+4. StreamVault Tech            $128K
+5. Vertex Systems              $125K
+6. DataFlow Systems            $105K (down from $195K - contraction)
+7. Helix Pharma               $98K
+8. MicroSolutions              $87K
+9. Quantum Dynamics            $78K (down from $168K - contraction)
+10. GlobalBank Corp            $60K (down from $245K - major contraction)
+
+Top 10 = 85% of ARR (extreme concentration)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ROOT CAUSE ANALYSIS - WHAT WENT WRONG
+
+1. Financial Controls & Reporting Failure
+─────────────────────────────────────────
+Issue: Revenue recognition practices were incorrect
+- Booked revenue reported as ARR (should be recognized revenue)
+- No finance function until CFO hired in Feb 2025
+- Founders + early team didn't understand ASC 606 compliance
+
+Impact:
+- Q1 ARR overstated by $1.92M (actual: $1.8M, reported: $3.72M)
+- Customer count overstated (152 reported, 68 actual paying)
+- Board and investors misled unintentionally
+- Growth narrative was false
+
+CFO Actions Taken:
+✓ Full revenue audit completed (April-May)
+✓ Implemented proper rev rec system (NetSuite)
+✓ Restated Q1 financials (painful but necessary)
+✓ Installed financial controls & monthly close process
+
+Learning: Should have hired CFO 12 months earlier
+
+2. Customer Concentration Risk Realized
+─────────────────────────────────────────
+Issue: Top 10 customers = 85% of ARR (extreme)
+- GlobalBank reduction ($245K → $60K) had massive impact
+- When top customers churn/contract, company is vulnerable
+- Did not diversify customer base fast enough
+
+Impact:
+- Single customer change wiped out growth
+- NRR crashed to 48%
+- Investor confidence at risk
+
+Mitigation Plan:
+→ Aggressive new logo acquisition (mid-market focus)
+→ Reduce top 10 concentration to <60% by EOY
+→ Diversify across industries & use cases
+
+3. GPU Hardware Lease Commitments
+─────────────────────────────────────────
+Issue: Locked into $2.4M annual GPU lease contracts
+- Signed in Q4 2024 based on growth projections
+- Cannot exit without penalties
+- Revenue didn't materialize, stuck with costs
+
+Impact:
+- Burn rate elevated by $200K/mo
+- Fixed costs with variable revenue = bad unit economics
+
+Actions:
+→ Negotiating with AMD to restructure lease (in progress)
+→ Exploring sublease options
+→ Shift to consumption-based pricing where possible
+
+4. Sales Execution Challenges
+─────────────────────────────────────────
+Issue: Sales team underperformed in Q2
+- Only $285K new bookings vs $1.2M+ target
+- 3 large deals slipped to Q3 ($420K pipeline)
+- Sales cycle lengthened (72 days avg vs 58 in Q1)
+
+Contributing Factors:
+- Macro headwinds (enterprise AI budget scrutiny)
+- Competitive pressure (AWS Bedrock, OpenAI)
+- Product gaps for certain use cases
+
+Actions:
+→ VP Sales James Park restructuring sales approach
+→ Focus on faster-closing mid-market deals
+→ Improve sales enablement & training
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PRODUCT & ENGINEERING UPDATE
+
+Q2 Shipped Features (Execution Remained Strong)
+──────────────────────────────────────────────
+✓ On-Device AI Support (Beta - April 15)
+  - Edge deployment for mobile/IoT use cases
+  - 6 customers in beta
+
+✓ Financial Services Compliance Module (GA - May 1)
+  - SOC2, PCI-DSS, FINRA compliance
+  - 3 financial services customers using
+
+✓ Enterprise Governance & Policy Engine (Beta - May 20)
+  - Centralized policy management
+  - Audit trails & compliance reporting
+  - 8 enterprise customers in beta
+
+✓ White-Label / OEM Offering (Pilot - June 1)
+  - 3 partners signed for pilot
+  - Revenue share model being tested
+
+Platform Performance (Q2)
+──────────────────────────
+Uptime:                        99.89%
+API Requests (Q2):             242M (down from 628M in Q1 due to churn)
+Tokens Processed:              32B tokens
+P95 Latency:                   385ms (excellent)
+Supported LLM Providers:       22
+
+Engineering Team
+──────────────────────────
+Current: 28 engineers (holding steady)
+
+No new hires in Q2 due to hiring freeze (implemented May 1)
+
+Q3 Product Roadmap (Scaled Back):
+→ Focus on retention features (not new customer acquisition)
+→ Advanced analytics for cost optimization
+→ Customer success automation
+→ Integration marketplace (partners build on our platform)
+
+Technical Debt Focus:
+- Infrastructure cost optimization (reduce cloud spend)
+- Improve product stickiness (increase switching costs)
+- Build features that drive expansion revenue
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+GO-TO-MARKET UPDATE
+
+Sales Performance
+─────────────────────────────────────
+Q2 New Bookings:              $285K (77% miss vs target)
+Enterprise Deals Closed:       3 (vs 12 target)
+Avg Enterprise ACV:            $95K
+Sales Cycle (Enterprise):      72 days (lengthening)
+Win Rate (Enterprise):         31% (down from 47%)
+
+Sales Team (Hiring Freeze Implemented May 1):
+- VP Sales: James Park
+- Account Executives: 6 (no new hires)
+- SDRs: 4
+- Sales Engineers: 3
+- Sales Ops: 1
+
+Pipeline Coverage:
+Q3 2025 Pipeline:              $1.8M (down from $4.8M)
+Enterprise Pipeline:           22 active opps (down from 52)
+Weighted Q3 Pipeline:          $560K
+
+Pipeline Deterioration Analysis:
+- 12 opportunities pushed to 2026
+- 8 opportunities lost to competition
+- 6 opportunities "no decision" (budget frozen)
+
+Win/Loss Analysis (Q2):
+Wins: 12 (3 enterprise, 9 mid-market/SMB)
+Losses: 18 (competitive losses increased)
+No Decision: 24 (macro headwinds)
+
+Top Loss Reasons:
+1. Budget/timing (14 losses) - macro environment
+2. Lost to AWS Bedrock (8 losses) - bundling advantage
+3. Lost to cheaper alternatives (6 losses) - price pressure
+4. Feature gaps (4 losses)
+
+Marketing Update
+─────────────────────────────────────
+VP Marketing Hired:
+✓ Sarah Rodriguez (April 1) - ex-HashiCorp, ex-Datadog
+  - Restructuring marketing strategy
+  - Focus shifting from growth to efficiency
+
+Website Traffic:               88K monthly (down 16% from Q1)
+Inbound Leads:                 1,240/month (down 33%)
+Free Tier Sign-ups:            1,580/month (down 25%)
+Free → Paid Conversion:        8.2% (declining)
+
+Marketing Pivot (May):
+→ Paused paid acquisition (burn reduction)
+→ Focus on organic & community
+→ Content marketing for existing customer expansion
+→ Case studies & social proof
+
+Partnerships Update
+─────────────────────────────────────
+Some bright spots:
+
+AWS Marketplace:               $185K ARR (growing)
+Snowflake Partnership:         $142K ARR (stable)
+Azure Marketplace:             $68K ARR (new)
+
+Partnership ARR:               $395K (22% of total ARR)
+
+Partnerships are most efficient channel - will double down
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TEAM & OPERATIONS - DIFFICULT DECISIONS AHEAD
+
+Headcount Summary
+──────────────────────────────────────
+Current (June 1):              48 FTE
+Hiring Freeze:                 Implemented May 1
+Target EOY 2025:               45 FTE (reduction from 78)
+
+Breakdown:
+Engineering:                   28 (58%)
+Sales & Marketing:             12 (25%)
+Product:                       4 (8%)
+Customer Success:              2 (4%)
+Operations/Finance/HR:         2 (4%)
+
+Q2 Leadership Hires (Completed Before Freeze):
+──────────────────────────────────────────────
+✓ Sarah Rodriguez - VP Marketing (April 1)
+  - Leading marketing efficiency pivot
+
+✓ David Kim - VP Product (May 1)
+  - Focusing on retention & expansion features
+
+Leadership Team Now Complete:
+- CEO: Alex Morgan (Founder)
+- CTO: Jamie Chen (Founder)
+- CFO: Michael Chen
+- VP Engineering: Sarah Mitchell
+- VP Sales: James Park
+- VP Marketing: Sarah Rodriguez
+- VP Product: David Kim
+
+Workforce Planning - Tough Decisions
+──────────────────────────────────────
+Current Situation:
+- 48 FTE with $1.8M ARR = unsustainable burn
+- Need to reduce to ~32-35 FTE for runway extension
+- Evaluating 13-15 person reduction (layoff)
+
+Timeline:
+- Board approval required for layoff plan
+- Target execution: July (if approved)
+- Estimated savings: $180K/mo reduction in personnel costs
+
+Retention Priorities (If Layoff Approved):
+1. Engineering: Core platform team (reduce from 28 to 20)
+2. Sales: Top performers only (reduce from 6 AEs to 4)
+3. Product: Retain VP + 2 PMs (reduce from 4 to 3)
+4. CS: Retain both CSMs (critical for retention)
+5. Marketing: VP + 2 core team (reduce from 7 to 3)
+
+Attrition & Morale
+──────────────────────────────────────
+Q2 Attrition:                  2 voluntary departures
+Retention Rate:                96% (still strong)
+eNPS:                          7.2/10 (declining)
+Engagement Score:              76% (down from 88%)
+
+Morale Impact:
+- Team aware of challenges (transparent communication)
+- Some anxiety about potential layoffs
+- Leadership being candid with team
+
+Actions to Support Team:
+→ Weekly all-hands with Q&A (transparency)
+→ 1:1s with leadership for concerned employees
+→ Clear communication about path forward once decided
+
+Operational Changes (Cost Reduction)
+──────────────────────────────────────
+Actions Taken (May-June):
+✓ Paused NYC office expansion (saving $8K/mo)
+✓ Renegotiated SaaS contracts (saving $12K/mo)
+✓ Reduced travel & events budget (saving $15K/mo)
+✓ Paused non-essential vendors (saving $18K/mo)
+
+In Progress:
+→ GPU lease renegotiation with AMD (target: $80K/mo savings)
+→ Cloud infrastructure optimization (target: $40K/mo savings)
+→ Office space sublease exploration (SF HQ)
+
+CFO Leading Cost Reduction Workstream:
+Target: Reduce monthly burn from $867K to $450K by August
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+STRATEGIC OPTIONS - BOARD DECISION REQUIRED
+
+We face a critical decision point. Three primary options:
+
+OPTION 1: EXTEND RUNWAY + RESTRUCTURE
+─────────────────────────────────────────
+Actions:
+• Implement workforce reduction (13-15 people)
+• Renegotiate GPU leases (AMD discussions ongoing)
+• Reduce burn to $450K/mo (from $867K/mo)
+• Focus on core customers & expansion revenue
+• Delay Series B to Q2 2026 (when metrics improve)
+
+Projected Outcome:
+• Runway extends to 18+ months
+• ARR growth modest ($2.5-3M by EOY 2025)
+• Smaller team focused on efficiency
+• Series B possible in 2026 if execution improves
+
+Pros:
++ Extends runway without external capital
++ Demonstrates financial discipline to future investors
++ Allows time to rebuild metrics
++ Avoids down round
+
+Cons:
+- Layoffs damage morale
+- Slower growth trajectory
+- Competitive risk (competitors gaining ground)
+- Uncertainty with team & customers
+
+OPTION 2: RAISE BRIDGE ROUND NOW
+─────────────────────────────────────────
+Actions:
+• Raise $5-8M bridge from existing investors (Stellar, Aurora, etc.)
+• Use bridge to extend runway 12 months
+• Implement moderate cost reductions (no layoffs)
+• Focus on sales execution & new logo acquisition
+• Raise Series B in Q4 2025 from position of stability
+
+Projected Outcome:
+• Runway through Q2 2026
+• ARR growth to $4-5M by EOY 2025
+• Maintain team & momentum
+• Series B from better position
+
+Pros:
++ Avoids layoffs
++ Maintains team morale
++ More time for sales execution
++ Can invest in growth
+
+Cons:
+- Dilution to existing shareholders
+- Down round concerns (lower valuation)
+- Bridge terms may be onerous (high interest, warrants)
+- Still need Series B in 6-12 months
+
+OPTION 3: ACCELERATE SERIES B NOW
+─────────────────────────────────────────
+Actions:
+• Launch Series B fundraise immediately (July)
+• Accept current metrics ($1.8M ARR, challenged growth)
+• Target smaller raise ($30-40M vs $75-100M original plan)
+• Accept lower valuation ($200-250M vs $500-600M)
+• Focus on investors who understand the story
+
+Projected Outcome:
+• Raise $30-40M at lower valuation
+• Runway through 2027
+• Ability to invest in growth
+• Significant dilution
+
+Pros:
++ Solves cash problem definitively
++ Can invest in growth & sales
++ Demonstrates investor confidence
++ Avoids layoffs
+
+Cons:
+- Significant dilution (down round from $150M Series A)
+- Difficult fundraising environment (current metrics weak)
+- May not be able to raise at all
+- Damages company narrative & founder morale
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MANAGEMENT RECOMMENDATION
+
+Recommended Path: OPTION 1 (Extend Runway + Restructure)
+
+Rationale:
+1. We have the cash to extend runway ourselves (no external dependency)
+2. Current metrics too weak for Series B (would be heavily dilutive down round)
+3. Bridge round terms likely onerous given current position
+4. Financial discipline demonstrates maturity to future investors
+5. Gives us time to rebuild metrics & narrative
+
+Proposed Action Plan:
+─────────────────────────────────────────
+Immediate (July 2025):
+✓ Implement workforce reduction: 13 people (to 35 FTE)
+  - Engineering: 28 → 20
+  - Sales: 8 → 5 (VP + 4 AEs)
+  - Marketing: 7 → 3 (VP + 2)
+  - Product: 4 → 3
+  - CS: 2 → 2 (retain both)
+  - Ops: 2 → 2 (retain CFO team)
+
+✓ Finalize GPU lease renegotiation (target: 50% reduction)
+✓ Implement all cost reduction measures
+✓ Target burn: $450K/mo (52% reduction)
+
+Q3 2025:
+→ Focus on existing customer expansion (drive NRR to 110%+)
+→ Close 3 slipped enterprise deals ($420K pipeline)
+→ Win 5 new mid-market customers ($250K ARR)
+→ Target: $2.2M ARR by Sept 30
+
+Q4 2025:
+→ Continue new logo acquisition (efficient channels: partnerships)
+→ Launch integration marketplace (ecosystem play)
+→ Target: $2.8M ARR by Dec 31
+
+2026 Plan:
+→ Rebuild to 25-30% QoQ growth
+→ NRR back to 120%+
+→ Diversify customer base (reduce top 10 to <60%)
+→ Raise Series B Q2 2026 at fair valuation ($250-300M)
+
+Financial Impact of Recommended Plan:
+─────────────────────────────────────────
+Current State:
+Burn: $867K/mo, Runway: 6 months
+
+Post-Restructuring (August 2025):
+Burn: $450K/mo, Runway: 18 months
+
+ARR Targets:
+Q3 2025: $2.2M
+Q4 2025: $2.8M
+Q2 2026: $5.0M (Series B raise timing)
+
+Cost Structure Post-Restructuring:
+Personnel (35 FTE):        $285K/mo
+Infrastructure:            $125K/mo (post GPU renegotiation)
+Sales & Marketing:         $28K/mo
+Other:                     $12K/mo
+Total:                     $450K/mo
+
+With revenue scaling, burn reduces further:
+Q3 2025: $420K/mo
+Q4 2025: $380K/mo
+Q1 2026: $350K/mo
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CUSTOMER RETENTION & EXPANSION PLAN
+
+Given ARR situation, retention & expansion are critical.
+
+At-Risk Customer Management:
+─────────────────────────────────────────
+Red Accounts (High Churn Risk): 4 customers, $385K ARR
+- GlobalBank (already contracted, managing relationship)
+- DataFlow Systems (usage declining, CSM engaged)
+- Quantum Dynamics (budget concerns flagged)
+- NovaTech (champion left company)
+
+Actions:
+→ Executive sponsor assigned (CEO/CTO)
+→ Weekly check-ins
+→ Custom success plans
+→ Discounting if necessary to retain
+
+Yellow Accounts (Moderate Risk): 8 customers, $520K ARR
+
+Actions:
+→ CSM-led health improvement plans
+→ Product training & adoption programs
+→ Quarterly business reviews
+
+Expansion Opportunities:
+─────────────────────────────────────────
+Top 10 Expansion Targets: $680K potential expansion ARR
+
+1. Titan Insurance: $245K → $380K (new use cases identified)
+2. MediCore Health: $180K → $265K (expanding to 3 departments)
+3. Apex Financial: $152K → $220K (higher volume)
+4. StreamVault: $128K → $185K (new product integration)
+5. Vertex Systems: $125K → $175K (additional users)
+
+Expansion Playbook:
+→ Usage-based expansion (volume discounts)
+→ New use case identification (workshops)
+→ Executive sponsor program
+→ Co-marketing opportunities (case studies)
+
+Target: $480K expansion ARR in H2 2025
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+COMMUNICATION PLAN - STAKEHOLDERS
+
+If Board Approves Restructuring:
+
+Employees (July 1):
+- All-hands meeting with CEO
+- Transparent explanation of situation
+- Severance package details (2 months + benefits)
+- Support for affected employees (job search, references)
+- Retention plan for remaining team
+
+Customers (July 2):
+- Proactive communication from CEO/CTO
+- Reassurance about product continuity
+- Commitment to support & SLAs
+- No customer-facing disruption
+
+Investors (Ongoing):
+- Current board deck provides full transparency
+- Monthly updates on restructuring progress
+- Clear path to recovery & Series B readiness
+
+Partners (As Needed):
+- AMD (GPU lease renegotiation)
+- AWS, Snowflake (reassurance about partnership)
+
+Press/Public:
+- No proactive communication
+- Prepared statement if media inquires
+- Focus on financial discipline & long-term vision
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BOARD ASKS - URGENT DECISIONS REQUIRED
+
+1. **APPROVE RESTRUCTURING PLAN**
+   - Workforce reduction: 48 FTE → 35 FTE (13 person layoff)
+   - Severance budget: $520K (2 months per person + benefits)
+   - Timeline: Execute July 2025
+
+2. **APPROVE GPU LEASE RENEGOTIATION AUTHORITY**
+   - Authorize CEO to restructure AMD lease
+   - Target: 50% reduction ($120K/mo savings)
+   - May require exit fees or extended term
+
+3. **APPROVE REVISED 2025 PLAN**
+   - Lower ARR target: $2.8M (from $10.2M)
+   - Lower headcount: 35 FTE (from 78)
+   - Lower burn: $450K/mo (from plan)
+   - Delay Series B to Q2 2026
+
+4. **GUIDANCE ON ALTERNATIVE OPTIONS**
+   - If board prefers Option 2 (bridge) or Option 3 (Series B now),
+     management needs clear direction
+   - Bridge terms: What dilution/terms are acceptable?
+   - Series B now: What valuation floor is acceptable?
+
+5. **BOARD SUPPORT & INVOLVEMENT**
+   - Introductions to bridge investors (if pursuing Option 2)
+   - Help with customer retention (executive relationships)
+   - Guidance on communication strategy
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CLOSING REMARKS - DIFFICULT BUT NECESSARY
+
+This is the hardest board deck we've presented. We made mistakes:
+• Financial controls were insufficient
+• Customer concentration risk was not managed
+• We over-hired based on inflated metrics
+• We locked into GPU commitments prematurely
+
+However, we have strong assets:
+✓ Exceptional product & technology
+✓ World-class leadership team
+✓ Loyal customer base (despite challenges)
+✓ Strong partnerships (AWS, Snowflake, etc.)
+✓ Enough cash to control our destiny
+
+We believe the right path is to restructure, extend runway, rebuild metrics,
+and raise Series B from a position of strength in 2026.
+
+This will be painful in the short term, but it sets us up for long-term success.
+
+We need the board's support and guidance to navigate this period.
+
+Questions & Discussion
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

@@ -1,0 +1,60 @@
+Example AI, Inc. - Balance Sheet Snapshot
+As of: January 31, 2026
+All amounts in USD
+
+ASSETS
+
+Current Assets
+Cash and Cash Equivalents,155655000
+Accounts Receivable,4125000,~1.5 months of revenue
+Prepaid Expenses,850000
+Total Current Assets,160630000
+
+Non-Current Assets
+Property and Equipment,2400000,Office buildout and equipment
+Intangible Assets,500000,Patents and trademarks
+Total Non-Current Assets,2900000
+
+TOTAL ASSETS,163530000
+
+
+LIABILITIES
+
+Current Liabilities
+Accounts Payable,1850000
+Accrued Expenses,3200000,Includes accrued payroll and bonuses
+Deferred Revenue,6500000,Annual contracts paid upfront
+Current Portion of Lease Obligations,3168000,GPU & colo lease payments due within 12 months
+Total Current Liabilities,14718000
+
+Non-Current Liabilities
+Long-term Lease Obligations,481000,GPU & colo lease payments due beyond 12 months
+Long-term Debt,0
+Total Non-Current Liabilities,481000
+
+TOTAL LIABILITIES,15199000
+
+
+SHAREHOLDERS' EQUITY
+
+Common Stock,200000,50M shares at $0.004 par value
+Preferred Stock,0,See cap table for preference structure
+Additional Paid-in Capital,121350000,Total capital raised: $121.55M
+Retained Earnings,26781000,Cumulative profit since inception
+Total Shareholders' Equity,148331000
+
+TOTAL LIABILITIES & EQUITY,163530000
+
+
+KEY METRICS
+
+Monthly Recurring Revenue (MRR),3848000,As of January 2026
+Annual Run Rate (ARR),46176000
+Monthly Burn Rate,2177000,Outflows only (excludes revenue)
+Net Monthly Burn,0,Revenue positive since Q2 2025
+Runway,Infinite,Revenue > burn; cash reserve: $155.7M
+Employees,166,As of January 2026
+Cash per Employee,937680
+
+Total Capital Raised,121550000,Pre-Seed through Series B
+Post-Money Valuation,350000000,Series B - November 2025

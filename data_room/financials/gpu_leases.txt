@@ -1,0 +1,260 @@
+EXAMPLE AI, INC. - GPU COMPUTE AND COLOCATION LEASE AGREEMENTS
+================================================================================
+
+SUMMARY OF ACTIVE LEASES (as of January 31, 2026)
+--------------------------------------------------------------------------------
+Total Monthly Lease Commitment:        $264,000
+Total Annual Commitment:               $3,168,000
+GPU Units Under Lease:                 280 AMD MI355X GPUs
+Colocation Facilities:                 2 (Santa Clara, Austin)
+
+
+LEASE AGREEMENT DETAILS
+================================================================================
+
+LEASE #1: AMD MI355X GPU Cluster - Phase 1
+--------------------------------------------------------------------------------
+Lessor:                    CoreWeave GPU Solutions
+Lease Start Date:          March 1, 2023
+Lease End Date:            February 28, 2027
+Lease Term:                48 months (4 years)
+Monthly Payment:           $45,000
+
+Equipment:
+- 48x AMD MI355X GPUs (600W TDP each)
+- High-speed NVLink interconnect fabric
+- GPU memory: 128 GB HBM3 per GPU
+
+Colocation Facility:       Santa Clara Data Center (Equinix SV15)
+Rack Space:                8 racks
+Power Allocation:          120 kW
+Monthly Colo Fee:          $18,000 (included in monthly payment above)
+
+Notes:
+Initial GPU infrastructure investment to support ML training workloads.
+Secured favorable 4-year terms during early scaling phase.
+
+
+LEASE #2: AMD MI355X GPU Cluster - Phase 2
+--------------------------------------------------------------------------------
+Lessor:                    Lambda Labs Compute
+Lease Start Date:          October 1, 2023
+Lease End Date:            September 30, 2027
+Lease Term:                36 months (3 years)
+Status:                    TERMINATED (not renewed)
+
+Equipment:
+- 32x AMD MI355X GPUs
+- InfiniBand HDR200 networking
+- GPU memory: 128 GB HBM3 per GPU
+
+Colocation Facility:       Austin Data Center (Digital Realty ATX1)
+Rack Space:                4 racks
+Power Allocation:          60 kW
+Monthly Colo Fee:          $12,000 (included in monthly payment above)
+Final Monthly Payment:     $28,000
+
+Notes:
+Lease scheduled to end September 2027. May not renew as compute needs shifting
+to larger clusters with better economics. Equipment was transitioned to
+Lease #5 (same Austin facility, different lessor).
+
+
+LEASE #3: AMD MI355X GPU Cluster - Phase 3
+--------------------------------------------------------------------------------
+Lessor:                    CoreWeave GPU Solutions
+Lease Start Date:          June 1, 2024
+Lease End Date:            May 31, 2027
+Lease Term:                36 months (3 years)
+Monthly Payment:           $72,000
+
+Equipment:
+- 80x AMD MI355X GPUs
+- NVLink domain with GPU-Direct RDMA
+- GPU memory: 128 GB HBM3 per GPU
+- Redundant power and cooling
+
+Colocation Facility:       Santa Clara Data Center (Equinix SV15)
+Rack Space:                12 racks (expansion of existing footprint)
+Power Allocation:          180 kW
+Monthly Colo Fee:          $22,000 (included in monthly payment above)
+
+Notes:
+Expanded Santa Clara capacity to support Series A growth and increased
+ML inference demands. Negotiated volume discount with CoreWeave.
+
+
+LEASE #4: AMD MI355X GPU Cluster - Phase 4
+--------------------------------------------------------------------------------
+Lessor:                    Crusoe Energy Systems
+Lease Start Date:          February 1, 2025
+Lease End Date:            January 31, 2028
+Lease Term:                36 months (3 years)
+Monthly Payment:           $85,000
+
+Equipment:
+- 96x AMD MI355X GPUs
+- Advanced liquid cooling system
+- GPU memory: 128 GB HBM3 per GPU
+- Green energy powered (stranded gas)
+
+Colocation Facility:       Austin Data Center (Digital Realty ATX1)
+Rack Space:                14 racks
+Power Allocation:          240 kW
+Monthly Colo Fee:          $26,000 (included in monthly payment above)
+
+Notes:
+Strategic expansion to Austin facility for geographic redundancy and
+sustainability goals. Crusoe offers carbon-neutral compute using
+stranded natural gas. Supports disaster recovery and distributed training.
+
+
+LEASE #5: AMD MI355X GPU Cluster - Phase 5
+--------------------------------------------------------------------------------
+Lessor:                    Voltage Park
+Lease Start Date:          October 1, 2026
+Lease End Date:            September 30, 2028
+Lease Term:                24 months (2 years)
+Monthly Payment:           $62,000
+
+Equipment:
+- 56x AMD MI355X GPUs
+- High-frequency trading grade networking (sub-microsecond latency)
+- GPU memory: 128 GB HBM3 per GPU
+- Dedicated security and compliance controls
+
+Colocation Facility:       Santa Clara Data Center (Equinix SV15)
+Rack Space:                8 racks
+Power Allocation:          140 kW
+Monthly Colo Fee:          $16,000 (included in monthly payment above)
+
+Notes:
+Latest expansion signed October 2026. Shorter 2-year term provides
+flexibility as company evaluates M&A opportunities and future compute
+strategy. Replaces capacity from terminated Lease #2.
+
+
+COLOCATION SUMMARY
+================================================================================
+
+Santa Clara Data Center (Equinix SV15)
+--------------------------------------------------------------------------------
+Total Racks:               28 racks (Leases #1, #3, #5)
+Total Power:               440 kW
+Total GPUs:                184 AMD MI355X units
+Monthly Colo Costs:        $56,000
+Physical Security:         24/7 SOC 2 Type II certified facility
+Network Connectivity:      100 Gbps redundant fiber
+Geographic Coordinates:    37.3688° N, 121.9773° W
+
+
+Austin Data Center (Digital Realty ATX1)
+--------------------------------------------------------------------------------
+Total Racks:               14 racks (Lease #4)
+Total Power:               240 kW
+Total GPUs:                96 AMD MI355X units
+Monthly Colo Costs:        $26,000
+Physical Security:         24/7 SOC 2 Type II certified facility
+Network Connectivity:      100 Gbps redundant fiber
+Geographic Coordinates:    30.3547° N, 97.7394° W
+
+
+TOTAL COMPUTE CAPACITY
+================================================================================
+
+Active GPU Count:          280 AMD MI355X GPUs (across all active leases)
+Total Compute Power:       ~850 TFLOPS FP32
+Total GPU Memory:          35,840 GB (35 TB HBM3)
+Total Power Draw:          ~168 kW (GPUs only, under load)
+Total Facility Power:      680 kW (including cooling, networking, storage)
+
+
+FINANCIAL COMMITMENTS
+================================================================================
+
+Current Monthly Obligations (January 2026):
+- Lease #1 (CoreWeave, Santa Clara):    $45,000
+- Lease #3 (CoreWeave, Santa Clara):    $72,000
+- Lease #4 (Crusoe, Austin):            $85,000
+- Lease #2 (Lambda, Austin):            $28,000
+- Lease #5 (Crusoe Colab, Austin):      $34,000
+- TOTAL (January 2026):                 $264,000
+
+Future Monthly Obligations (February 2026 onwards):
+- Lease #1:                             $45,000 (ends Feb 2027)
+- Lease #3:                             $72,000 (ends May 2027)
+- Lease #4:                             $85,000 (ends Jan 2028)
+- Lease #5:                             $62,000 (ends Sep 2028)
+- TOTAL (Oct 2026+):                    $264,000
+
+
+Remaining Financial Obligations (as of Oct 1, 2026):
+- Lease #1: $225,000 (5 months remaining)
+- Lease #3: $576,000 (8 months remaining)
+- Lease #4: $1,360,000 (16 months remaining)
+- Lease #5: $1,488,000 (24 months remaining)
+- TOTAL REMAINING: $3,649,000
+
+
+Historical Monthly Lease Costs:
+2023-03 to 2023-09:    $45,000  (Lease #1 only)
+2023-10 to 2024-05:    $73,000  (Leases #1, #2)
+2024-06 to 2025-01:    $145,000 (Leases #1, #2, #3)
+2025-02 to 2026-09:    $230,000 (Leases #1, #2, #3, #4)
+2026-10 onwards:       $264,000 (Leases #1, #3, #4, #5)
+
+
+COST COMPARISON: DIRECT GPU LEASES vs CLOUD
+================================================================================
+
+Direct GPU Lease Cost per GPU-Hour:
+- Average lease cost per GPU: $943/month ($264k / 280 GPUs)
+- Assuming 730 hours/month: $1.29/GPU-hour
+- Actual utilization ~85%: effective cost $1.52/GPU-hour
+
+Equivalent Cloud GPU Cost (AWS/GCP p4d/a2 instances):
+- On-demand MI250X equivalent: $32.77/hour
+- 1-year reserved: $18.50/hour
+- 3-year reserved: $12.20/hour
+
+Cost Savings:
+Direct leasing provides 88-95% cost savings vs on-demand cloud GPU compute
+for steady-state ML training and inference workloads. Company maintains
+cloud GPU usage for burst capacity and experimentation.
+
+
+TECHNICAL SPECIFICATIONS: AMD MI355X GPU
+================================================================================
+Architecture:              CDNA 3
+Process Node:              5nm
+GPU Memory:                128 GB HBM3
+Memory Bandwidth:          5.3 TB/s
+FP32 Performance:          ~92 TFLOPS
+FP16 Performance:          ~184 TFLOPS
+INT8 Performance:          ~368 TOPS
+TDP:                       600W
+Interconnect:              Infinity Fabric, PCIe Gen 5
+AI/ML Frameworks:          PyTorch, TensorFlow, JAX, ROCm 6.x
+
+
+OPERATIONAL NOTES
+================================================================================
+
+Utilization Metrics (January 2026):
+- Average GPU utilization: 85%
+- Peak training workloads: 95% utilization (nights/weekends)
+- Inference workloads: 70-80% utilization (business hours)
+
+Workload Distribution:
+- ML model training: 60% of GPU-hours
+- Inference serving: 30% of GPU-hours
+- Research and experimentation: 10% of GPU-hours
+
+Engineering Team Split:
+- Engineers using direct GPU compute: ~120 engineers
+- Engineers using cloud-only resources: ~80 engineers
+
+Reliability:
+- GPU availability SLA: 99.9% (per lease agreements)
+- Actual uptime (2026 YTD): 99.94%
+- Zero data loss incidents

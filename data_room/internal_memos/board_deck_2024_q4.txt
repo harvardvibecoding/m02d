@@ -1,0 +1,702 @@
+EXAMPLE AI, INC.
+BOARD OF DIRECTORS MEETING
+Q4 2024 UPDATE & 2025 PLANNING
+
+Confidential - Board Members Only
+December 18, 2024
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+AGENDA
+
+1. Q4 & Full Year 2024 Performance Review
+2. Product & Engineering Achievements
+3. Go-to-Market Retrospective
+4. Team & Operations Update
+5. 2025 Operating Plan & Budget
+6. Series B Planning
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+EXECUTIVE SUMMARY
+
+Q4 Highlights:
+✓ ARR reached $2.48M (EOY target: $2.5M) - 98% to plan
+✓ Closed 11 enterprise deals in Q4, including first Fortune 500 customer
+✓ VP Sales (James Park) started Nov 1 - already transforming pipeline
+✓ Achieved SOC2 Type 2 certification (Dec 12)
+✓ Shipped Agentic Framework Beta - 14 design partners
+✓ Team scaled to 40 FTE (95% of hiring target)
+
+Full Year 2024:
+✓ ARR grew 220% ($780K → $2.48M)
+✓ Customers grew 185% (42 → 119)
+✓ Platform uptime: 99.83% (exceeded 99.7% SLA)
+✓ Successfully executed Series A ($38M raised)
+✓ Zero regrettable attrition
+
+Looking Ahead:
+→ 2025 Plan: $10.2M ARR, 78 FTE, Series B raise in Q4
+→ Market momentum strong, competitive position improving
+→ Cash runway: 16.8 months (comfortable position for Series B timing)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FINANCIAL PERFORMANCE - Q4 2024
+
+Revenue Metrics (as of December 1, 2024)
+─────────────────────────────────────────
+ARR:                           $2,480,000
+MRR:                           $206,667
+QoQ Growth:                    53%
+YoY Growth:                    372%
+
+Q4 New Bookings:               $860,000
+Net New ARR (Q4):              $860,000 (73% above Q3)
+
+Customer Metrics:
+Total Customers:               119 (up from 78)
+Enterprise (>$50K ARR):        28 (up from 17)
+Mid-Market ($10K-50K):         37
+SMB (<$10K):                   54
+Net Dollar Retention:          148%
+Gross Dollar Retention:        97%
+Avg Contract Value:            $20,800
+
+ARR by Segment:
+Enterprise (>$50K):            $1,390K (56%)
+Mid-Market:                    $720K (29%)
+SMB:                           $370K (15%)
+
+Top Customer Wins (Q4):
+─────────────────────────────────────────
+GlobalBank Corp (Fortune 500) - $195K ARR
+- First Fortune 500 logo
+- Use case: Fraud detection & customer service AI
+- 4-month sales cycle, CEO heavily involved
+
+Vertex Systems - $125K ARR
+- SaaS platform adding AI features
+- Displaced LangChain Cloud
+
+Helix Pharma - $98K ARR
+- Drug discovery AI workflows
+- On-prem deployment (compliance requirement)
+
+MicroSolutions Inc. - $87K ARR
+- Developer tools company
+- Beat Humanloop on enterprise features
+
+Cash Position
+─────────────────────────────────────
+Starting Cash (Sept 1):       $37.8M
+Current Cash (Dec 1):          $34.9M
+Q4 Burn:                       $2.9M ($967K/month avg)
+Runway:                        16.8 months
+
+Q4 Burn Analysis (elevated due to year-end hiring):
+- Personnel (40 FTE):          $525K/mo
+- Cloud/GPU Infrastructure:    $285K/mo
+- Sales & Marketing:           $95K/mo
+- Recruiting & Ops:            $62K/mo
+
+2024 Full Year Financial Summary
+─────────────────────────────────────────
+Starting ARR (Jan 1):          $780K
+Ending ARR (Dec 31):           $2,480K
+Net New ARR:                   $1,700K
+ARR Growth:                    218%
+
+Starting Customers:            42
+Ending Customers:              119
+Net New Customers:             77
+
+Total Cash Consumed (2024):    $4.2M
+Avg Monthly Burn (2024):       $350K
+
+Efficiency Metrics:
+CAC Payback Period:            14 months
+LTV/CAC Ratio:                 4.2x
+Magic Number:                  1.8 (strong growth efficiency)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PRODUCT & ENGINEERING UPDATE
+
+Q4 Shipped Features
+──────────────────────────
+✓ Agentic AI Framework (Beta - Nov 15)
+  - 14 design partners using in production
+  - Multi-step reasoning, tool calling, memory management
+  - Early feedback: "game-changer for customer support automation"
+
+✓ Workflow Automation Builder (GA - Dec 1)
+  - Low-code interface for LLM workflows
+  - 42 customers building custom workflows
+  - Avg time to first workflow: 18 minutes
+
+✓ Cost Optimization Engine v2 (GA - Nov 20)
+  - Intelligent routing saves customers 38% on average
+  - Auto-fallback across 15 LLM providers
+  - Customers processing cost reduction as key value prop
+
+✓ Multi-Region GA (Dec 10)
+  - EU West, APAC, US East/West fully operational
+  - 18 customers using multi-region (data residency compliance)
+
+✓ Enterprise Security Suite Enhancements
+  - Customer-managed encryption keys (CMEK)
+  - Advanced audit logging with SIEM integration
+  - SSO improvements (Okta, Azure AD, Google)
+
+Platform Performance (Q4)
+──────────────────────────
+Uptime:                        99.87% (exceeded SLA)
+API Requests (Q4):             385M requests
+Tokens Processed:              52B tokens
+P95 Latency:                   520ms (down from 680ms, target <500ms)
+Supported LLM Providers:       18
+
+Full Year Platform Stats:
+Total API Requests (2024):     698M
+Total Tokens Processed:        93B
+Incidents (SEV-1):             2 (both resolved <30min)
+Incidents (SEV-2):             8
+
+Engineering Team
+──────────────────────────
+Current: 22 engineers (up from 16)
+- VP Engineering: Sarah Mitchell
+- Backend: 11
+- ML/Infra: 6
+- Frontend: 4
+- DevOps: 1
+
+Q4 Engineering Hires:
+✓ 4 Senior Backend Engineers
+✓ 2 ML Engineers
+✓ 1 Senior Frontend Engineer
+
+Infrastructure Investments:
+- Completed Kubernetes migration (100% of workloads)
+- Implemented observability platform (custom + Datadog)
+- Latency optimization project (520ms P95, target <500ms by Q1)
+- Reserved GPU capacity: $2.4M annual commitment (AMD, Nvidia)
+
+2025 Product Roadmap Preview
+──────────────────────────────────────
+Q1:
+→ Agentic Framework GA (Feb)
+→ Vertical Solutions: Healthcare AI Compliance Module
+→ Advanced Analytics Dashboard (usage, cost, performance)
+
+Q2:
+→ On-Device AI Support (edge deployment)
+→ Model Performance Benchmarking Suite
+→ Enterprise Governance & Policy Engine
+
+Q3:
+→ White-Label / OEM Option
+→ AI Agent Marketplace (3rd party integrations)
+→ Advanced fine-tuning capabilities
+
+Q4:
+→ Industry-specific pre-built workflows
+→ Real-time collaboration features
+→ Advanced security: anomaly detection, threat monitoring
+
+Technical Priorities (2025):
+- Achieve <500ms P95 latency consistently
+- Scale to 5B requests/month
+- 99.95% uptime target
+- Reduce infrastructure costs 20% via optimization
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+GO-TO-MARKET UPDATE
+
+Q4 Sales Performance
+─────────────────────────────────────
+Q4 New Bookings:              $860K (73% above Q3)
+Enterprise Deals Closed:       11 (>$50K ARR each)
+Avg Enterprise ACV:            $96K (up from $82K)
+Sales Cycle (Enterprise):      61 days (improving from 68)
+Win Rate (Enterprise):         42% (up from 38%)
+
+Sales Team Evolution:
+Q4 Leadership:
+✓ VP Sales: James Park (started Nov 1)
+  - Ex-Datadog, Segment
+  - Restructured sales process, introduced MEDDIC
+  - Already elevated team performance
+
+Current Sales Team (Dec):
+- VP Sales: 1
+- Account Executives: 5 (target achieved)
+- SDRs: 3 (up from 2)
+- Sales Engineers: 2 (up from 1)
+- Sales Ops: 1 (new hire in Nov)
+
+Pipeline & Coverage:
+Q1 2025 Pipeline:              $3.2M (4.5x quota)
+Enterprise Pipeline:           38 active opps
+Avg Enterprise Opp:            $112K ACV (growing)
+Weighted Q1 Pipeline:          $1.35M
+
+Sales Transformation Under James Park:
+✓ Implemented MEDDIC sales methodology
+✓ Formalized sales stages & qualification criteria
+✓ Weekly pipeline reviews & deal coaching
+✓ Enterprise playbook documented
+✓ Win/loss analysis process
+
+Top Q4 Wins & Competitive Intel:
+─────────────────────────────────────
+GlobalBank Corp - $195K ARR
+- Beat: Build in-house, AWS Bedrock
+- Winning themes: Security, compliance, multi-provider
+- Sales cycle: 4 months (complex procurement)
+
+Vertex Systems - $125K ARR
+- Beat: LangChain Cloud
+- Winning themes: Reliability, SLAs, enterprise support
+- Sales cycle: 2.5 months
+
+Helix Pharma - $98K ARR
+- Beat: Humanloop
+- Winning themes: On-prem, HIPAA compliance, security
+- Sales cycle: 3 months
+
+Win/Loss Analysis (Q4):
+Wins: 28 (11 enterprise, 17 mid-market)
+Losses: 9
+No Decision: 12
+
+Top Win Reasons:
+1. Enterprise features (security, compliance, SLAs)
+2. Multi-provider flexibility
+3. Reliability & uptime track record
+
+Top Loss Reasons:
+1. Price (4) - lost to open-source alternatives
+2. Feature gaps (3) - vertical-specific needs
+3. Timing (2) - budget/project delays
+
+Marketing & Demand Gen (Q4)
+─────────────────────────────────────
+Website Traffic:               72K monthly visitors
+Inbound Leads:                 1,240/month (up 72%)
+Free Tier Sign-ups:            1,380/month
+Free → Paid Conversion:        10.8%
+
+Q4 Marketing Highlights:
+✓ Published "State of LLM Ops 2024" report - 2,800 downloads
+✓ Launched podcast "Building with AI" - 6 episodes, strong traction
+✓ Developer community: 9,200 Discord members
+✓ Open-source SDK downloads: 48K/month
+
+Partnerships & Channels (Q4)
+─────────────────────────────────────
+AWS Marketplace:
+- Launched Nov 15
+- 8 customers signed via marketplace in first month
+- $68K ARR from marketplace channel
+
+Streamline Commerce:
+- 28 joint customers (up from 12)
+- $412K ARR from this partnership
+
+Snowflake Partnership:
+- Joint GTM launched Dec 1
+- Co-selling motion established
+- Pipeline: 6 joint opportunities ($580K)
+
+New Partnerships (Q4):
+✓ Databricks integration completed
+✓ ServiceNow app marketplace listing (launching Q1)
+
+2024 Full Year Marketing Summary
+─────────────────────────────────────
+Total Leads Generated:        8,400
+Total Customers Acquired:      77 net new
+Customer Acquisition Cost:     $5,200 (blended)
+Marketing Budget Spent:        $420K
+
+Channel Mix (by ARR):
+Direct Sales:                  62%
+Partnerships:                  23%
+Product-Led Growth:            15%
+
+Brand Awareness:
+- Industry recognition: Named "Cool Vendor" by Gartner (Nov)
+- Press mentions: 14 articles in major tech press
+- Conference sponsorships: 4 events (6,500+ attendees)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TEAM & OPERATIONS
+
+Headcount Summary
+──────────────────────────────────────
+Dec 1, 2024:                   40 FTE
+Target (EOY):                  42 FTE (revised from 45)
+Achievement:                   95%
+
+YoY Growth:                    122% (18 → 40 FTE)
+
+Breakdown by Function:
+Engineering:                   22 (55%)
+Sales & Marketing:             10 (25%)
+Product:                       4 (10%)
+Customer Success:              2 (5%)
+Operations/Finance:            2 (5%)
+
+Q4 Key Hires
+──────────────────────────────────────
+Executive:
+✓ James Park - VP Sales (Nov 1)
+  - Transformed sales org in 6 weeks
+  - Bringing Datadog playbook to Example AI
+
+Engineering:
+✓ 6 Senior Engineers (various specialties)
+✓ 1 Engineering Manager (leading backend team)
+
+GTM:
+✓ 2 Account Executives
+✓ 1 SDR
+✓ 1 Sales Engineer
+✓ 1 Sales Operations Analyst
+✓ 1 Customer Success Manager
+
+Product:
+✓ 1 Senior Product Manager (Agentic Framework)
+
+Open Roles (Carrying into 2025):
+→ 1 Product Manager (Enterprise)
+→ 1 DevRel / Developer Advocate
+
+Culture & Retention
+──────────────────────────────────────
+2024 Attrition:                1 departure (non-regrettable)
+Retention Rate:                97.5%
+eNPS (Q4):                     9.1/10
+Engagement Score:              89%
+
+Team Highlights:
+- Annual team offsite in Napa Valley (Dec) - celebration of strong year
+- Launched mentorship program (8 mentor/mentee pairs)
+- Expanded benefits: fertility support, mental health resources
+
+Diversity & Inclusion (Dec 2024):
+Women:                         32%
+Underrepresented minorities:   28%
+Goal: Reach 40% women, 35% URM by EOY 2025
+
+Operational Milestones (Q4)
+──────────────────────────────────────
+✓ SOC2 Type 2 Certification (Dec 12)
+  - Unlocked 8 enterprise deals waiting on compliance
+  - Annual audits now required
+
+✓ Upgraded Financial Systems
+  - NetSuite fully implemented
+  - Revenue recognition automation (ASC 606)
+  - Subscription billing via Stripe
+
+✓ Fractional CFO → Full-Time CFO Search
+  - Rebecca Larson (fractional) recommending full-time hire
+  - Search initiated for full-time CFO (targeting Q1 hire)
+
+✓ Legal & Compliance
+  - Hired Cooley LLP as outside counsel
+  - GDPR compliance program established
+  - Privacy policy & terms updated
+
+Office & Facilities:
+- SF HQ lease extended (2 years)
+- Hybrid policy maintained (3 days/week)
+- Opened satellite office in NYC (sales team, 5 people)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2024 FULL YEAR RETROSPECTIVE
+
+What Went Well:
+✓ Exceeded ARR target ($2.48M vs $2.5M plan)
+✓ Successfully closed Series A ($38M)
+✓ Scaled team effectively (18 → 40 FTE)
+✓ Shipped major product milestones (on-prem, agentic, multi-region)
+✓ Zero regrettable attrition
+✓ First Fortune 500 customer (GlobalBank)
+✓ SOC2 Type 2 achieved
+✓ Platform reliability exceeded SLAs
+
+What Could Have Been Better:
+⚠ Sales hiring took longer than expected (Q2-Q3 delays)
+⚠ Latency optimization slower than planned (520ms vs 500ms target)
+⚠ International expansion minimal (only 12% of customers)
+⚠ Customer concentration still high (top 10 = 58% of ARR)
+⚠ Burn rate higher than plan ($350K avg vs $300K target)
+
+Key Learnings:
+1. VP-level hires are transformative (Sarah, James immediate impact)
+2. Enterprise sales cycles predictable with right process (MEDDIC)
+3. Product-market fit strongest in regulated industries (finance, healthcare)
+4. Partnerships take 2-3 quarters to ramp (patience required)
+5. SOC2 is table stakes for enterprise (should have prioritized earlier)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2025 OPERATING PLAN
+
+Strategic Objectives:
+1. Reach $10M+ ARR (4x growth)
+2. Establish market leadership in enterprise LLM infrastructure
+3. Achieve strong unit economics (NRR >130%, CAC payback <12mo)
+4. Prepare for Series B raise (Q4 2025)
+
+Revenue Plan
+─────────────────────────────────────
+Starting ARR (Jan 1, 2025):    $2.48M
+Target ARR (Dec 31, 2025):     $10.2M
+Growth:                        311%
+
+Quarterly ARR Targets:
+Q1 2025:                       $3.5M
+Q2 2025:                       $5.2M
+Q3 2025:                       $7.5M
+Q4 2025:                       $10.2M
+
+Assumes:
+• 35-40% QoQ ARR growth (accelerating in H2)
+• NRR maintained at 140%+
+• Enterprise mix grows to 65% of ARR
+• 260+ total customers by EOY
+
+Customer Acquisition Plan:
+Enterprise (>$50K):            68 customers (from 28)
+Mid-Market:                    85 customers (from 37)
+SMB:                           107 customers (from 54)
+Total:                         260 customers
+
+Revenue by Segment (EOY 2025):
+Enterprise:                    $6.6M ARR (65%)
+Mid-Market:                    $2.6M ARR (25%)
+SMB:                           $1.0M ARR (10%)
+
+GTM Strategy & Headcount Plan
+─────────────────────────────────────
+Sales Team Scaling:
+Current (Jan 2025):            12 (VP, 5 AEs, 3 SDRs, 2 SEs, 1 Ops)
+Target (Dec 2025):             24
+
+Hiring Plan:
+→ 8 Account Executives (1-2 per quarter)
+→ 3 SDRs
+→ 2 Sales Engineers
+→ 1 Sales Ops Analyst
+
+Marketing & Demand Gen:
+Current:                       4
+Target:                        10
+
+Hiring Plan:
+→ VP Marketing / CMO (Q1)
+→ 2 Content Marketers
+→ 1 Demand Gen Manager
+→ 1 Product Marketing Manager
+→ 1 DevRel / Developer Advocate
+
+Customer Success:
+Current:                       2
+Target:                        6
+
+Hiring Plan:
+→ Head of Customer Success (Q1)
+→ 3 CSMs
+→ 1 Onboarding Specialist
+
+Product & Engineering Plan
+─────────────────────────────────────
+Engineering Team Scaling:
+Current (Jan 2025):            22
+Target (Dec 2025):             40
+
+Hiring Plan:
+→ 2 Engineering Managers
+→ 10 Senior Backend Engineers
+→ 3 ML Engineers
+→ 2 Infrastructure Engineers
+→ 1 Security Engineer
+
+Product Team:
+Current:                       4
+Target:                        8
+
+Hiring Plan:
+→ VP Product (Q2)
+→ 2 Senior Product Managers
+→ 1 Technical Writer
+
+Key Product Initiatives (2025):
+→ Agentic Framework GA & expansion
+→ Vertical solutions (healthcare, fintech)
+→ White-label / OEM offering
+→ AI governance & compliance suite
+→ Model performance optimization
+→ International expansion (EMEA, APAC)
+
+Operations & G&A
+─────────────────────────────────────
+Current:                       2
+Target:                        8
+
+Hiring Plan:
+→ CFO (Q1)
+→ Controller (Q2)
+→ Finance Analyst (Q3)
+→ HR Manager (Q1)
+→ Recruiter (Q1)
+→ IT/Security Manager (Q2)
+
+Total Headcount Plan:
+Starting (Jan 1, 2025):        40 FTE
+Ending (Dec 31, 2025):         78 FTE
+Net New Hires:                 38
+
+Financial Model - 2025
+─────────────────────────────────────
+                    Q1      Q2      Q3      Q4      Total
+Revenue (Qtr)       $875K   $1,300K $1,875K $2,550K $6.6M
+OpEx (Qtr)          $1.65M  $2.1M   $2.55M  $3.0M   $9.3M
+Net Income (Qtr)    -$775K  -$800K  -$675K  -$450K  -$2.7M
+Burn Rate (mo)      $258K   $267K   $225K   $150K   $225K avg
+
+Cash Position:
+Starting (Jan 1, 2025):        $34.9M
+Ending (Dec 31, 2025):         $32.2M
+Total Cash Consumed:           $2.7M
+
+Runway at EOY 2025:            ~18 months (comfortable for Series B)
+
+Key Assumptions:
+• Gross margin: 72% (improving from 68%)
+• CAC payback: 11 months
+• LTV/CAC: 5.2x
+• NRR: 140%
+• Sales efficiency improving as team matures
+
+2025 Budget Summary:
+Total OpEx (2025):             $9.3M
+  - Personnel (78 FTE):        $6.8M (73%)
+  - Infrastructure/Cloud:      $1.6M (17%)
+  - Marketing & GTM:           $650K (7%)
+  - Other (facilities, etc):   $250K (3%)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SERIES B PLANNING
+
+Target Timeline: Q4 2025 / Q1 2026
+Target Raise: $70-90M
+Target Valuation: $450-550M post-money
+
+Milestones to Achieve Before Fundraise:
+─────────────────────────────────────
+✓ $10M+ ARR (on track)
+✓ 250+ customers, 60+ enterprise (on track)
+✓ NRR >130% (currently 148%)
+✓ Clear path to profitability (model shows CF+ by Q4 2026)
+✓ Market leadership position (building)
+✓ Strong executive team (hiring VP Product, CFO in 2025)
+
+Preparatory Actions (2025):
+─────────────────────────────────────
+Q1-Q2:
+→ Build relationships with target funds (Sequoia, a16z, Index, etc.)
+→ CEO visibility: speaking at conferences, thought leadership
+→ Publish industry research & benchmarks
+
+Q3:
+→ Finalize Series B narrative & positioning
+→ Update financial model & pitch deck
+→ Begin informal investor conversations
+
+Q4:
+→ Formal fundraise process (if metrics support)
+→ Target: 3-4 term sheets
+→ Close by EOY 2025 or Q1 2026
+
+Target Investor Profile:
+- Top-tier growth funds (Sequoia, a16z, Index, Bessemer)
+- Firms with B2B SaaS expertise
+- Strong enterprise/AI portfolio experience
+- Ability to support international expansion
+
+Board Composition Post-Series B:
+Current: 3 voting members (2 founders, 1 investor)
+Target: 5 voting members (2 founders, 2-3 investors, potential independent)
+
+Use of Funds (Series B):
+- 50% Engineering & Product (R&D, infra scaling)
+- 35% GTM (sales, marketing, international expansion)
+- 15% G&A & Operations
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+RISKS & MITIGATIONS (2025)
+
+1. Revenue Growth Execution Risk
+   Risk: 4x growth is aggressive, may miss targets
+   Mitigation: Strong pipeline coverage (4.5x), VP Sales driving discipline,
+               diversified customer acquisition (enterprise + PLG)
+
+2. Competitive Intensity
+   Risk: OpenAI/Anthropic, cloud providers intensifying competition
+   Mitigation: Enterprise moat (security, compliance, SLAs), multi-provider value,
+               vertical solutions differentiation
+
+3. Hiring at Scale
+   Risk: Doubling headcount (40 → 78) while maintaining quality
+   Mitigation: Hiring experienced leaders (CFO, VP Product, Head of CS),
+               recruiter hire, strong employer brand
+
+4. Customer Concentration
+   Risk: Top 10 = 58% of ARR
+   Mitigation: Aggressive new logo acquisition (targeting 260 customers EOY),
+               expansion in mid-market segment
+
+5. Platform Scaling
+   Risk: 10x request volume could strain infrastructure
+   Mitigation: VP Eng focused on scaling, reserved capacity, multi-region redundancy
+
+6. International Expansion
+   Risk: Limited presence outside US (88% of revenue)
+   Mitigation: 2025 plan includes international go-to-market expansion (EMEA AE)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ASKS OF THE BOARD
+
+1. Approve 2025 Operating Plan & Budget
+   - $10.2M ARR target, 78 FTE, $2.7M cash consumption
+   - Board vote required for annual budget
+
+2. Approve CFO Hire
+   - Targeting full-time CFO hire in Q1 2025
+   - Compensation: $250K base + equity
+   - Board approval for executive hires
+
+3. Approve Equity Pool Refresh
+   - Current pool: 8M shares (14.5% fully diluted)
+   - Requested: +2M shares (for 2025 hires, especially VPs)
+   - New pool: 10M shares (~18% fully diluted)
+
+4. Series B Timing Guidance
+   - Board preference: Q4 2025 vs Q1 2026?
+   - Valuation expectations & dilution tolerance?
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Questions & Discussion

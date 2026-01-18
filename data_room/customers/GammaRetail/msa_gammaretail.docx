@@ -1,0 +1,248 @@
+# Master Services Agreement - Enterprise License Agreement
+
+**Agreement No:** ELA-2024-0087
+**Effective Date:** December 15, 2024
+**Confidential**
+
+---
+
+## PARTIES
+
+**Provider:**
+Example AI, Inc.
+548 Market St, Suite 95000
+San Francisco, CA 94104
+
+**Customer:**
+GammaRetail, Inc.
+2100 Commerce Boulevard
+Seattle, WA 98101
+
+---
+
+## AGREEMENT SUMMARY
+
+| Term | Value |
+|------|-------|
+| Agreement Type | Enterprise License Agreement (ELA) |
+| Industry | E-commerce / Retail |
+| Initial Term | 3 Years |
+| Effective Date | December 15, 2024 |
+| Expiration Date | December 14, 2027 |
+| Annual Contract Value | $2,800,000 |
+| Total Contract Value | $8,400,000 |
+| Payment Terms | Net 30 |
+| Auto-Renewal | 1-year periods with 60-day notice |
+
+---
+
+## 1. SERVICES
+
+### 1.1 Licensed Services
+Provider grants Customer a non-exclusive, non-transferable license to access and use the Example AI Platform ("Platform") for Customer's internal business operations, including:
+
+- AI/ML inference API access (unlimited API calls within fair use)
+- Model fine-tuning capabilities (up to 50 custom models)
+- Multi-region deployment (US-West, US-East, EU-West)
+- Dedicated compute resources
+- Enterprise administration console
+- Priority support services
+
+### 1.2 Deployment Configuration
+- **Deployment Type:** Multi-region cloud deployment
+- **Primary Region:** US-West-2
+- **Secondary Regions:** US-East-1, EU-West-1
+- **Dedicated Resources:** 8x GPU clusters (reserved capacity)
+- **Data Residency:** US (primary), EU (GDPR compliance for EU customers)
+
+### 1.3 Use Cases
+Customer may use the Platform for:
+- Product recommendation engines
+- Customer service automation
+- Inventory forecasting
+- Personalization services
+- Content generation for marketing
+
+---
+
+## 2. FEES AND PAYMENT
+
+### 2.1 Fee Schedule
+
+| Year | Annual Fee | Payment Schedule |
+|------|------------|------------------|
+| Year 1 | $2,800,000 | Quarterly ($700,000) |
+| Year 2 | $2,800,000 | Quarterly ($700,000) |
+| Year 3 | $2,800,000 | Quarterly ($700,000) |
+
+### 2.2 Price Protection
+- Annual price increases capped at 5%
+- Renewal pricing locked at Year 3 rates for first renewal term
+- Volume discount: Additional 10% discount for usage exceeding $4M annually
+
+### 2.3 Payment Terms
+- Payment due Net 30 from invoice date
+- Late payment: 1.5% monthly interest
+- Invoices issued quarterly in advance
+
+---
+
+## 3. SERVICE LEVEL AGREEMENT
+
+### 3.1 Uptime Commitment
+- **Guaranteed Uptime:** 99.95%
+- **Measurement Period:** Monthly
+- **Exclusions:** Scheduled maintenance (max 4 hours/month with 72-hour notice)
+
+### 3.2 Performance SLAs
+
+| Metric | Target | Measurement |
+|--------|--------|-------------|
+| API Availability | 99.95% | Monthly |
+| P95 Latency | <300ms | Per request |
+| P99 Latency | <500ms | Per request |
+| Error Rate | <0.1% | Monthly |
+
+### 3.3 Support Response Times
+
+| Severity | Response Time | Resolution Target |
+|----------|---------------|-------------------|
+| Critical (P1) | 15 minutes | 4 hours |
+| High (P2) | 1 hour | 8 hours |
+| Medium (P3) | 4 hours | 2 business days |
+| Low (P4) | 1 business day | 5 business days |
+
+### 3.4 Service Credits
+
+| Uptime Achieved | Service Credit |
+|-----------------|----------------|
+| 99.0% - 99.95% | 10% monthly fee |
+| 95.0% - 99.0% | 25% monthly fee |
+| <95.0% | 50% monthly fee |
+
+---
+
+## 4. DATA AND SECURITY
+
+### 4.1 Data Ownership
+- Customer retains all ownership rights to Customer Data
+- Provider retains ownership of Platform and underlying technology
+- Provider may use anonymized, aggregated data for service improvement
+
+### 4.2 Data Processing
+- Data Processing Agreement (DPA) incorporated by reference (Exhibit A)
+- GDPR compliant processing for EU data subjects
+- CCPA compliant for California residents
+
+### 4.3 Data Handling
+- **Encryption at Rest:** AES-256
+- **Encryption in Transit:** TLS 1.3
+- **Data Retention:** Customer data deleted within 90 days of termination (per negotiated terms)
+- **Data Location:** US (default), EU (for EU customer data)
+
+### 4.4 Security Certifications
+- SOC 2 Type II (annual audit)
+- ISO 27001 (upon request)
+- PCI DSS Level 1 (for payment-related workloads)
+
+---
+
+## 5. INTELLECTUAL PROPERTY
+
+### 5.1 Ownership
+
+| Asset | Owner |
+|-------|-------|
+| Platform Technology | Provider |
+| Customer Data | Customer |
+| Custom Fine-tuned Models | Customer |
+| Prompts and Templates | Customer |
+| Aggregate/Derived Data | Provider (anonymized) |
+| Custom Integrations | Joint (per Exhibit B) |
+
+### 5.2 License Grants
+- Provider grants Customer license to use Platform per this Agreement
+- Customer grants Provider limited license to process Customer Data for service delivery
+
+---
+
+## 6. LIMITATION OF LIABILITY
+
+### 6.1 Liability Caps
+
+| Liability Type | Cap |
+|----------------|-----|
+| Direct Damages | 12 months fees paid |
+| Data Breach | 24 months fees paid |
+| Indemnification (IP) | Unlimited |
+
+### 6.2 Exclusions
+Neither party liable for indirect, consequential, special, or punitive damages.
+
+---
+
+## 7. TERM AND TERMINATION
+
+### 7.1 Term
+- Initial Term: 3 years from Effective Date
+- Renewal: Automatic 1-year renewals unless 60-day written notice
+
+### 7.2 Termination for Cause
+- Material breach with 30-day cure period
+- Insolvency or bankruptcy
+
+### 7.3 Change of Control
+Customer may terminate within 180 days of Provider Change of Control with 90 days written notice, without penalty.
+
+### 7.4 Effect of Termination
+- Provider will provide data export within 30 days
+- Customer data deleted within 90 days (negotiated term)
+- Accrued payment obligations survive
+
+---
+
+## 8. GENERAL PROVISIONS
+
+### 8.1 Governing Law
+State of Delaware, USA
+
+### 8.2 Dispute Resolution
+Binding arbitration under AAA Commercial Rules in San Francisco, CA
+
+### 8.3 Assignment
+Neither party may assign without written consent, except in connection with merger or acquisition
+
+### 8.4 Entire Agreement
+This Agreement, including all Exhibits, constitutes the entire agreement between parties
+
+---
+
+## EXHIBITS
+
+- **Exhibit A:** Data Processing Agreement (DPA)
+- **Exhibit B:** Custom Integration IP Terms
+- **Exhibit C:** Acceptable Use Policy
+- **Exhibit D:** Technical Specifications
+
+---
+
+## SIGNATURES
+
+**Example AI, Inc.**
+
+Signature: _________________________
+Name: Sarah Chen
+Title: Chief Executive Officer
+Date: December 15, 2024
+
+**GammaRetail, Inc.**
+
+Signature: _________________________
+Name: Michael Torres
+Title: Chief Technology Officer
+Date: December 15, 2024
+
+---
+
+*Document ID: ELA-2024-0087-GAMMA*
+*Classification: Confidential - M&A Due Diligence*

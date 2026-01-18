@@ -1,0 +1,11 @@
+customer_id,name,industry,segment,contract_type,arr_usd,contract_term,effective_date,expiration_date,status,notes
+CUST001,GammaRetail,E-commerce,Enterprise,ELA,2800000,3 years,2024-12-15,2027-12-14,Active,Top customer; multi-region deployment
+CUST002,AlphaCorp,Financial Services,Enterprise,MSA,2100000,3 years,2025-03-01,2028-02-28,Active,HIPAA BAA in place; 48-month liability cap
+CUST003,TechFlow Enterprise,Technology,Enterprise,MSA,1800000,2 years,2025-09-15,2027-09-14,Active,Expansion in progress; reviewing 3yr ELA
+CUST004,DataSphere Inc,Analytics,Enterprise,MSA,1500000,2 years,2025-11-01,2027-10-31,Active,Hybrid on-prem + cloud deployment
+CUST005,Quantum Dynamics,Manufacturing,Enterprise,MSA,1200000,3 years,2025-06-01,2028-05-31,Active,Multi-site deployment (4 locations)
+CUST006,Meridian Analytics,Financial Services,Enterprise,MSA,950000,2 years,2025-02-15,2027-02-14,Active,Upsell opportunity identified
+CUST007,CloudBurst Inc,Technology,Enterprise,MSA,880000,2 years,2025-04-01,2027-03-31,Active,Annual prepay customer
+CUST008,Apex Robotics,Manufacturing,Enterprise,MSA,820000,2 years,2025-07-01,2027-06-30,Active,Edge deployment for robotics
+CUST009,Vantage AI Labs,Technology,Enterprise,MSA,750000,1 year,2026-01-15,2027-01-14,Active,Reviewing 3-year commitment
+CUST010,BetaHealth,Healthcare,Enterprise,MSA + BAA,720000,2 years,2025-08-01,2027-07-31,Active,HIPAA compliant; BAA executed

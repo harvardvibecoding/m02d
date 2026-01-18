@@ -1,0 +1,51 @@
+# Patent #2: Semantic Caching System for LLM Responses
+
+**Example AI, Inc.**
+**Confidential - M&A Due Diligence**
+
+---
+
+## Patent Information
+
+| Field | Details |
+|-------|---------|
+| **Patent Number** | US 11,XXX,XXX |
+| **Filing Date** | June 22, 2023 |
+| **Grant Date** | December 15, 2025 |
+| **Inventors** | Amy Zhao, Daniel Kim, Nina Rodriguez |
+| **Assignee** | Example AI, Inc. |
+| **Status** | Granted |
+
+---
+
+## Abstract
+
+A caching system for Large Language Model responses that uses semantic similarity matching rather than exact string matching. The system employs embedding-based comparison to identify functionally equivalent queries, reducing redundant API calls by 30-40% while maintaining response quality.
+
+---
+
+## Key Claims
+
+1. A method for determining cache hits based on semantic similarity scores exceeding a configurable threshold
+
+2. A cache invalidation strategy based on temporal decay and semantic drift detection
+
+3. Integration with token counting to estimate cost savings from cache utilization
+
+---
+
+## Commercial Importance
+
+Drives 30-40% cost reduction for customers; key selling point
+
+---
+
+## Technology Domain
+
+LLM Gateway & Routing
+
+---
+
+*Document prepared for M&A due diligence purposes*
+*Patent numbers redacted for confidentiality*
+*Data as of September 30, 2026*
